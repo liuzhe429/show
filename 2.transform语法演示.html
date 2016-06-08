@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        .stage{
+            width: 367px;
+            height: 297px;
+            background: url(images/bg-grid.jpg) no-repeat;
+            position:relative;
+            transform-style: preserve-3d;
+            perspective: 800px;
+        }
+        /*下面的这个是将图片居中,两张图片堆叠在一起,一张设置成透明的好对比*/
+        .stage img{
+            width: 142px;
+            height: 200px;
+            position: absolute;
+            left:50%;
+            top:50%;
+            margin: -100px 0 0 -71px;
+        }
+        /*这张图片是用来对比的*/
+        .stage img:nth-child(1){
+            opacity: 0.5;
+        }
+        .stage img:nth-child(2){
+            /*transform:rotate(45deg);*/
+            /*transform:skew(15deg,0deg);*/
+            transform: rotateX(0deg) translateZ(100px);
+
+            /*
+            第一个参数:正的值往左倾斜,负的值往右倾斜
+            第二个参数:正的值往下倾斜,负的值往上倾斜
+            */
+            /*transform: scale(0.2);*/
+            /*transform: translate(-100px,-50px);*/
+
+
+        }
+        /*css3变形属性 transform*/
+        /*
+        1.2D变形函数
+         transform : rotate(45deg)
+         transform : skew(15deg,15deg)
+         transform : scale(0.2);
+         transform : translate(100px)
+         transform-origin:center 设置变形基准点,默认是center
+         rotate,skew,scale基准点都可以变,但是 translate基准点不能更改,永远是center,这几个变形函数能放一起用,但是要注意先后顺序问题
+        */
+    </style>
+</head>
+<body>
+<div class="stage">
+    <img src="images/pic.jpg">
+    <img src="images/pic.jpg">
+</div>
+</body>
+</html>

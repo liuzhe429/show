@@ -1,0 +1,275 @@
+*{
+    margin: 0;
+    padding:0
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+#main{
+    width: 640px;
+    height: 1008px;
+    position: absolute;
+    left:50%;
+    margin-left: -320px;
+    top:0;
+    overflow: hidden;
+    -webkit-transform-origin: top;
+    transform-origin: top;
+}
+#loading{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 10;
+    background: #000;
+}
+.processBox{
+    width: 80%;
+    margin: 0 10%;
+    background: #fff;
+    height: 40px;
+    border-radius: 10px;
+    position: absolute;
+    top:40%;
+    overflow: hidden;
+}
+.process{
+    width: 0;
+    height: 40px;
+    background-image:-webkit-linear-gradient(45deg,#6bbf6b 25%,#63bc63 50%,#6bbf6b 75%,#63bc63 100%);
+    background-repeat: repeat-x;
+    background-size: 40px 40px;
+    transition:1s;
+    -webkit-transition:1s;
+}
+#phone {
+    width: 100%;
+    height: 100%;
+    background: url(images/phoneBg.jpg) no-repeat;
+    position: absolute;
+    z-index: 9;
+}
+.phoneHead{
+    width: 100%;
+    height: 89px;
+    background: url(images/logo.png) no-repeat center;
+    position: absolute;
+    top:10%;
+}
+.listen{
+    width: 520px;
+    height: 360px;
+    position: absolute;
+    left: 50%;
+    bottom:0;
+    margin-left: -255px;
+    background: url(images/phoneBtn.png) no-repeat;
+
+}
+.listenStyle,.listenTouch{
+    width: 170px;
+    height: 170px;
+    position: absolute;
+    left:358px;
+    top:143px;
+}
+.listenStyle{
+    border:2px solid #0F0;
+    border-radius: 50%;
+    animation:move 1s infinite;
+    z-index: -1;
+}
+@keyframes move {
+    0%{
+        transform: scale(0.5);
+        -webkit-transform: scale(0.5);
+    }
+    100%{
+        transform: scale(1);
+        -webkit-transform: scale(1);
+    }
+}
+@-webkit-keyframes move {
+    0%{
+        transform: scale(0.5);
+        -webkit-transform: scale(0.5);
+    }
+    100%{
+        transform: scale(1);
+        -webkit-transform: scale(1);
+    }
+}
+.speak{
+    width: 520px;
+    height: 659px;
+    background: url(images/phoneKey.png) no-repeat;
+    position: absolute;
+    left:50%;
+    margin-left: -255px;
+    bottom:0;
+    transform: translate(0,659px);
+    -webkit-transform: translate(0,659px);
+    transition:1s;
+    -webkit-transition:1s;
+}
+.refuse{
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    left:190px;
+    bottom:37px;
+}
+
+#message{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 8;
+    background: #eaeaea;
+}
+.messageText{
+    width: 640px;
+    height: 88px;
+    position: absolute;
+    background: url(images/messageText.png) no-repeat;
+    bottom:0;
+    left:50%;
+    margin-left: -320px;
+}
+#message ul li{
+    list-style: none;
+    max-width: 360px;
+    min-width: 300px;
+    font-size: 30px;
+    line-height: 40px;
+    padding: 20px;
+    border:2px solid #cacaca;
+    background: #fff;
+    margin: 20px 0;
+    position: relative;
+    border-radius: 10px;
+    opacity: 0;
+    transform: translate(0,20px);
+    -webkit-transform: translate(0,20px);
+    transition:1s;
+    -webkit-transition:1s;
+}
+#message ul li.left{
+    float: left;
+    left: 125px;
+}
+#message ul li  img{
+    position: absolute;
+}
+#message ul li.left img:nth-of-type(1){
+    left:-10px;
+}
+#message ul li.left img:nth-of-type(2){
+    left:-100px;
+    top:0;
+}
+#message ul li.right{
+    float: right;
+    right:125px;
+    border-color: #96b471;
+    background: #aec45c;
+
+}
+#message ul li.right img:nth-of-type(1){
+    right: -10px;
+}
+#message ul li.right img:nth-of-type(2){
+    right: -100px;
+    top:0;
+}
+
+#cube{
+    width: 100%;
+    height: 100%;
+    background: url(images/cubeBg.jpg) no-repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: 7;
+    perspective: 800px;
+}
+#cubeBox{
+    list-style: none;
+    width: 510px;
+    height: 510px;
+    position: absolute;
+    left:50%;
+    top:50%;
+    margin-left: -265px;
+    margin-top:-265px;
+    transform-style: preserve-3d;/*它的子元素在3D空间里展示*/
+    -webkit-transform-style: preserve-3d;/*它的子元素在3D空间里展示*/
+    transform: scale(0.2) rotateX(45deg) rotateY(45deg);
+    -webkit-transform: scale(0.2) rotateX(45deg) rotateY(45deg);
+    transform-origin: 255px 255px -255px;
+    -webkit-transform-origin: 255px 255px -255px;
+    transition: 1s;
+    -webkit-transition: 1s;
+}
+#cubeBox li{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+#cubeBox li:nth-child(1){
+    background: url(images/cubeImg1.png) no-repeat;
+    left:510px;
+    transform:rotateY(90deg);
+    -webkit-transform:rotateY(90deg);
+    transform-origin: left;
+    -webkit-transform-origin: left;
+
+}
+#cubeBox li:nth-child(2){
+    background: url(images/cubeImg2.png) no-repeat;
+    left:-510px;
+    transform: rotateY(-90deg);
+    -webkit-transform: rotateY(-90deg);
+    transform-origin: right;
+    -webkit-transform-origin: right;
+}
+#cubeBox li:nth-child(3){
+    background: url(images/cubeImg3.png) no-repeat;
+    top:-510px;
+    transform: rotateX(90deg);
+    -webkit-transform: rotateX(90deg);
+    transform-origin: bottom;
+    -webkit-transform-origin: bottom;
+}
+#cubeBox li:nth-child(4){
+    background: url(images/cubeImg4.png) no-repeat;
+    top:510px;
+    transform: rotateX(-90deg);
+    -webkit-transform: rotateX(-90deg);
+    transform-origin: top;
+    -webkit-transform-origin: top;
+}
+#cubeBox li:nth-child(5){
+    background: url(images/cubeImg5.png) no-repeat;
+    transform: translateZ(-510px);
+    -webkit-transform: translateZ(-510px);
+}
+#cubeBox li:nth-child(6){
+    background: url(images/cubeImg6.png) no-repeat;
+    transform: translateZ(0px);
+    -webkit-transform: translateZ(0px);
+}
+
+/*
+2D变形方法
+transform:rotate(45deg)
+transform:skew(15deg,15deg)
+transform:scale(0.5)
+transform:translate(100px,200px)
+transform-origin:top
+3D变形方法
+transform:rotateX(45deg);
+transform:rotateY(45deg);
+transform:translateZ(100px)
+*/
