@@ -1,0 +1,414 @@
+@import "common.less";
+
+.login {
+  .w {
+    width: 990px;
+  }
+  .loginTop {
+    width: 100%;
+    height: 80px;
+    //background: mediumvioletred;
+    .w {
+      margin: 10px auto;
+      height: 60px;
+      overflow: hidden;
+      //background: red;
+      .loginA {
+        width: 170px;
+        height: 100%;
+        display: block;
+        float: left;
+        img {
+          width: 100%;
+        }
+      }
+      .loginT {
+        width: 110px;
+        height: 100%;
+        font-size: 26px;
+        margin-left: 20px;
+        color: #000;
+        //font-weight: 700;
+        line-height: 60px;
+      }
+    }
+  }
+  .loginCenter {
+    width: 100%;
+    height: 475px;
+    background: #f21d45; //红色
+    background: #ffaf18; //黄色
+    .w {
+      position: relative;
+      height: 100%;
+      .loginBg {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 1;
+      }
+      .qrcode-loginForm{
+        position: absolute;
+        right: 0;
+        top: 30px;
+        width: 346px;
+        height: 357px;
+        background: #fff;
+        z-index: 2;
+        padding: 20px;
+        box-sizing: border-box;
+        display: none;
+        .mc{
+          height: 100%;
+          .qrcode-desc{
+            margin-top: 30px;
+            h2{
+              text-align: center;
+              font-size: 16px;
+              color: #999;
+              font-family: "寰蒋闆呴粦";
+              font-weight: 400;
+              .ml5{
+                 margin-left:15px;
+              }
+            }
+          }
+          .qrcode-main{
+            .qrcode-img{
+              border: 1px solid #f4f4f4;
+              padding: 10px;
+              width: 155px;
+              margin: 20px auto 15px
+            }
+            .qrcode-panel{
+                ul{
+                  width:150px;
+                  margin:0 auto;
+                  &:after{
+                    text-align: center;
+                    display: block;
+                    content:"";
+                    clear: both;
+                    overflow: hidden;
+                  }
+                  //background: pink;
+                  li{
+                    float: left;
+                    padding: 0 0 0 10px;
+                    margin: 0 10px 0 0;
+                    border-left: 1px solid #ccc;
+                    &:first-child{
+                      border: none;
+                    }
+                    &:hover{
+                      a{
+                        text-decoration: underline;
+                      }
+                    }
+
+                  }
+                }
+              .qrcode-tips{
+                margin:0 auto;
+                width:150px;
+                text-align: center;
+                position: relative;
+                background: #F6DCDF;
+                color: #999;
+                margin-top: 10px;
+                .triangle-border{
+                  position: absolute;
+                  right: 30px;
+                  top: -10px;
+                  border-color: transparent transparent #F6DCDF;
+                  overflow: hidden;
+                  width: 0;
+                  height: 0;
+                  border-width: 5px;
+                  border-style: dashed dashed solid;
+                }
+              }
+            }
+          }
+        }
+        .qrcode-loginTwo{
+          position: absolute;
+          right: 0px;
+          bottom: 0px;
+          width:60px;
+          height:60px;
+          background: url("../img/login_ma.png") no-repeat 0px -59px;
+        }
+      }
+      .loginForm {
+        box-sizing: border-box;
+        position: absolute;
+        right: 0;
+        top: 30px;
+        width: 346px;
+        height: 357px;
+        background: #fff;
+        z-index: 2;
+        padding: 20px;
+        //display: none;
+        .loginTitle {
+          width: 100%;
+          height: 27px;
+          line-height: 27px;
+          h1 {
+            line-height: 27px;
+            float: left;
+            color: #666;
+            font-family: "寰蒋闆呴粦";
+            font-size: 20px;
+          }
+          a {
+            float: right;
+            color: #b61d1d;
+            font-size: 14px;
+            i {
+              display: inline-block;
+              width: 16px;
+              height: 16px;
+              overflow: hidden;
+              background: url("../img/login_icon.png") -104px -75px no-repeat;
+              vertical-align: middle;
+              margin-right: 5px;
+            }
+          }
+
+        }
+        .msg-wrap {
+          width: 100%;
+          color: #666;
+          clear: both;
+          zoom: 1;
+          overflow: hidden;
+          .msg-warn {
+            width: 100%;
+            height: 32px;
+            box-sizing: border-box;
+            background: #fff6d2;
+            border: 1px solid #ffe57d;
+            margin: 10px 0;
+            display: none;
+            b {
+              display: block;
+              float: left;
+              margin-top: 8px;
+              margin: 8px 10px 8px 10px;
+              width: 16px;
+              height: 16px;
+              overflow: hidden;
+              background: url(//misc.360buyimg.com/user/passport/1.0.0/widget/login-form/i/pwd-icons-new.png) -104px -22px no-repeat;
+            }
+            p {
+              width: 300px;
+              line-height: 32px;
+            }
+          }
+          .msg-error {
+            width: 100%;
+            height: auto;
+            margin: 10px 0;
+            box-sizing: border-box;
+            color: #e4393c;
+            border: 1px solid #e4393c;
+            background: #ffebeb;
+            //line-height: 18px;
+            min-height: 32px;
+            display: none;
+            b {
+              display: block;
+              float: left;
+              margin-top: 8px;
+              margin: 8px 10px 8px 10px;
+              width: 16px;
+              height: 16px;
+              overflow: hidden;
+              background: url(//misc.360buyimg.com/user/passport/1.0.0/widget/login-form/i/pwd-icons-new.png) -104px -49px no-repeat;
+            }
+            p {
+              width: 300px;
+              line-height: 32px;
+            }
+          }
+        }
+        .loginFormInfo {
+          position: absolute;
+          top: 90px;
+          width: 306px;
+          box-sizing: border-box;
+          //height:50px;
+          //background: red;
+          .item {
+            width: 100%;
+            position: relative;
+            margin-top: 15px;
+            border: 1px solid #bdbdbd;
+            height: 38px;
+            label {
+              position: absolute;
+              z-index: 3;
+              top: 0;
+              left: 0;
+              width: 38px;
+              height: 38px;
+              border-right: 1px solid #bdbdbd;
+              background: url("../img/login_icon.png") no-repeat;
+            }
+
+            label.pwd {
+              background-position: -48px 0px;
+            }
+            input {
+              width: 100%;
+              height: 100%;
+              text-indent: 45px;
+            }
+            input::-webkit-input-placeholder {
+              font-size: 14px !important;
+              color: #999 !important;
+            }
+            input::-moz-placeholder {
+              font-size: 14px !important;
+              color: #999 !important;
+            }
+            span {
+              //background: red;
+              cursor: pointer;
+              position: absolute;
+              right: 10px;
+              top: 8px;
+              color: #ccc;
+              font-weight: 700;
+              font-size: 18px;
+              display: none;
+            }
+          }
+          .item_error {
+            border: 1px solid #e4393c;
+            label {
+              border-color: #e4393c;
+            }
+            label.username {
+              background-position: 0 -96px;
+            }
+            label.pwd {
+              background-position: -48px -96px;
+            }
+          }
+          .item_focus {
+            border: 1px solid #3aa2e4;
+            label {
+              border-color: #3aa2e4;
+            }
+            label.username {
+              background-position: 0 -48px;
+            }
+            label.pwd {
+              background-position: -48px -48px;
+            }
+          }
+          .forget {
+            width: 100%;
+            height: 32px;
+            line-height: 32px;
+            box-sizing: border-box;
+            color: #666;
+            margin: 10px 0 5px;
+            //background: red;
+            .forgetWords {
+              float: right;
+            }
+          }
+          .submit {
+            width: 100%;
+            height: 35px;
+            line-height: 35px;
+            text-align: center;
+            color: #fff;
+            a {
+              width: 100%;
+              display: block;
+              box-sizing: border-box;
+              border: 1px solid #cb2a2d;
+              background: #e4393c;
+              height: 31px;
+              line-height: 31px;
+              color: #fff;
+              font-size: 20px;
+              font-family: 'Microsoft YaHei';
+            }
+          }
+          .agent {
+            margin-top: 15px;
+            h5 {
+              color: #999;
+            }
+            ul {
+              li {
+                line-height: 22px;
+
+                float: left;
+                a {
+                  color: #333;
+                  span {
+                    margin: 0 10px;
+                    color: #999;
+                  }
+                }
+              }
+            }
+          }
+          .qrcode-login{
+            position: absolute;
+            right: -20px;
+            bottom: -20px;
+            width:60px;
+            height:60px;
+            background: url("../img/login_ma.png") no-repeat -60px 0px;
+          }
+        }
+
+      }
+    }
+  }
+  .loginBot {
+    width: 100%;
+    height: 86px;
+    background: #fff;
+    //background: green;
+    margin-top: 30px;
+    .w {
+      height: 30px;
+      text-align: center;
+      color: #666;
+      a {
+        color: #666;
+      }
+      //background: red;
+      ul {
+        li {
+          _display: block;
+          _float: left;
+          display: inline-block;
+          &:first-child {
+            span {
+              display: none;
+            }
+          }
+          a {
+            margin: 0 10px;
+          }
+        }
+      }
+      p {
+        text-align: center;
+        margin: 10px 0;
+      }
+    }
+  }
+}

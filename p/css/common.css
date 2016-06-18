@@ -1,0 +1,42 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+img {
+  border: none;
+}
+ul,
+li {
+  list-style: none;
+}
+a,
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: #666;
+}
+a.style_red {
+  color: #C81623;
+}
+a:hover {
+  color: #C81623;
+}
+a.styleRed {
+  color: #C81623;
+}
+input,
+button,
+textarea {
+  outline: none;
+  border: none;
+}
+body {
+  font: 12px/150% Arial, Verdana, "\5b8b\4f53";
+  color: #666;
+  -webkit-font-smoothing: antialiased;
+}
+.w {
+  width: 1210px;
+  margin: 0 auto;
+}

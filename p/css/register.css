@@ -1,0 +1,286 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+img {
+  border: none;
+}
+ul,
+li {
+  list-style: none;
+}
+a,
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: #666;
+}
+a.style_red {
+  color: #C81623;
+}
+a:hover {
+  color: #C81623;
+}
+a.styleRed {
+  color: #C81623;
+}
+input,
+button,
+textarea {
+  outline: none;
+  border: none;
+}
+body {
+  font: 12px/150% Arial, Verdana, "\5b8b\4f53";
+  color: #666;
+  -webkit-font-smoothing: antialiased;
+}
+.w {
+  width: 1210px;
+  margin: 0 auto;
+}
+* {
+  font-family: "Microsoft YaHei", "Hiragino Sans GB";
+}
+button {
+  cursor: pointer;
+}
+.register .rTop {
+  height: 110px;
+  box-shadow: 4px 4px 10px #eee;
+}
+.register .rTop .w {
+  margin: 0px auto;
+  height: 100%;
+  overflow: hidden;
+  display: table;
+}
+.register .rTop .w .loginA {
+  width: 170px;
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+.register .rTop .w .loginA img {
+  vertical-align: middle;
+}
+.register .rTop .w .loginT {
+  width: 110px;
+  height: 100%;
+  line-height: 110px;
+  font-size: 18px;
+  color: #000;
+  border-left: solid 1px #bbb;
+  margin-left: 25px;
+  padding: 7px 0 7px 25px;
+  margin-top: 34px;
+  font-family: "Microsoft YaHei", "Hiragino Sans GB";
+}
+.register .rTop .w .login {
+  float: right;
+  line-height: 110px;
+  font-size: 16px;
+}
+.register .rTop .w .login span {
+  margin-top: 55px;
+  color: #999;
+}
+.register .rTop .w .login a {
+  color: #333;
+}
+.register .rMiddle {
+  margin: 50px auto 60px;
+  width: 830px;
+  zoom: 1;
+  overflow: hidden;
+  clear: both;
+}
+.register .rMiddle .regForm {
+  width: 400px;
+  float: left;
+  font-size: 14px;
+  font-weight: normal;
+}
+.register .rMiddle .regForm .phone-wrap {
+  position: relative;
+}
+.register .rMiddle .regForm .phone-wrap .orEmail {
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+}
+.register .rMiddle .regForm .phone-wrap .orEmail a {
+  color: #38f;
+}
+.register .rMiddle .regForm .form-item {
+  position: relative;
+  border: solid 1px #ddd;
+  width: 398px;
+  height: 52px;
+  z-index: 0;
+}
+.register .rMiddle .regForm .form-item input {
+  width: 285px;
+  height: 100%;
+  font-size: 14px;
+  font-family: "Microsoft YaHei", "Hiragino Sans GB";
+  color: #cccccc;
+}
+.register .rMiddle .regForm .form-item label {
+  float: left;
+  width: 90px;
+  height: 52px;
+  line-height: 52px;
+  padding-left: 20px;
+  letter-spacing: 5px;
+}
+.register .rMiddle .regForm .form-item .label-phone {
+  letter-spacing: 2px;
+  border-right: solid 1px #ddd;
+  padding: 0 10px;
+  position: relative;
+}
+.register .rMiddle .regForm .form-item .label-phone a {
+  position: absolute;
+  right: 10px;
+  background: url("../img/reg_icon.png") no-repeat;
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  margin-top: 15px;
+  margin-left: 5px;
+  background-position: -2px -151px;
+}
+.register .rMiddle .regForm .form-item .field {
+  border: 0 none;
+  font-size: 14px;
+  width: 265px;
+  height: 25px;
+  padding-bottom: 11px;
+  padding-left: 20px;
+  padding-top: 16px;
+}
+.register .rMiddle .regForm .form-item .field::-moz-placeholder {
+  font-weight: 700;
+  color: #cccccc;
+}
+.register .rMiddle .regForm .form-item .field::-webkit-input-placeholder {
+  font-weight: 700;
+  color: #cccccc;
+}
+.register .rMiddle .regForm .form-item .field:-ms-input-placeholder {
+  font-weight: 700;
+  color: #cccccc;
+}
+.register .rMiddle .regForm .input-tip {
+  color: #c5c5c5;
+  height: 27px;
+  font-size: 12px;
+  padding: 5px 0;
+}
+.register .rMiddle .regForm .input-tip span {
+  width: 100%;
+  height: 100%;
+  line-height: 27px;
+  display: none;
+  position: relative;
+  padding-left: 20px;
+}
+.register .rMiddle .regForm .input-tip span i {
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 17px;
+  height: 18px;
+  display: block;
+  background: url("../img/reg_icon.png") no-repeat;
+  background-position: 0 -99px;
+}
+.register .rMiddle .regForm .vertifyCode {
+  position: absolute;
+  right: 3px;
+  top: 3px;
+  width: 110px;
+  height: 46px;
+  text-align: center;
+  line-height: 46px;
+  border: none;
+  color: #333;
+  padding: 0;
+}
+.register .rMiddle .regForm .vertifyCode img {
+  width: 100%;
+  height: 100%;
+}
+.register .rMiddle .regForm .phoneCode {
+  position: absolute;
+  right: 3px;
+  top: 3px;
+  width: 110px;
+  height: 46px;
+  text-align: center;
+  line-height: 46px;
+  border: none;
+  background: #f2f2f2;
+  color: #333;
+  padding: 0;
+}
+.register .rMiddle .form-agree {
+  color: #333;
+  font-size: 12px;
+  margin: 20px 0;
+}
+.register .rMiddle .form-agree a {
+  color: #38f;
+}
+.register .rMiddle .sub_btn button {
+  width: 100%;
+  height: 54px;
+  color: #fff;
+  background: #e22;
+  border: 0;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: "Microsoft YaHei", "Hiragino Sans GB";
+}
+.register .rMiddle .reg_other {
+  float: left;
+  margin-left: 104px;
+  height: 605px;
+  padding-left: 90px;
+  border-left: solid 1px #e6e6e6;
+}
+.register .rBot {
+  width: 100%;
+  background: #fff;
+  font-family: "Microsoft YaHei", "Hiragino Sans GB";
+  float: left;
+}
+.register .rBot .w {
+  width: 1210px;
+  height: 86px;
+  padding-top: 30px;
+  border-top: 1px solid #e6e6e6;
+  text-align: center;
+  color: #999;
+}
+.register .rBot .w a {
+  color: #999;
+}
+.register .rBot .w ul li {
+  _display: block;
+  _float: left;
+  display: inline-block;
+}
+.register .rBot .w ul li:first-child span {
+  display: none;
+}
+.register .rBot .w ul li a {
+  margin: 0 10px;
+}
+.register .rBot .w p {
+  text-align: center;
+  margin: 10px 0;
+}

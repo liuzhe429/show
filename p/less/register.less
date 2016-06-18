@@ -1,0 +1,264 @@
+@import "common.less";
+*{
+  font-family: "Microsoft YaHei","Hiragino Sans GB";
+}
+button{
+  cursor: pointer;
+}
+.register{
+  .rTop{
+    height:110px;
+    box-shadow: 4px 4px 10px #eee;
+    .w{
+      margin: 0px auto;
+      height:100%;
+      overflow: hidden;
+      display: table;
+      .loginA{
+        width:170px;
+        height:100%;
+        display: table-cell;
+        .m_m();
+        img{
+          vertical-align: middle;
+        }
+      }
+      .loginT{
+        width:110px;
+        height: 100%;
+        line-height: 110px;
+        font-size: 18px;
+        color: #000;
+        border-left: solid 1px #bbb;
+        margin-left: 25px;
+        padding:7px 0 7px 25px;
+        margin-top: 34px;
+        font-family: "Microsoft YaHei","Hiragino Sans GB";
+      }
+      .login{
+        float: right;
+        line-height: 110px;
+        font-size: 16px;
+        //font-weight: 700;
+        span{
+          margin-top: 55px;
+          color: #999;
+        }
+        a{
+          color:#333;
+        }
+      }
+    }
+  }
+  .rMiddle{
+    margin: 50px auto 60px;
+    width: 830px;
+    zoom:1;
+    overflow: hidden;
+    clear: both;
+    .regForm{
+      width: 400px;
+      float: left;
+      font-size: 14px;
+      font-weight: normal;
+      .phone-wrap{
+        position: relative;
+        .orEmail{
+          position: absolute;
+          right: 0;
+          bottom: 10px;
+          a{
+            color:#38f;
+          }
+        }
+      }
+      .form-item{
+        position: relative;
+        border: solid 1px #ddd;
+        width: 398px;
+        height: 52px;
+        z-index: 0;
+        input{
+          width: 285px;
+          height: 100%;
+          font-size: 14px;
+          font-family: "Microsoft YaHei", "Hiragino Sans GB";
+          color: rgb(204, 204, 204);
+          //background: red;
+        }
+        label{
+          float: left;
+          width: 90px;
+          height: 52px;
+          line-height: 52px;
+          padding-left: 20px;
+          letter-spacing: 5px;
+        }
+        .label-phone{
+          letter-spacing: 2px;
+          border-right: solid 1px #ddd;
+          padding: 0 10px;
+          position: relative;
+          a{
+            position: absolute;
+            right: 10px;
+            background: url("../img/reg_icon.png") no-repeat;
+            width: 15px;
+            height: 15px;
+            display: inline-block;
+            margin-top: 15px;
+            margin-left: 5px;
+            background-position: -2px -151px;
+          }
+        }
+        .field{
+          border: 0 none;
+          font-size: 14px;
+          width: 265px;
+          height: 25px;
+          padding-bottom: 11px;
+          padding-left: 20px;
+          padding-top: 16px;
+          &::-moz-placeholder{
+            font-weight: 700;
+            color:rgb(204,204,204);
+          }
+          &::-webkit-input-placeholder{
+            font-weight: 700;
+            color:rgb(204,204,204);
+
+          }
+          &:-ms-input-placeholder{
+            font-weight: 700;
+            color:rgb(204,204,204);
+          }
+
+        }
+      }
+      .input-tip{
+        color: #c5c5c5;
+        height: 27px;
+        font-size: 12px;
+        padding: 5px 0;
+        span{
+          width: 100%;
+          height: 100%;
+          line-height: 27px;
+          display: none;
+          position: relative;
+          //background: pink;
+          padding-left: 20px;
+          i{
+            position: absolute;
+            left: 0;
+            top: 5px;
+            width: 17px;
+            height: 18px;
+            display: block;
+            background: url("../img/reg_icon.png") no-repeat;
+            background-position: 0 -99px;
+          }
+
+          //display: none;
+          //background: red;
+        }
+      }
+      .vertifyCode{
+        position: absolute;
+        right: 3px;
+        top: 3px;
+        width: 110px;
+        height: 46px;
+        text-align: center;
+        line-height: 46px;
+        border: none;
+        color: #333;
+        padding: 0;
+        img{
+          width: 100%;
+          height:100%;
+        }
+      }
+      .phoneCode{
+        position: absolute;
+        right: 3px;
+        top: 3px;
+        width: 110px;
+        height: 46px;
+        text-align: center;
+        line-height: 46px;
+        border: none;
+        background: #f2f2f2;
+        color: #333;
+        padding: 0;
+      }
+    }
+    .form-agree{
+      color:#333;
+      font-size: 12px;
+      margin:20px 0;
+      a{
+        color:#38f;
+      }
+    }
+    .sub_btn{
+      button{
+        width: 100%;
+        height: 54px;
+        color: #fff;
+        background: #e22;
+        border: 0;
+        font-size: 16px;
+        cursor: pointer;
+        font-family: "Microsoft YaHei","Hiragino Sans GB";
+      }
+    }
+    .reg_other{
+      float: left;
+      margin-left: 104px;
+      height: 605px;
+      padding-left: 90px;
+      border-left: solid 1px #e6e6e6;
+    }
+  }
+
+  .rBot{
+    width:100%;
+    background: #fff;
+    font-family: "Microsoft YaHei","Hiragino Sans GB";
+    //background: green;
+    float: left;
+    .w{
+      width:1210px;
+      height:86px;
+      padding-top:30px;
+
+      border-top: 1px solid #e6e6e6;
+      text-align: center;
+      color:#999;
+      a{
+        color:#999;
+      }
+      //background: red;
+      ul{
+        li{
+          _display: block;
+          _float: left;
+          display: inline-block;
+          &:first-child{
+            span{
+              display: none;
+            }
+          }
+          a{
+            margin:0 10px;
+          }
+        }
+      }
+      p{
+        text-align: center;
+        margin:10px 0;
+      }
+    }
+  }
+}

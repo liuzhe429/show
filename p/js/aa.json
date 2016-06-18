@@ -1,0 +1,93 @@
+[
+  {
+    "sho": [
+      {
+        "sco": "63",
+        "squ": "ip"
+      }
+    ]
+  },
+  {
+    "acc": 10,
+    "acp": "jfs/t2971/64/175881983/2835/a9a72c8f/574e9280Ndbd80e3d.png",
+    "acq": "618品质狂欢节",
+    "acu": "&icon=100",
+    "his": 1,
+    "key": "iphone6s",
+    "qre": 68
+  },
+  {
+    "acc": 14,
+    "acp": "jfs/t2971/64/175881983/2835/a9a72c8f/574e9280Ndbd80e3d.png",
+    "acq": "618品质狂欢节",
+    "acu": "&icon=100",
+    "key": "iphone6",
+    "qre": 95
+  },
+  {
+    "acc": 11,
+    "acp": "jfs/t2971/64/175881983/2835/a9a72c8f/574e9280Ndbd80e3d.png",
+    "acq": "618品质狂欢节",
+    "acu": "&icon=100",
+    "key": "iphone se",
+    "qre": 21
+  },
+  {
+    "acc": 111,
+    "acp": "jfs/t2971/64/175881983/2835/a9a72c8f/574e9280Ndbd80e3d.png",
+    "acq": "618品质狂欢节",
+    "acu": "&icon=100",
+    "key": "ipad",
+    "qre": 810
+  },
+  {
+    "acc": 3,
+    "acp": "jfs/t2971/64/175881983/2835/a9a72c8f/574e9280Ndbd80e3d.png",
+    "acq": "618品质狂欢节",
+    "acu": "&icon=100",
+    "key": "iphone5s",
+    "qre": 16
+  },
+  {
+    "acc": 6,
+    "acp": "jfs/t2971/64/175881983/2835/a9a72c8f/574e9280Ndbd80e3d.png",
+    "acq": "618品质狂欢节",
+    "acu": "&icon=100",
+    "key": "iphone6s plus",
+    "qre": 32
+  },
+  {
+    "acc": 28,
+    "acp": "jfs/t2971/64/175881983/2835/a9a72c8f/574e9280Ndbd80e3d.png",
+    "acq": "618品质狂欢节",
+    "acu": "&icon=100",
+    "key": "iphone",
+    "qre": 136
+  },
+  {
+    "acc": 41,
+    "acp": "jfs/t2971/64/175881983/2835/a9a72c8f/574e9280Ndbd80e3d.png",
+    "acq": "618品质狂欢节",
+    "acu": "&icon=100",
+    "key": "ipad air2",
+    "qre": 186
+  },
+  {
+    "acc": 61,
+    "acp": "jfs/t2971/64/175881983/2835/a9a72c8f/574e9280Ndbd80e3d.png",
+    "acq": "618品质狂欢节",
+    "acu": "&icon=100",
+    "key": "ipod",
+    "qre": 3251
+  },
+  {
+    "acc": 33,
+    "acp": "jfs/t2971/64/175881983/2835/a9a72c8f/574e9280Ndbd80e3d.png",
+    "acq": "618品质狂欢节",
+    "acu": "&icon=100",
+    "key": "ipad pro",
+    "qre": 337
+  }
+]
+14   3   6   28    111    61   41    33
+95  16  31  136  810   3251 186  337

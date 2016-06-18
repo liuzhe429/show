@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录页面</title>
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+<div class="login">
+    <div class="loginTop">
+        <div class="w">
+            <a href="./index.html" class="loginA">
+                <img src="./img/logo2.png" alt="">
+            </a>
+            <a href="javascript:;" class="loginT">欢迎登录</a>
+        </div>
+    </div>
+    <div class="loginCenter">
+        <div class="w">
+            <div class="loginBg">
+                <img src="./img/login_bg2.jpg" alt="">
+            </div>
+            <div class="loginForm">
+                <div class="loginTitle">
+                    <h1>京东会员</h1>
+                    <a href="./register.html"><i></i>立即注册</a>
+                </div>
+                <div class="msg-wrap">
+                    <div class="msg-warn">
+                        <b></b>
+                        <p>公共场所不建议自动登录，以防账号丢失</p>
+                    </div>
+                    <div class="msg-error">
+                        <b></b>
+                        <p>公共场所不建议自动登录，以防账号丢失</p>
+                    </div>
+                </div>
+                <div class="loginFormInfo">
+                    <div class="item item_user">
+                        <label for="username" class="username"></label>
+                        <input type="text" id="username" placeholder="邮箱/用户名/已验证手机">
+                        <span class="clearUser">x</span>
+                    </div>
+                    <div class="item item_pwd">
+                        <label for="pwd" class="pwd"></label>
+                        <input type="text" id="pwd" placeholder="密码">
+                        <span class="clearPwd">x</span>
+
+                    </div>
+                    <div class="forget">
+                        <span>
+                            <input type="checkbox" checked=" "id="autoLogin">
+                            <label for="">自动登录</label>
+                        </span>
+                        <span class="forgetWords">
+                            <a href="javascript:;">忘记密码?</a>
+                        </span>
+                    </div>
+                    <div class="submit">
+                        <a href="javascript:;">登录</a>
+                    </div>
+                    <div class="agent">
+                        <h5>使用合作网站账号登录京东：</h5>
+                        <ul>
+                            <li><a href="javascript:;">京东钱包 <span>|</span></a></li>
+                            <li><a href="javascript:;">QQ<span>|</span></a></li>
+                            <li><a href="javascript:;">微信<span>|</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="qrcode-login"></div>
+                </div>
+            </div>
+            <div class="qrcode-loginForm">
+                <div class="mc">
+                    <div class="qrcode-desc">
+                        <h2>用京东APP <span class="ml5">扫码安全登录</span></h2>
+                    </div>
+                    <div class="qrcode-main">
+                        <div class="qrcode-img">
+                            <img src="./img/jd_ma.png" alt="">
+                        </div>
+                        <div class="qrcode-panel">
+                            <ul>
+                                <li class="fore">
+                                    <a href="javascript:;">刷新二维码</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">使用帮助</a>
+                                </li>
+                            </ul>
+                            <div class="qrcode-tips">
+                                <span>扫描不上，版本过低？</span>
+                                <div class="triangle-border tb-border"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="qrcode-loginTwo"></div>
+            </div>
+        </div>
+    </div>
+    <div class="loginBot">
+        <div class="w">
+            <ul>
+                <li><span>|</span><a href="javascript:;"> 关于我们 </a></li>
+                <li><span>|</span><a href="javascript:;"> 联系我们 </a></li>
+                <li><span>|</span><a href="javascript:;"> 人才招聘 </a></li>
+                <li><span>|</span><a href="javascript:;"> 商家入驻 </a></li>
+                <li><span>|</span><a href="javascript:;"> 广告服务 </a></li>
+                <li><span>|</span><a href="javascript:;"> 手机京东 </a></li>
+                <li><span>|</span><a href="javascript:;"> 友情链接 </a></li>
+                <li><span>|</span><a href="javascript:;"> 销售联盟 </a></li>
+                <li><span>|</span><a href="javascript:;"> 京东社区 </a></li>
+                <li><span>|</span><a href="javascript:;"> 京东公益 </a></li>
+                <li><span>|</span><a href="javascript:;"> English Site </a></li>
+            </ul>
+            <p>
+                Copyright©2004-2016  京东JD.com 版权所有
+            </p>
+        </div>
+    </div>
+</div>
+<script src="./js/DOM.js"></script>
+<script src="./js/login.js"></script>
+</body>
+</html>

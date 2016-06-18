@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #container{
+            width:1000px;height:300px;margin:20px auto;background:green;
+            position: relative;
+        }
+        #container div{
+            background-image: url("./img/banner1.jpg");
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+
+</div>
+<script src="./js/DOM.js"></script>
+<script src="./js/tween.js"></script>
+<script>
+    var rows=3;
+    var cols =10;
+    var container = document.getElementById("container");
+    var h = container.offsetHeight/rows;
+    var w = container.offsetWidth/cols;
+    var a =[];
+    for(var i =0;i<rows*cols;i++){
+        var ele = document.createElement("div");
+
+        with(ele.style){
+            width = w+"px";
+            height = h +"px";
+            position = "absolute";
+            //每个盒子的坐标是:left是她的width*列号  ,top是它的的height*行号
+            //i%cols ==列号
+            //Math.floor(i/cols) == 行号
+            var l = w*(i%cols) +'px';
+            var t = h *Math.floor((i/cols))+'px';
+            ele.l = parseInt(l);
+            ele.t = parseInt(t);
+//            left = l;
+//            top = t;
+            left = -400 +'px';
+
+            if(Math.floor((i/cols))==0){
+                top = -200 +'px';
+            }else if(Math.floor((i/cols))==1) {
+                top = t;
+            }else if(Math.floor((i/cols))==2){
+                top = parseInt(t)+200 +'px';
+            }
+            backgroundPosition = "-"+l+" -"+t;
+            a.push(ele);
+        }
+        container.appendChild(ele);
+    }
+
+
+    window.setTimeout(function(){
+        for(var i =0;i<a.length;i++){
+            ~function(i){
+                var ele = a[i];
+                window.setTimeout(function(){
+                    animate(ele,{top:ele.t,left:ele.l},500,3);
+                },i%cols*200)
+            }(i)
+
+        }
+    },1000)
+</script>
+</body>
+</html>

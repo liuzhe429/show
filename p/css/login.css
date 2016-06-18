@@ -1,0 +1,423 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+img {
+  border: none;
+}
+ul,
+li {
+  list-style: none;
+}
+a,
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: #666;
+}
+a.style_red {
+  color: #C81623;
+}
+a:hover {
+  color: #C81623;
+}
+a.styleRed {
+  color: #C81623;
+}
+input,
+button,
+textarea {
+  outline: none;
+  border: none;
+}
+body {
+  font: 12px/150% Arial, Verdana, "\5b8b\4f53";
+  color: #666;
+  -webkit-font-smoothing: antialiased;
+}
+.w {
+  width: 1210px;
+  margin: 0 auto;
+}
+.login .w {
+  width: 990px;
+}
+.login .loginTop {
+  width: 100%;
+  height: 80px;
+}
+.login .loginTop .w {
+  margin: 10px auto;
+  height: 60px;
+  overflow: hidden;
+}
+.login .loginTop .w .loginA {
+  width: 170px;
+  height: 100%;
+  display: block;
+  float: left;
+}
+.login .loginTop .w .loginA img {
+  width: 100%;
+}
+.login .loginTop .w .loginT {
+  width: 110px;
+  height: 100%;
+  font-size: 26px;
+  margin-left: 20px;
+  color: #000;
+  line-height: 60px;
+}
+.login .loginCenter {
+  width: 100%;
+  height: 475px;
+  background: #f21d45;
+  background: #ffaf18;
+}
+.login .loginCenter .w {
+  position: relative;
+  height: 100%;
+}
+.login .loginCenter .w .loginBg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+.login .loginCenter .w .qrcode-loginForm {
+  position: absolute;
+  right: 0;
+  top: 30px;
+  width: 346px;
+  height: 357px;
+  background: #fff;
+  z-index: 2;
+  padding: 20px;
+  box-sizing: border-box;
+  display: none;
+}
+.login .loginCenter .w .qrcode-loginForm .mc {
+  height: 100%;
+}
+.login .loginCenter .w .qrcode-loginForm .mc .qrcode-desc {
+  margin-top: 30px;
+}
+.login .loginCenter .w .qrcode-loginForm .mc .qrcode-desc h2 {
+  text-align: center;
+  font-size: 16px;
+  color: #999;
+  font-family: "寰蒋闆呴粦";
+  font-weight: 400;
+}
+.login .loginCenter .w .qrcode-loginForm .mc .qrcode-desc h2 .ml5 {
+  margin-left: 15px;
+}
+.login .loginCenter .w .qrcode-loginForm .mc .qrcode-main .qrcode-img {
+  border: 1px solid #f4f4f4;
+  padding: 10px;
+  width: 155px;
+  margin: 20px auto 15px;
+}
+.login .loginCenter .w .qrcode-loginForm .mc .qrcode-main .qrcode-panel ul {
+  width: 150px;
+  margin: 0 auto;
+}
+.login .loginCenter .w .qrcode-loginForm .mc .qrcode-main .qrcode-panel ul:after {
+  text-align: center;
+  display: block;
+  content: "";
+  clear: both;
+  overflow: hidden;
+}
+.login .loginCenter .w .qrcode-loginForm .mc .qrcode-main .qrcode-panel ul li {
+  float: left;
+  padding: 0 0 0 10px;
+  margin: 0 10px 0 0;
+  border-left: 1px solid #ccc;
+}
+.login .loginCenter .w .qrcode-loginForm .mc .qrcode-main .qrcode-panel ul li:first-child {
+  border: none;
+}
+.login .loginCenter .w .qrcode-loginForm .mc .qrcode-main .qrcode-panel ul li:hover a {
+  text-decoration: underline;
+}
+.login .loginCenter .w .qrcode-loginForm .mc .qrcode-main .qrcode-panel .qrcode-tips {
+  margin: 0 auto;
+  width: 150px;
+  text-align: center;
+  position: relative;
+  background: #F6DCDF;
+  color: #999;
+  margin-top: 10px;
+}
+.login .loginCenter .w .qrcode-loginForm .mc .qrcode-main .qrcode-panel .qrcode-tips .triangle-border {
+  position: absolute;
+  right: 30px;
+  top: -10px;
+  border-color: transparent transparent #F6DCDF;
+  overflow: hidden;
+  width: 0;
+  height: 0;
+  border-width: 5px;
+  border-style: dashed dashed solid;
+}
+.login .loginCenter .w .qrcode-loginForm .qrcode-loginTwo {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  width: 60px;
+  height: 60px;
+  background: url("../img/login_ma.png") no-repeat 0px -59px;
+}
+.login .loginCenter .w .loginForm {
+  box-sizing: border-box;
+  position: absolute;
+  right: 0;
+  top: 30px;
+  width: 346px;
+  height: 357px;
+  background: #fff;
+  z-index: 2;
+  padding: 20px;
+}
+.login .loginCenter .w .loginForm .loginTitle {
+  width: 100%;
+  height: 27px;
+  line-height: 27px;
+}
+.login .loginCenter .w .loginForm .loginTitle h1 {
+  line-height: 27px;
+  float: left;
+  color: #666;
+  font-family: "寰蒋闆呴粦";
+  font-size: 20px;
+}
+.login .loginCenter .w .loginForm .loginTitle a {
+  float: right;
+  color: #b61d1d;
+  font-size: 14px;
+}
+.login .loginCenter .w .loginForm .loginTitle a i {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+  background: url("../img/login_icon.png") -104px -75px no-repeat;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.login .loginCenter .w .loginForm .msg-wrap {
+  width: 100%;
+  color: #666;
+  clear: both;
+  zoom: 1;
+  overflow: hidden;
+}
+.login .loginCenter .w .loginForm .msg-wrap .msg-warn {
+  width: 100%;
+  height: 32px;
+  box-sizing: border-box;
+  background: #fff6d2;
+  border: 1px solid #ffe57d;
+  margin: 10px 0;
+  display: none;
+}
+.login .loginCenter .w .loginForm .msg-wrap .msg-warn b {
+  display: block;
+  float: left;
+  margin-top: 8px;
+  margin: 8px 10px 8px 10px;
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+  background: url(//misc.360buyimg.com/user/passport/1.0.0/widget/login-form/i/pwd-icons-new.png) -104px -22px no-repeat;
+}
+.login .loginCenter .w .loginForm .msg-wrap .msg-warn p {
+  width: 300px;
+  line-height: 32px;
+}
+.login .loginCenter .w .loginForm .msg-wrap .msg-error {
+  width: 100%;
+  height: auto;
+  margin: 10px 0;
+  box-sizing: border-box;
+  color: #e4393c;
+  border: 1px solid #e4393c;
+  background: #ffebeb;
+  min-height: 32px;
+  display: none;
+}
+.login .loginCenter .w .loginForm .msg-wrap .msg-error b {
+  display: block;
+  float: left;
+  margin-top: 8px;
+  margin: 8px 10px 8px 10px;
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+  background: url(//misc.360buyimg.com/user/passport/1.0.0/widget/login-form/i/pwd-icons-new.png) -104px -49px no-repeat;
+}
+.login .loginCenter .w .loginForm .msg-wrap .msg-error p {
+  width: 300px;
+  line-height: 32px;
+}
+.login .loginCenter .w .loginForm .loginFormInfo {
+  position: absolute;
+  top: 90px;
+  width: 306px;
+  box-sizing: border-box;
+}
+.login .loginCenter .w .loginForm .loginFormInfo .item {
+  width: 100%;
+  position: relative;
+  margin-top: 15px;
+  border: 1px solid #bdbdbd;
+  height: 38px;
+}
+.login .loginCenter .w .loginForm .loginFormInfo .item label {
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  width: 38px;
+  height: 38px;
+  border-right: 1px solid #bdbdbd;
+  background: url("../img/login_icon.png") no-repeat;
+}
+.login .loginCenter .w .loginForm .loginFormInfo .item label.pwd {
+  background-position: -48px 0px;
+}
+.login .loginCenter .w .loginForm .loginFormInfo .item input {
+  width: 100%;
+  height: 100%;
+  text-indent: 45px;
+}
+.login .loginCenter .w .loginForm .loginFormInfo .item input::-webkit-input-placeholder {
+  font-size: 14px !important;
+  color: #999 !important;
+}
+.login .loginCenter .w .loginForm .loginFormInfo .item input::-moz-placeholder {
+  font-size: 14px !important;
+  color: #999 !important;
+}
+.login .loginCenter .w .loginForm .loginFormInfo .item span {
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  top: 8px;
+  color: #ccc;
+  font-weight: 700;
+  font-size: 18px;
+  display: none;
+}
+.login .loginCenter .w .loginForm .loginFormInfo .item_error {
+  border: 1px solid #e4393c;
+}
+.login .loginCenter .w .loginForm .loginFormInfo .item_error label {
+  border-color: #e4393c;
+}
+.login .loginCenter .w .loginForm .loginFormInfo .item_error label.username {
+  background-position: 0 -96px;
+}
+.login .loginCenter .w .loginForm .loginFormInfo .item_error label.pwd {
+  background-position: -48px -96px;
+}
+.login .loginCenter .w .loginForm .loginFormInfo .item_focus {
+  border: 1px solid #3aa2e4;
+}
+.login .loginCenter .w .loginForm .loginFormInfo .item_focus label {
+  border-color: #3aa2e4;
+}
+.login .loginCenter .w .loginForm .loginFormInfo .item_focus label.username {
+  background-position: 0 -48px;
+}
+.login .loginCenter .w .loginForm .loginFormInfo .item_focus label.pwd {
+  background-position: -48px -48px;
+}
+.login .loginCenter .w .loginForm .loginFormInfo .forget {
+  width: 100%;
+  height: 32px;
+  line-height: 32px;
+  box-sizing: border-box;
+  color: #666;
+  margin: 10px 0 5px;
+}
+.login .loginCenter .w .loginForm .loginFormInfo .forget .forgetWords {
+  float: right;
+}
+.login .loginCenter .w .loginForm .loginFormInfo .submit {
+  width: 100%;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  color: #fff;
+}
+.login .loginCenter .w .loginForm .loginFormInfo .submit a {
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  border: 1px solid #cb2a2d;
+  background: #e4393c;
+  height: 31px;
+  line-height: 31px;
+  color: #fff;
+  font-size: 20px;
+  font-family: 'Microsoft YaHei';
+}
+.login .loginCenter .w .loginForm .loginFormInfo .agent {
+  margin-top: 15px;
+}
+.login .loginCenter .w .loginForm .loginFormInfo .agent h5 {
+  color: #999;
+}
+.login .loginCenter .w .loginForm .loginFormInfo .agent ul li {
+  line-height: 22px;
+  float: left;
+}
+.login .loginCenter .w .loginForm .loginFormInfo .agent ul li a {
+  color: #333;
+}
+.login .loginCenter .w .loginForm .loginFormInfo .agent ul li a span {
+  margin: 0 10px;
+  color: #999;
+}
+.login .loginCenter .w .loginForm .loginFormInfo .qrcode-login {
+  position: absolute;
+  right: -20px;
+  bottom: -20px;
+  width: 60px;
+  height: 60px;
+  background: url("../img/login_ma.png") no-repeat -60px 0px;
+}
+.login .loginBot {
+  width: 100%;
+  height: 86px;
+  background: #fff;
+  margin-top: 30px;
+}
+.login .loginBot .w {
+  height: 30px;
+  text-align: center;
+  color: #666;
+}
+.login .loginBot .w a {
+  color: #666;
+}
+.login .loginBot .w ul li {
+  _display: block;
+  _float: left;
+  display: inline-block;
+}
+.login .loginBot .w ul li:first-child span {
+  display: none;
+}
+.login .loginBot .w ul li a {
+  margin: 0 10px;
+}
+.login .loginBot .w p {
+  text-align: center;
+  margin: 10px 0;
+}

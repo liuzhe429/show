@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册页面</title>
+    <link rel="stylesheet" href="./css/register.css">
+
+</head>
+<body>
+<div class="register">
+    <div class="rTop">
+        <div class="w">
+            <a href="./index.html" class="loginA">
+                <img src="./img/logo2.png" alt="">
+            </a>
+            <a href="javascript:;" class="loginT">欢迎注册</a>
+            <div class="login">
+                <span>已有账号</span>
+                <a href="login.html">请登录</a>
+            </div>
+        </div>
+    </div>
+    <div class="rMiddle">
+        <div class="regForm">
+            <form action="">
+                <div class="form-item">
+                    <label for="">用户名</label>
+                    <input type="text" class="field rUser" placeholder="您的账户名和登录名">
+                </div>
+                <div class="input-tip rUser_tip">
+                    <span><i></i>支持中文、字母、数字、“-”“_”的组合，4-20个字符</span>
+                </div>
+                <div class="form-item">
+                    <label for="">设置密码</label>
+                    <input type="text" class="field rPwd" placeholder="建议至少使用两种字符组合">
+                </div>
+                <div class="input-tip rPwd_tip">
+                    <span>
+                        <i></i>建议使用字母、数字和符号两种及以上的组合，6-20个字符
+                    </span>
+                </div>
+                <div class="form-item">
+                    <label for="">确认密码</label>
+                    <input type="text" class="field rPwd2" placeholder="请再次输入密码">
+                </div>
+                <div class="input-tip rPwd2_tip">
+                    <span>
+                        <i></i>请再次输入密码
+                    </span>
+                </div>
+                <div class="phone-wrap">
+                    <div class="form-item">
+                        <label for="" class="label-phone">中国 +86<a href=""class="arrow"></a></label>
+                        <input type="text" class="field rPhone" placeholder="建议使用常用手机">
+                    </div>
+                    <div class="input-tip rPhone_tip">
+                        <span>
+                            <i></i>完成验证后，可以使用该手机登录和找回密码
+                        </span>
+                    </div>
+                    <div class="orEmail">
+                        或 <a href="javascript:;">邮箱验证</a>
+                    </div>
+                </div>
+
+
+                <div class="form-item">
+                    <label for="">验证码</label>
+                    <input type="text" class="field rVertify" placeholder="请输入验证码">
+                    <div class="vertifyCode">
+                        <img class="img-code" title="换一换" id="imgAuthCode" onclick="this.src= document.location.protocol +'//authcode.jd.com/verify/image?a=0&amp;acid=6de9350a-2450-4aeb-9b71-14e6b6806fc1&amp;uid=6de9350a-2450-4aeb-9b71-14e6b6806fc1&amp;srcid=reg&amp;is=6cc959204e93a39982fe5d4fa9708f71&amp;yys='+new Date().getTime()" ver_colorofnoisepoint="#888888" src="https://authcode.jd.com/verify/image?a=0&amp;acid=6de9350a-2450-4aeb-9b71-14e6b6806fc1&amp;uid=6de9350a-2450-4aeb-9b71-14e6b6806fc1&amp;srcid=reg&amp;is=6cc959204e93a39982fe5d4fa9708f71&amp;yys=1465919786112">
+                    </div>
+                </div>
+                <div class="input-tip rVertify_tip">
+                    <span><i></i>看不清？点击图片更换验证码</span>
+                </div>
+
+                <div class="form-item">
+                    <label for="" class="label-phone">手机验证码</label>
+                    <input type="text" class="field rPhoneCode" placeholder="请输入手机验证码">
+                    <button class="phoneCode">获取验证码</button>
+                </div>
+                <div class="form-agree">
+                    <div>
+                        <input type="checkbox" checked="true"> 我已阅读并同意
+                        <a href="javascript:;">《京东用户注册协议》</a>
+                    </div>
+                </div>
+                <div class="sub_btn">
+                    <button>立即注册</button>
+                </div>
+
+            </form>
+        </div>
+        <div class="reg_other">
+            <div>
+                <img src="./img/reg_phone.jpg" alt="">
+            </div>
+        </div>
+
+    </div>
+    <div class="rBot">
+        <div class="w">
+            <ul>
+                <li><span>|</span><a href="javascript:;"> 关于我们 </a></li>
+                <li><span>|</span><a href="javascript:;"> 联系我们 </a></li>
+                <li><span>|</span><a href="javascript:;"> 人才招聘 </a></li>
+                <li><span>|</span><a href="javascript:;"> 商家入驻 </a></li>
+                <li><span>|</span><a href="javascript:;"> 广告服务 </a></li>
+                <li><span>|</span><a href="javascript:;"> 手机京东 </a></li>
+                <li><span>|</span><a href="javascript:;"> 友情链接 </a></li>
+                <li><span>|</span><a href="javascript:;"> 销售联盟 </a></li>
+                <li><span>|</span><a href="javascript:;"> 京东社区 </a></li>
+                <li><span>|</span><a href="javascript:;"> 京东公益 </a></li>
+                <li><span>|</span><a href="javascript:;"> English Site </a></li>
+
+            </ul>
+            <p>
+                Copyright©2004-2016&nbsp;  京东JD.com 版权所有
+
+            </p>
+        </div>
+    </div>
+</div>
+</body>
+<script src="./js/DOM.js"></script>
+<script src="./js/register.js"></script>
+<script>
+
+    imgAuthCode.onclick =function(){
+        console.log(this.src)
+    }
+
+</script>
+</html>
