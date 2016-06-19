@@ -96,6 +96,15 @@ body {
   -webkit-animation: fadeIn3 1s 0s 1 linear forwards;
   animation: fadeIn3 1s 0s 1 linear forwards;
 }
+#loading .msg {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  height: 60px;
+  top: 45%;
+  color: #fff;
+  font-size: 30px;
+}
 #loading .processBox {
   width: 80%;
   margin: 0 10%;
