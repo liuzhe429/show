@@ -706,8 +706,8 @@ body {
   z-index: 10;
 }
 .page4.animation div.p1 {
-  -webkit-animation: bounceInRight 0.5s 0.5s 1 ease-in-out forwards;
-  animation: bounceInRight 0.5s 0.5s 1 ease-in-out forwards;
+  -webkit-animation: slideInTop2 0.5s 0.5s 1 ease-in-out forwards;
+  animation: slideInTop2 0.5s 0.5s 1 ease-in-out forwards;
 }
 .page4 div.p1-2 {
   top: 0px;
@@ -905,6 +905,10 @@ body {
 }
 .page5 .p2-n-6 {
   bottom: 75%;
+}
+.page5.animation .p2-n {
+  -webkit-animation: fadeIn 1s 1.5s 1 ease-in-out forwards;
+  animation: fadeIn 1s 1.5s 1 ease-in-out forwards;
 }
 .page5.animation .p2-n-2 {
   -webkit-animation-delay: 2s;

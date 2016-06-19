@@ -752,8 +752,10 @@ body{
   }
   &.animation{
     div.p1{
-      -webkit-animation: bounceInRight .5s .5s 1 ease-in-out forwards;
-      animation: bounceInRight .5s .5s 1 ease-in-out forwards;
+      -webkit-animation: slideInTop2 .5s 0.5s 1 ease-in-out forwards;
+      animation: slideInTop2 .5s 0.5s 1 ease-in-out forwards;
+      //-webkit-animation: bounceInRight .5s .5s 1 ease-in-out forwards;
+      //animation: bounceInRight .5s .5s 1 ease-in-out forwards;
     }
 
   }
@@ -961,6 +963,10 @@ body{
   .p2-n-5{  bottom: 62%;  }
   .p2-n-6{  bottom: 75%;  }
   &.animation{
+    .p2-n{
+      -webkit-animation: fadeIn 1s 1.5s 1 ease-in-out forwards;
+      animation: fadeIn 1s 1.5s 1 ease-in-out forwards;
+    }
     .p2-n-2{
       -webkit-animation-delay: 2s;
       animation-delay: 2s;
