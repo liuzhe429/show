@@ -42,9 +42,6 @@ var content = getEle(".content");
  容器宽/容器高>背景图宽/背景图高  按照宽来缩放
  缩放值 = 容器的宽/背景图宽
  * */
-
-
-// document.documentElement.style.fontSize = winW / desW * 100 + "px";
 var winW = window.innerWidth;/*设备宽*/
 var winH = window.innerHeight;/*设备高*/
 
@@ -52,32 +49,18 @@ var desW = 640;
 var desH = 1008;
 windowStyle();
 function windowStyle(){
+
     winW = window.innerWidth;/*设备宽*/
     winH = window.innerHeight;/*设备高*/
-
     desW = 640;
     desH = 1008;
-    if(winW>desW){
-        document.documentElement.style.width="640px";
-        document.documentElement.style.margin="0 auto";
-    }else{
-        if (winW / winH <= desW / desH) {
-            main.style.webkitTransform = "scale(" + winH / desH + ")";
-            // document.documentElement.style.webkitTransform = "scale(" + winH / desH + ")";
-            // content.style.width = winW/winH*desH+"px";
-            // content.style.height = desH+"px";
-            // document.documentElement.style.fontSize = winH / desH*100 +"px"
-            document.documentElement.style.fontSize = "100px"
 
-        } else {
-            main.style.webkitTransform = "scale(" + winW / desW + ")";
-            // document.documentElement.style.fontSize = winW / desW*100 +"px"
-            document.documentElement.style.fontSize = "100px"
-
-            // document.documentElement.style.webkitTransform = "scale(" + winW / desW + ")";
-            // content.style.width = desW+"px";
-            // content.style.height = winH/winW*desW+"px";
-        }
+    if (winW / winH <= desW / desH) {
+        main.style.webkitTransform = "scale(" + winH / desH + ")";
+        document.documentElement.style.fontSize = "100px"
+    } else {
+        main.style.webkitTransform = "scale(" + winW / desW + ")";
+        document.documentElement.style.fontSize = "100px"
     }
 }
 
@@ -127,7 +110,8 @@ function fnLoad(){
                                 // },1000);
                             }
                             fnMove();
-                            var audioSrc = audio.getAttribute("src");
+                            var audioSrc = audio.getAttribute("trueSrc");
+                            audio.src = audioSrc;
                             audioSrc.onload = function(){
                                 addClass(audioBox,"rotate");
                                 bell.play();//播放
@@ -152,17 +136,14 @@ audioBox.addEventListener("touchstart",function(){
         addClass(this,"rotate");
     }
 })
-audioBox.addEventListener("touchend",function(){
+audioBox.addEventListener("touch",function(){
     if(hasClass(this,"rotate")){
-        var audioSrc = audio.getAttribute("src");
-        addClass(audioBox,"rotate");
-        bell.play();//播放
-        // audioSrc.onload = function(){
-        //
-        // }
-        bell.play();//播放
+        removeClass(this,"rotate");
+        bell.pause();
+    }else{
+        addClass(this,"rotate");
+        bell.play();
     }
-    
 })
 function fnMove(){
     var oPageList = document.querySelectorAll(".content>.page");
