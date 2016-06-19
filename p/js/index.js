@@ -18,7 +18,7 @@
         }
     }
     function goTo(top,callback){
-        var duration = 700;
+        var duration = 400;
         var distance = DOM.win('scrollTop');
         var interval = 10;
         var step = (distance/duration)/*1ms跑多远*/*interval;
@@ -43,6 +43,12 @@
         },interval);
 
         window.onscroll = null;
+        if(callback){
+            window.onscroll = function(){
+                showBtn();
+                imgLazyLoad();
+            };
+        }
     }
     //**********************回到顶部代码*****************************
     var returnTop = document.getElementById("returnTop");
@@ -53,21 +59,23 @@
         var distance = DOM.win('scrollTop');
         var interval = 10;
         var step = (distance/duration)/*1ms跑多远*/*interval;
-        console.log(distance,top)
-        var timer = window.setInterval(function (){
-            if(DOM.win('scrollTop') <= top){
-                window.clearInterval(timer);
-                if(callback){
-                    window.onscroll = showBtn;
-                }
-                return;
-            }
-            var srcollTop = DOM.win('scrollTop');
-            srcollTop -= step;
-            DOM.win('scrollTop',srcollTop);
-        },interval);
+        goTo(0,showBtn);
+        // var screenHeight = DOM.win('clientHeight');
+        // var timer = window.setInterval(function (){
+        //     console.log(top)
+        //     if(DOM.win('scrollTop') <= top){
+        //         window.clearInterval(timer);
+        //         if(callback){
+        //             window.onscroll = showBtn;
+        //         }
+        //         return;
+        //     }
+        //     var srcollTop = DOM.win('scrollTop');
+        //     srcollTop -= step;
+        //     DOM.win('scrollTop',srcollTop);
+        // },interval);
 
-        window.onscroll = null;
+        // window.onscroll = null;
         footbar.style.display = 'none';
     }
     function showBtn(){
@@ -433,22 +441,22 @@ new Tab("floor12");
 
 //    *******************右下角toolbar*****************************
 (function(){
-    // var toolbar = DOM.getElementsByClass("toolbar");
-    // for(var j=0;j<toolbar.length;j++){
-    //     var curB = toolbar[j];
-    //     var oTools = curB.getElementsByTagName("li");
-    //     for(var i=0;i<oTools.length;i++){
-    //         curT = oTools[i];
-    //         curT.onmouseover = function(){
-    //             var son = DOM.children(this,"em")[0];
-    //             animate(son,{left:-60},300,1);
-    //         }
-    //         curT.onmouseout = function(){
-    //             var son = DOM.children(this,"em")[0];
-    //             animate(son,{left:35},200,1);
-    //         }
-    //     }
-    // }
+    var toolbar = DOM.getElementsByClass("toolbar");
+    for(var j=0;j<toolbar.length;j++){
+        var curB = toolbar[j];
+        var oTools = curB.getElementsByTagName("li");
+        for(var i=0;i<oTools.length;i++){
+            curT = oTools[i];
+            curT.onmouseover = function(){
+                var son = DOM.children(this,"em")[0];
+                animate(son,{left:-60},300,1);
+            }
+            curT.onmouseout = function(){
+                var son = DOM.children(this,"em")[0];
+                animate(son,{left:35},200,1);
+            }
+        }
+    }
 
 
 })();
