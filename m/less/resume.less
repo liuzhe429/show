@@ -310,8 +310,8 @@ body{
     opacity: 0;
   }
   &.animation > div.p7 {
-    -webkit-animation: fadeIn 1.5s 2.5s 1 ease-in-out forwards;
-    animation: fadeIn 1.5s 2.5s 1 ease-in-out forwards;
+    -webkit-animation: fadeIn 1.5s 1.5s 1 ease-in-out forwards;
+    animation: fadeIn 1.5s 1.5s 1 ease-in-out forwards;
   }
 
 }
@@ -906,11 +906,14 @@ body{
   .p2{
     left: 46%;
     bottom: 0;
-    width: 3px;
+    width: 8px;
     height: 90%;
     border-radius: 10px;
-    background: #000;
     opacity: 0;
+    //background: #000;
+    background: -webkit-linear-gradient(top left, lightskyblue,lightsalmon); /* Safari 5.1 - 6.0 */
+    background: linear-gradient(lightskyblue,lightsalmon); /* 标准的语法（必须放在最后） */
+    //background: rgba(0,0,0,.7);
     //-webkit-transform:  translate3d( 0%,-100%, 0) scale(1);
     //transform:  translate3d( 0%,-100%, 0) scale(1,1);
   }
@@ -948,7 +951,7 @@ body{
     }
   }
   .p2-n{
-    left: 44%;
+    left: 44.5%;
     bottom: 10%;
     width: 26px;
     height: 26px;

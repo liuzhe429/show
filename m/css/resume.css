@@ -316,8 +316,8 @@ body {
   opacity: 0;
 }
 .page1.animation > div.p7 {
-  -webkit-animation: fadeIn 1.5s 2.5s 1 ease-in-out forwards;
-  animation: fadeIn 1.5s 2.5s 1 ease-in-out forwards;
+  -webkit-animation: fadeIn 1.5s 1.5s 1 ease-in-out forwards;
+  animation: fadeIn 1.5s 1.5s 1 ease-in-out forwards;
 }
 .page2 div.p1 {
   top: 0px;
@@ -836,11 +836,14 @@ body {
 .page5 .p2 {
   left: 46%;
   bottom: 0;
-  width: 3px;
+  width: 8px;
   height: 90%;
   border-radius: 10px;
-  background: #000;
   opacity: 0;
+  background: -webkit-linear-gradient(top left, lightskyblue, lightsalmon);
+  /* Safari 5.1 - 6.0 */
+  background: linear-gradient(lightskyblue, lightsalmon);
+  /* 标准的语法（必须放在最后） */
 }
 .page5.animation .p2 {
   -webkit-animation: slideInDown2 1.5s 1.5s 1 linear forwards;
@@ -882,7 +885,7 @@ body {
   animation-delay: 7s;
 }
 .page5 .p2-n {
-  left: 44%;
+  left: 44.5%;
   bottom: 10%;
   width: 26px;
   height: 26px;
