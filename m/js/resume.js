@@ -98,7 +98,6 @@ function fnLoad(){
             ary.push(curImg.src);
         }
     }
-    console.log(ary);
 
     /*
      * 执行步骤:

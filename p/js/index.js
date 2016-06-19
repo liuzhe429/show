@@ -331,21 +331,33 @@
 
 
 // *********************轮播图部分*****************************
-// new AutoBanner({curEleId:"slider0",ajaxURL:"./js/banner.json",ajaxParam:"banner0",isOpacity:1,time:3000});
-// new AutoBanner({curEleId:"slider1",ajaxURL:"./js/banner.json",ajaxParam:"banner1",isOpacity:0,time:500});
-// new AutoBanner({curEleId:"slider2",ajaxURL:"./js/banner.json",ajaxParam:"banner2",isOpacity:0,time:500});
-// new AutoBanner({curEleId:"slider6",ajaxURL:"./js/banner.json",ajaxParam:"banner2",isOpacity:0,time:500});
-// new AutoBanner({curEleId:"slider7",ajaxURL:"./js/banner.json",ajaxParam:"banner2",isOpacity:0,time:500});
-// new AutoBanner({curEleId:"slider8",ajaxURL:"./js/banner.json",ajaxParam:"banner2",isOpacity:0,time:500});
+new AutoBanner({curEleId:"slider0",ajaxURL:"./js/banner.json",ajaxParam:"banner0",isOpacity:1,time:3000});
+new AutoBanner({curEleId:"slider1",ajaxURL:"./js/banner.json",ajaxParam:"banner1",isOpacity:0,time:500});
+new AutoBanner({curEleId:"slider2",ajaxURL:"./js/banner.json",ajaxParam:"banner2",isOpacity:0,time:500});
+
+//下面这几楼样式一样
+new AutoBanner({curEleId:"slider6",ajaxURL:"./js/banner.json",ajaxParam:"banner2",isOpacity:0,time:500});
+new AutoBanner({curEleId:"slider7",ajaxURL:"./js/banner.json",ajaxParam:"banner2",isOpacity:0,time:500});
+new AutoBanner({curEleId:"slider8",ajaxURL:"./js/banner.json",ajaxParam:"banner2",isOpacity:0,time:500});
 new AutoBanner({curEleId:"slider9",ajaxURL:"./js/banner.json",ajaxParam:"banner2",isOpacity:0,time:500});
 new AutoBanner({curEleId:"slider10",ajaxURL:"./js/banner.json",ajaxParam:"banner2",isOpacity:0,time:500});
-// new Tab("floor1");
-// new Tab("floor2");
-// new Tab("floor6");
-// new Tab("floor7");
-// new Tab("floor8");
+//跟5楼一样
+new AutoBanner({curEleId:"slider3",ajaxURL:"./js/banner.json",ajaxParam:"banner3",isOpacity:0,time:500});
+new AutoBanner({curEleId:"slider4",ajaxURL:"./js/banner.json",ajaxParam:"banner3",isOpacity:0,time:500});
+new AutoBanner({curEleId:"slider5",ajaxURL:"./js/banner.json",ajaxParam:"banner3",isOpacity:0,time:500});
+new AutoBanner({curEleId:"slider11",ajaxURL:"./js/banner.json",ajaxParam:"banner3",isOpacity:0,time:500});
+new Tab("floor1");
+new Tab("floor2");
+new Tab("floor3");
+new Tab("floor4");
+new Tab("floor5");
+new Tab("floor6");
+new Tab("floor7");
+new Tab("floor8");
 new Tab("floor9");
 new Tab("floor10");
+new Tab("floor11");
+new Tab("floor12");
 
 
 // **********************轮播图下面的左右切换*********************************

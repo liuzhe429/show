@@ -24,8 +24,7 @@
         this.bannerTip = DOM.getElementsByClass("dotList",this.banner)[0];
         this.ulList = DOM.getElementsByClass("list",this.banner)[0];
         this.oLis = this.ulList.getElementsByTagName("li");
-        this.liWidth = this.oLis[0].offsetWidth;
-        console.log(this.oLis[0].offsetWidth);
+        this.liWidth = this.oLis[0].offsetWidth || 440;
 
         this.bannerLeft = DOM.getElementsByClass("leftBtn",this.banner)[0];
         this.bannerRight = DOM.getElementsByClass("rightBtn",this.banner)[0];
@@ -69,12 +68,11 @@
                 }else{
                     jsonData = this.jsonData;
                 }
-                console.log(jsonData)
+
                 for (var i = 0, len = jsonData.length; i < len; i++) {
                     var curData = jsonData[i];
-                    if(curData["img"]){
-                        str +="<li><div><img src='' trueImg='"+ curData["img"] +"' alt=''></div></li>";
-                    }else{
+                    if(!curData["img"]){
+
                         for(var j=0;j<curData["img2"].length;j++){
                             var curJ = curData["img2"][j]["img"];
 
@@ -84,6 +82,8 @@
                             str += "<div class='center'><a href='javascript:;'><img src='' trueImg='" + curJ["1"]["img"] + "'/></a></div>";
                             str += "</li>";
                         }
+                    }else{
+                        str +="<li><div><img src='' trueImg='"+ curData["img"] +"' alt=''></div></li>";
                     }
                 }
                 if(!this._default["isOpacity"]){
