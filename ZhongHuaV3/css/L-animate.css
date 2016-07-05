@@ -1,0 +1,201 @@
+@charset "utf-8";
+/* CSS Document */
+
+@-webkit-keyframes flipInRing {
+0% {
+-webkit-transform:rotateY(0deg);
+-webkit-animation-timing-function:linear
+}
+100% {
+-webkit-transform:rotateY(360deg);
+-webkit-animation-timing-function:linear
+}
+}
+@keyframes flipInRing {
+0% {
+transform:rotateY(0deg);
+animation-timing-function:linear
+}
+100% {
+transform:rotateY(360deg);
+animation-timing-function:linear
+}
+}
+.flipInRing {
+	  -webkit-animation-name:'flipInRing';/*动画属性名，也就是我们前面keyframes定义的动画名*/
+     -webkit-animation-duration: 1s;/*动画持续时间*/
+     -webkit-animation-timing-function: ease-in-out; /*动画频率，和transition-timing-function是一样的*/
+     -webkit-animation-delay: 0;/*动画延迟时间*/
+     -webkit-animation-iteration-count: 1;/*定义循环资料，infinite为无限次*/
+}
+
+
+
+@-webkit-keyframes fadeInDown {
+    0% {
+        opacity:0;
+        -webkit-transform:translate3d(0, -100%, 0)
+    }
+    100% {
+        opacity:1;
+        -webkit-transform:none
+    }
+}
+@keyframes fadeInDown {
+    0% {
+        opacity:0;
+        transform:translate3d(0, -100%, 0)
+    }
+    100% {
+        opacity:1;
+        transform:none
+    }
+}
+.fadeInDown {
+	  -webkit-animation-name:'fadeInDown';/*动画属性名，也就是我们前面keyframes定义的动画名*/
+     -webkit-animation-duration: 1s;/*动画持续时间*/
+     -webkit-animation-timing-function: ease-in-out; /*动画频率，和transition-timing-function是一样的*/
+     -webkit-animation-delay: 0;/*动画延迟时间*/
+     -webkit-animation-iteration-count: 1;/*定义循环资料，infinite为无限次*/
+}
+
+
+@-webkit-keyframes zoomIn {
+    0% {
+        opacity:0;
+        -webkit-transform:scale3d(.3, .3, .3)
+    }
+    50% {
+        opacity:1
+    }
+    100% {
+        opacity:1
+    }
+}
+@keyframes zoomIn {
+    0% {
+        opacity:0;
+        transform:scale3d(.3, .3, .3)
+    }
+    50% {
+        opacity:1
+    }
+    100% {
+        opacity:1
+    }
+}
+.zoomIn {
+	  -webkit-animation-name:'zoomIn';/*动画属性名，也就是我们前面keyframes定义的动画名*/
+     -webkit-animation-duration: 1s;/*动画持续时间*/
+     -webkit-animation-timing-function: ease; /*动画频率，和transition-timing-function是一样的*/
+     -webkit-animation-delay: 4.5s;/*动画延迟时间*/
+     -webkit-animation-iteration-count: 1;/*定义循环资料，infinite为无限次*/
+}
+
+
+
+
+
+
+
+
+.zoomleft1 {
+    -moz-transition:left 2s ease-in 5s,top 2s ease-in 5s,opacity 2s ease-in 5s;
+    -webkit-transition: left 2s ease-in 5s,top 2s ease-in 5s,opacity 2s ease-in 5s;
+    -o-transition: left 2s ease-in 5s,top 2s ease-in 5s,opacity 2s ease-in 5s;
+    transition:left 2s ease-in 5s,top 2s ease-in 5s,opacity 2s ease-in 5s;
+}
+
+
+
+.zoomleft2 {
+    -moz-transition:left 2s ease-in 6s,top 2s ease-in 6s,opacity 2s ease-in 6s;
+    -webkit-transition: left 2s ease-in 6s,top 2s ease-in 6s,opacity 2s ease-in 6s;
+    -o-transition: left 2s ease-in 6s,top 2s ease-in 6s,opacity 2s ease-in 6s;
+    transition:left 2s ease-in 6s,top 2s ease-in 6s,opacity 2s ease-in 6s;
+}
+.zoomleft3 {
+	  -moz-transition:left 2s ease-in 7s,top 2s ease-in 7s,opacity 2s ease-in 7s;
+    -webkit-transition: left 2s ease-in 7s,top 2s ease-in 7s,opacity 2s ease-in 7s;
+    -o-transition: left 2s ease-in 7s,top 2s ease-in 7s,opacity 2s ease-in 7s;
+    transition:left 2s ease-in 7s,top 2s ease-in 7s,opacity 2s ease-in 7s;
+}
+
+.zoomleft4 {
+	-moz-transition:right 2s ease-in 4s,top 2s ease-in 4s,opacity 2s ease-in 4s;
+    -webkit-transition:right 2s ease-in 4s,top 2s ease-in 4s,opacity 2s ease-in 4s;
+    -o-transition: right 2s ease-in 4s,top 2s ease-in 4s,opacity 2s ease-in 4s;
+    transition:right 2s ease-in 4s,top 2s ease-in 4s,opacity 2s ease-in 4s;
+}
+
+.zoomleft5 {
+	-moz-transition:right 2s ease-in 6s,top 2s ease-in 6s,opacity 2s ease-in 6s;
+    -webkit-transition: right 2s ease-in 6s,top 2s ease-in 6s,opacity 2s ease-in 6s;
+    -o-transition: right 2s ease-in 6s,top 2s ease-in 6s,opacity 2s ease-in 6s;
+    transition:right 2s ease-in 6s,top 2s ease-in 6s,opacity 2s ease-in 6s;
+}
+
+.zoomleft6 {
+	-moz-transition:right 2s ease-in 6.5s,top 2s ease-in 6.5s,opacity 2s ease-in 6.5s;
+    -webkit-transition: right 2s ease-in 6.5s,top 2s ease-in 6.5s,opacity 2s ease-in 6.5s;
+    -o-transition: right 2s ease-in 6.5s,top 2s ease-in 6.5s,opacity 2s ease-in 6.5s;
+    transition:right 2s ease-in 6.5s,top 2s ease-in 6.5s,opacity 2s ease-in 6.5s;
+}
+
+.CarRight1 {
+    -moz-transition:right 1s ease-in 4.5s;
+    -webkit-transition:right 1s ease-in 4.5s;
+    -o-transition: right 1s ease-in 4.5s;
+    transition:right 1s ease-in 4.5s;
+}
+
+
+
+@-webkit-keyframes scaleCar {
+    0% {
+    	
+    opacity:0;
+        -webkit-transform:scale3d(.3, .3, .3)
+    }
+    50% {
+        opacity:1
+    }
+    100% {
+        opacity:0;
+    }
+}
+@keyframes scaleCar {
+    0% {
+        opacity:0;
+        transform:scale3d(.3, .3, .3)
+    }
+    50% {
+        opacity:1
+    }
+    100% {
+        opacity:0;
+    }
+}
+.scaleCar {
+	  -webkit-animation-name:'scaleCar';/*动画属性名，也就是我们前面keyframes定义的动画名*/
+     -webkit-animation-duration: 1s;/*动画持续时间*/
+     -webkit-animation-timing-function: ease-in-out; /*动画频率，和transition-timing-function是一样的*/
+     -webkit-animation-delay: 3s;/*动画延迟时间*/
+     -webkit-animation-iteration-count: 1;/*定义循环资料，infinite为无限次*/
+}
+
+
+
+
+
+.scaleCar2 {
+	-moz-transition:opacity 1s ease-in 4s;
+    -webkit-transition: opacity 1s ease-in 4s;
+    -o-transition: opacity 1s ease-in 4s;
+    transition:opacity 1s ease-in 4s;
+}
+
+
+
+
+

@@ -1,0 +1,131 @@
+/* 
+* @Author: --
+* @Date:   2015-05-05 11:01:06
+* @Last Modified by:   --
+* @Last Modified time: 2015-05-05 11:52:42
+*/
+	#one {
+		width:100%;
+	}
+	#two {
+		position:absolute;
+		left:-148px;
+		top:0px;
+		width:148px;
+		height:148px;
+		opacity:1;
+		z-index:101;
+	}
+	#two2 {
+		position:absolute;
+		left:-148px;
+		top:300px;
+		width:148px;
+		height:148px;
+		opacity:1;
+		z-index:101;
+	}
+	#two3 {
+		position:absolute;
+		left:-148px;
+		top:300px;
+		width:148px;
+		height:148px;
+		opacity:1;
+		z-index:101;
+	}
+	#two4 {
+		position:absolute;
+		right:-148px;
+		top:-100px;
+		width:148px;
+		height:148px;
+		opacity:1;
+		z-index:101;
+	}
+	#two5 {
+		position:absolute;
+		right:-148px;
+		top:150px;
+		width:148px;
+		height:148px;
+		opacity:1;
+		z-index:101;
+	}
+	#two6 {
+		position:absolute;
+		right:-148px;
+		top:300px;
+		width:148px;
+		height:148px;
+		opacity:1;
+		z-index:101;
+	}
+	#three {
+		width:100%;
+	}
+	#four1 {
+		position:absolute;
+		right:-45px;
+		top:0;
+		width:45px;
+		height:15px;
+		
+	}
+
+	#five {
+
+		margin:0 auto;
+		width:100%;
+		
+	}
+	#six {
+		width:150%;
+		width:100%;
+		position:absolute;
+		left:0;
+		top:0;
+		opacity:0;
+		z-index:10
+
+	}
+	#seven {
+		width:100%;
+		position:absolute;
+		left:0;
+		top:0;
+		opacity:0;
+		z-index:12;
+	}
+	#button1{
+		width: 40%;
+		position: absolute;
+		left:0;
+		margin-left:5%;
+		bottom:170px;
+		z-index: 99;
+	}
+	#button2{
+		width: 40%;
+		position: absolute;
+		right:0;
+		margin-right:5%;
+		bottom:170px;
+		z-index: 99;
+	}
+	#button3{
+		width: 40%;
+		position: absolute;
+		left:0;
+		margin-left:5%;
+		bottom:0;
+		z-index: 99;
+	}
+	#button4{
+		width: 40%;
+		position: absolute;
+		right:0;
+		margin-right:5%;
+		bottom:0;
+		z-index: 99;
+	}

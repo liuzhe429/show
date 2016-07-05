@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<title>全新广汽本田奥德赛</title>
+	<script type="text/javascript">
+		//判断访问终端
+        ua = navigator.userAgent.toLowerCase();
+		var browser={
+		    versions:function(){
+		        var u = navigator.userAgent, app = navigator.appVersion;
+
+		        return {
+		            ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+		            android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1,
+		        };
+		    }(),
+		}
+        if(browser.versions.android){
+            if(ua.match(/MicroMessenger/i)=="micromessenger") {
+                window.location.href= './index.php';
+            }else{
+                window.location.href= './index.php';   
+            }
+        }
+        if(browser.versions.ios) {
+
+            window.location.href= './index_iphone.php';
+        }
+	</script>
+   
+</head>
+<body >
+</body>
+</html>

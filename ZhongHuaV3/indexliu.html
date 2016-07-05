@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<META http-equiv="X-UA-Compatible" content="IE=9" > </META>
+<title>中华</title>
+<meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" type="text/css" href="css/mian.css">
+<link rel="stylesheet" type="text/css" href="css/L-animate.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+<!--背景图片是两道线-->
+<div style="position:relative; left:0; top:0; z-index:11; background-image:url(images/bg.jpg); background-repeat:no-repeat; background-position:center center; background-size:cover;" id="mian" >
+	<!--汽车头条logo图片-->
+	<img id="three" class="fadeInDown" src="images/logo.png">
+	<img id="five" class="zoomIn" src="images/title.png">
+	<img src="images/shadow.png" id="one">
+	<!-- 四个按钮 -->
+	<img src="images/btn/button1.png" id="button1" class="bzoomleft1">
+	<img src="images/btn/button2.png" id="button2" class="bzoomleft1">
+	<img src="images/btn/button3.png" id="button3" class="bzoomleft1">
+	<img src="images/btn/button4.png" id="button4" class="bzoomleft1">
+
+	<!-- 左一 -->
+	<img src="images/detail/detail1.png" id="two" class="zoomleft1">
+	<!-- 左二 -->
+	<img src="images/detail/detail1.png" id="two2" class="zoomleft2">
+	<!-- 左三 -->
+	<img src="images/detail/detail1.png" id="two3" class="zoomleft3">
+	<!-- 右一 -->
+	<img src="images/detail/detail1.png" id="two4" class="zoomleft4">
+	<img src="images/detail/detail1.png" id="two5" class="zoomleft5">
+	<img src="images/detail/detail1.png" id="two6" class="zoomleft6">
+
+
+	<!-- 小汽车图片 -->
+	<img src="images/leftcar.png" id="four1" class="CarRight1"/>
+	<img src="images/light2.png" id="six" class="scaleCar"/>
+	<img src="images/car.png"  id="seven" class="scaleCar2"/>
+</div>
+<script type="text/javascript" src="js/jquery.min.js"></script> 
+<script type="text/javascript">
+$(document).ready(function() {
+	function ab(){
+		  var screenW=document.documentElement.clientWidth;
+		  var screenH=document.documentElement.clientHeight;
+		  var mian=document.getElementById('mian');
+				mian.style.width=screenW+'px';
+				mian.style.height=screenH+'px';
+		  var two=document.getElementById('two');
+				two.style.left=(screenW-148)/2+'px';
+				two.style.top=(screenH-148)/2+'px';
+				two.style.opacity=0;
+		  var two2=document.getElementById('two2');
+				two2.style.left=(screenW-148)/2+'px';
+				two2.style.top=(screenH-148)/2+'px';
+				two2.style.opacity=0;
+		  var two3=document.getElementById('two3');
+				two3.style.left=(screenW-148)/2+'px';
+				two3.style.top=(screenH-148)/2+'px';
+				two3.style.opacity=0;
+		  var two4=document.getElementById('two4');
+				two4.style.right=(screenW-148)/2+'px';
+				two4.style.top=(screenH-148)/2+'px';
+				two4.style.opacity=0; 
+		  var two5=document.getElementById('two5');
+				two5.style.right=(screenW-148)/2+'px';
+				two5.style.top=(screenH-148)/2+'px';
+				two5.style.opacity=0; 
+		  var two6=document.getElementById('two6');
+				two6.style.right=(screenW-148)/2+'px';
+				two6.style.top=(screenH-148)/2+'px';
+				two6.style.opacity=0;
+		  var three=document.getElementById('three');
+				three.style.height=(screenW*96/640)+'px';
+		  var five=document.getElementById('five');
+				five.style.height=(screenW*240/640)+'px';
+		  var one=document.getElementById('one');
+				one.style.height=(screenW*270/640)+'px';
+				//one.style.marginTop=-(screenW*550/640)/5+'px';
+	     var fourOne=document.getElementById('four1');
+		   	fourOne.style.width=(screenW*0.2) +'px';
+		   	fourOne.style.height=((screenW*0.2)*15)/45 +'px';
+		   	fourOne.style.right=(screenW-(screenW*0.2))/1.5+'px';
+		   	fourOne.style.top=(screenW*96/640)+(screenW*240/640)+(screenW*270/640)+'px';
+		   
+		  var sixS=document.getElementById('six');  
+		  		sixS.style.top=(screenW*80/640)+(screenW*240/640)+'px';
+		  		//sixS.style.left=(screenW-screenW*1.5)/2+'px';
+		 var sevenS=document.getElementById('seven');  
+		  	  sevenS.style.top=(screenW*80/640)+(screenW*240/640)+'px';
+		  	  sevenS.style.opacity=1;
+		  
+	}
+   window.onload=function(){
+      ab();
+	}
+	window.onresize=function(){
+	  ab()
+	}
+})
+</script>
+</body>
+</html>
+

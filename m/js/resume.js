@@ -105,9 +105,6 @@ function fnLoad(){
                         window.setTimeout(function(){
                             if(loading){
                                 addClass(loading,"fadeIn3")
-                                // setTimeout(function(){
-                                //     document.body.removeChild(loading);
-                                // },1000);
                             }
                             fnMove();
                             var audioSrc = audio.getAttribute("trueSrc");

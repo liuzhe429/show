@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+
+<script language=javascript>
+var mid=new Array()
+mid[0]="images/1.wav"
+mid[1]="images/2.wav"
+mid[2]="images/3.wav"
+mid[3]="images/4.wav"
+mid[4]="images/5.wav"
+mid[5]="images/1.wav"
+mid[6]="images/2.wav"
+mid[7]="images/3.wav"
+function clicksound(i)
+{
+  document.all.sound.src=mid[i]
+}
+</script>
+
+</head>
+
+<body>
+<bgsound id=sound src="" loop=1></bgsound>
+
+<center>
+  <a href="#" onclick="clicksound(0)">Click</a><br>
+  <a href="#" onclick="clicksound(1)">Click</a><br>
+  <a href="#" onclick="clicksound(2)">Click</a><br>
+  <a href="#" onclick="clicksound(3)">Click</a><br>
+  <a href="#" onclick="clicksound(4)">Click</a><br>
+  <a href="#" onclick="clicksound(5)">Click</a><br>
+<a href="#" onclick="clicksound(6)">NO!</a><br>
+  <a href="#" onclick="clicksound(7)">Win!</a>
+  </center>
+
+
+</body>
+</html>
