@@ -32,8 +32,8 @@ function removeClass(curEle, className) {
     }
 }
 var main = getEle("#main");
-var audioBox = getEle("#audioBox");
-var audio = audioBox.getElementsByTagName("audio")[0];
+// var audioBox = getEle("#audioBox");
+// var audio = audioBox.getElementsByTagName("audio")[0];
 var content = getEle(".content");
 /******************初始化页面大小
  cover缩放原理:
@@ -107,12 +107,12 @@ function fnLoad(){
                                 addClass(loading,"fadeIn3")
                             }
                             fnMove();
-                            var audioSrc = audio.getAttribute("trueSrc");
-                            audio.src = audioSrc;
-                            audioSrc.onload = function(){
-                                addClass(audioBox,"rotate");
-                                bell.play();//播放
-                            }
+                            // var audioSrc = audio.getAttribute("trueSrc");
+                            // audio.src = audioSrc;
+                            // audioSrc.onload = function(){
+                            //     addClass(audioBox,"rotate");
+                            //     bell.play();//播放
+                            // }
 
                         },2000);
                     }
@@ -125,23 +125,23 @@ function fnLoad(){
 
     }
 }
-audioBox.addEventListener("touchstart",function(){
-    if(hasClass(this,"rotate")){
-        removeClass(this,"rotate");
-        bell.pause();//暂停
-    }else{
-        addClass(this,"rotate");
-    }
-})
-audioBox.addEventListener("touch",function(){
-    if(hasClass(this,"rotate")){
-        removeClass(this,"rotate");
-        bell.pause();
-    }else{
-        addClass(this,"rotate");
-        bell.play();
-    }
-})
+// audioBox.addEventListener("touchstart",function(){
+//     if(hasClass(this,"rotate")){
+//         removeClass(this,"rotate");
+//         bell.pause();//暂停
+//     }else{
+//         addClass(this,"rotate");
+//     }
+// })
+// audioBox.addEventListener("touch",function(){
+//     if(hasClass(this,"rotate")){
+//         removeClass(this,"rotate");
+//         bell.pause();
+//     }else{
+//         addClass(this,"rotate");
+//         bell.play();
+//     }
+// })
 function fnMove(){
     var oPageList = document.querySelectorAll(".content>.page");
     addClass(oPageList[0],"zIndex animation");

@@ -1109,7 +1109,7 @@ body {
   top: 125px;
 }
 .page6 .t2 {
-  top: 365px;
+  top: 381px;
 }
 .page6 .t3 {
   top: 608px;
@@ -1126,16 +1126,16 @@ body {
   top: 60px;
 }
 .page6 .l2 {
-  height: 100px;
-  top: 260px;
+  height: 168px;
+  top: 208px;
 }
 .page6 .l3 {
-  height: 100px;
-  top: 500px;
+  height: 142px;
+  top: 463px;
 }
 .page6 .l4 {
-  height: 100px;
-  top: 745px;
+  height: 190px;
+  top: 693px;
 }
 .page6 .project {
   width: 65%;
@@ -1145,13 +1145,24 @@ body {
   text-align: left;
 }
 .page6 .project h3 {
-  font-size: 26px;
+  font-size: 24px;
 }
 .page6 .project p {
+  font-size: 20px;
+  line-height: 35px;
+}
+.page6 .project p.title {
   font-size: 23px;
+  line-height: 45px;
 }
 .page6 .pro1 {
-  top: 100px;
+  top: 132px;
+}
+.page6 .pro2 {
+  top: 400px;
+}
+.page6 .pro3 {
+  top: 630px;
 }
 .page7 {
   background: url("../img/resume/bg.jpg") no-repeat;
@@ -1606,8 +1617,8 @@ body {
   }
   0% {
     opacity: 0;
-    -webkit-transform: translate3d(0, -3000px, 0);
-    transform: translate3d(0, -3000px, 0);
+    -webkit-transform: translate3d(0, -1000px, 0);
+    transform: translate3d(0, -1000px, 0);
   }
   60% {
     opacity: 1;
@@ -1638,8 +1649,8 @@ body {
   }
   0% {
     opacity: 0;
-    -webkit-transform: translate3d(0, -3000px, 0);
-    transform: translate3d(0, -3000px, 0);
+    -webkit-transform: translate3d(0, -1000px, 0);
+    transform: translate3d(0, -1000px, 0);
   }
   60% {
     opacity: 1;

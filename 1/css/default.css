@@ -1,0 +1,598 @@
+/*
+========================================================================
+ EXCLUSIVE ON themeforest.net
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ Project Name		: Resumy - Colorful CV/Resume Template
+ Author 			: Mias Marthinus
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ Copyright (c) 2016 - Mias Studio 
+========================================================================
+
+
+
+========================================================================
+ TABLE OF CONTENT
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+[1] keyframe
+[2] transition
+[3] layout
+	[3.1] pages container
+	[3.2] main menu
+[4] typography
+[5] color
+
+========================================================================
+*/
+
+@charset "utf-8";
+
+/*
+========================================================================
+ KEY FRAME
+========================================================================
+*/
+@keyframes loading-animation{
+	from{		
+		-webkit-transform:scale(1,1);
+			-ms-transform:scale(1,1);
+				transform:scale(1,1);
+	}
+	to{		
+		-webkit-transform:scale(0.5,0.5);
+			-ms-transform:scale(0.5,0.5);
+				transform:scale(0.5,0.5);
+	}
+}
+
+/*
+========================================================================
+ TRANSITION
+========================================================================
+*/
+
+#canvas{
+	-webkit-transition:opacity 0.75s;
+		-ms-transition:opacity 0.75s;
+			transition:opacity 0.75s;
+	-webkit-transition-timing-function:ease-in-out;
+		-ms-transition-timing-function:ease-in-out;
+			transition-timing-function:ease-in-out;
+}
+
+#social-media-link,
+#portofolio-ajax-container > .portofolio-item-container > div,
+#portofolio-ajax-container > .portofolio-item-container > div > .scrim,
+#contact-form textarea,
+#contact-form input[type=text],
+#back-to-top-button,
+#testimonial-accordion .ms-accordion-title,
+#education-accordion .ms-accordion-title,
+#experience-accordion .ms-accordion-title,
+.button-darker,
+.button-frame-darker,
+.button-lighter,
+.button-frame-lighter,
+#main-menu > div > .text,
+#main-menu > div{
+	-webkit-transition-timing-function:ease;
+		-ms-transition-timing-function:ease;
+			transition-timing-function:ease;
+}
+
+.button-darker,
+.button-lighter{
+	-webkit-transition:color 0.3s, background-color 0.3s;
+		-ms-transition:color 0.3s, background-color 0.3s;
+			transition:color 0.3s, background-color 0.3s;
+}
+
+.button-frame-darker,
+.button-frame-lighter{
+	-webkit-transition:color 0.3s, border-color 0.3s, background-color 0.3s;
+		-ms-transition:color 0.3s, border-color 0.3s, background-color 0.3s;
+			transition:color 0.3s, border-color 0.3s, background-color 0.3s;
+}
+
+#testimonial-accordion .ms-accordion-title,
+#experience-accordion .ms-accordion-title,
+#education-accordion .ms-accordion-title,
+#social-media-link > a,
+.dimmed-hover{
+	-webkit-transition:opacity 0.3s;
+		-ms-transition:opacity 0.3s;
+			transition:opacity 0.3s;
+}
+
+#page-resume .accent-bg-hover:hover,
+#page-portofolio .accent-bg-hover:hover,
+#page-services .accent-bg-hover:hover,
+#page-contact .accent-bg-hover:hover,
+#main-menu > div{
+	-webkit-transition:color 0.3s, background-color 0.3s;
+		-ms-transition:color 0.3s, background-color 0.3s;
+			transition:color 0.3s, background-color 0.3s;
+}
+
+#page-resume .accent-color-hover:hover,
+#page-portofolio .accent-color-hover:hover,
+#page-services .accent-color-hover:hover,
+#page-contact .accent-color-hover:hover{
+	-webkit-transition:color 0.3s;
+		-ms-transition:color 0.3s;
+			transition:color 0.3s;
+}
+
+#education-accordion > div{
+	-webkit-transition:border-color 0.3s, background-color 0.3s;
+		-ms-transition:border-color 0.3s, background-color 0.3s;
+			transition:border-color 0.3s, background-color 0.3s;
+}
+
+#contact-form textarea,
+#contact-form input[type=text]{
+	-webkit-transition:padding 0.3s;
+		-ms-transition:padding 0.3s;
+			transition:padding 0.3s;
+}
+
+#main-menu > div > .text{
+	-webkit-transition:top 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+		-ms-transition:top 0.3s, opacity 0.3s, -ms-transform 0.3s;
+			transition:top 0.3s, opacity 0.3s, transform 0.3s;
+	-webkit-transition-delay: 0.2s;
+		-ms-transition-delay: 0.2s;
+			transition-delay: 0.2s;
+}
+
+#social-media-link,
+#portofolio-ajax-container > .portofolio-item-container > div > .scrim,
+#back-to-top-button{
+	-webkit-transition:opacity 0.3s, -webkit-transform 0.3s;
+		-ms-transition:opacity 0.3s, -ms-transform 0.3s;
+			transition:opacity 0.3s, transform 0.3s;
+}
+
+#portofolio-ajax-container > .portofolio-item-container > div{
+	-webkit-transition:opacity 0.3s, width 0.5s;
+		-ms-transition:opacity 0.3s, width 0.5s;
+			transition:opacity 0.3s, width 0.5s;
+}
+
+
+/*
+========================================================================
+ LAYOUT
+========================================================================
+*/
+
+*{
+	word-wrap:break-word;
+}
+
+body{
+	overflow:hidden;
+}
+
+button{
+	color:inherit;
+}
+
+#loading-container{
+	position:absolute;
+	width:40vw;
+	font-size:0;
+	line-height:0;
+	letter-spacing:0;
+	word-spacing:0;
+}
+
+#loading-container > div{
+	display:inline-block;
+	width:10vw;
+	height:10vw;
+	border-radius:50%;
+	animation-name:loading-animation;
+	animation-direction:alternate;
+    animation-timing-function:linear;
+    animation-iteration-count:infinite;
+	animation-duration:1s;
+}
+
+#loading-container > div{
+	-webkit-animation-play-state: paused;
+		-ms-animation-play-state: paused;
+			animation-play-state: paused;
+}
+
+body.loading #loading-container > div{
+	-webkit-animation-play-state: running;
+		-ms-animation-play-state: running;
+			animation-play-state: running;
+}
+
+#loading-container > div:nth-child(1){
+	-webkit-animation-delay: 0;
+		-ms-animation-delay: 0;
+			animation-delay: 0;
+}
+
+#loading-container > div:nth-child(2){
+	-webkit-animation-delay: 0.25s;
+		-ms-animation-delay: 0.25s;
+			animation-delay: 0.25s;
+}
+
+#loading-container > div:nth-child(3){
+	-webkit-animation-delay: 0.5s;
+		-ms-animation-delay: 0.5s;
+			animation-delay: 0.5s;
+}
+
+#loading-container > div:nth-child(4){
+	-webkit-animation-delay: 0.75s;
+		-ms-animation-delay: 0.75s;
+			animation-delay: 0.75s;
+}
+
+#canvas{
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	overflow:hidden;
+}
+
+body.loading #canvas{
+	opacity:0;
+}
+
+.scrim{
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+}
+
+.full{
+	width:100%;
+	height:100%;
+}
+
+.full-x{
+	width:100%;
+}
+
+.full-y{
+	height:100%;
+}
+
+.button{
+	display:inline-block;
+	cursor:pointer;
+}
+
+.no-frame{
+	border-style:none;
+}
+
+/*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ PAGES CONTAINER
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+
+#pages-container > article > header > .watermark > div{
+	width:100%;
+	height:100%;
+	overflow:visible;
+}
+
+#pages-container > article > header > .content{
+	position:relative;
+}
+
+#portofolio-ajax-container > .portofolio-item-container{
+	font-size:0;
+	line-height:0;
+	letter-spacing:0;
+	word-spacing:0;
+}
+
+#portofolio-ajax-container > .portofolio-item-container > div{
+	overflow:hidden;
+}
+
+#portofolio-ajax-container > .portofolio-item-container > div.hide{
+	width:0;
+	margin:0;
+	opacity:0;
+}
+
+#portofolio-ajax-container > .portofolio-item-container > div > .content{
+	display:none;
+}
+
+#portofolio-preview ul{
+	padding:0;
+}
+
+#portofolio-preview-image{
+	width:100%;
+}
+
+#testimonial-accordion > .ms-accordion-deactive > .ms-accordion-title,
+#education-accordion > .ms-accordion-deactive > .ms-accordion-title,
+#experience-accordion > .ms-accordion-deactive > .ms-accordion-title{
+	opacity:0.3;
+}
+
+#testimonial-accordion > .ms-accordion-deactive > .ms-accordion-title:hover,
+#education-accordion > .ms-accordion-deactive > .ms-accordion-title:hover,
+#experience-accordion > .ms-accordion-deactive > .ms-accordion-title:hover{
+	opacity:1;
+}
+
+/*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ MAIN MENU
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+
+#main-menu{
+	z-index:1;
+	text-align:center;
+	vertical-align:middle;
+	font-size:0;
+	line-height:5;
+	word-spacing:0;
+	letter-spacing:0;
+}
+
+#main-menu > div{
+	display:inline-block;
+	position:relative;
+	border-style:none;
+	background-color:rgba(0,0,0,0);
+}
+
+/*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ BACK TO TOP BUTTON
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+
+#back-to-top-button{
+	opacity:0.5;
+	z-index:1;
+	cursor:pointer;
+}
+
+#back-to-top-button.hide{
+	opacity:0;
+	-webkit-transform:scale(0,0);
+		-ms-transform:scale(0,0);
+			transform:scale(0,0);
+}
+
+#back-to-top-button:hover{
+	opacity:1;
+}
+
+/*
+========================================================================
+ TYPOGRAPHY
+========================================================================
+*/
+
+/* BODY */
+.font-body,
+body, p, ul, textarea, input{
+	font-family:"Comfortaa", sans-serif;
+}
+
+/* HEADING */
+#main-menu > div > .text,
+.font-heading,
+h1, h2, h3, h4, h5, h6{
+	font-family:"Montserrat", sans-serif;
+}
+
+.font-bold,
+strong{
+	font-weight:700;
+}
+
+.font-light{
+	font-weight:400;
+}
+
+/*
+========================================================================
+ COLOR
+========================================================================
+*/
+
+footer{
+	background-color:#222;
+	color:#fff;
+}
+
+.dimmed-hover:hover,
+.dimmed{
+	opacity:0.5;
+}
+
+.bg-lighter-soft{
+	background-color:rgba(255,255,255,0.25);
+}
+
+.bg-lighter-medium{
+	background-color:rgba(255,255,255,0.5);
+}
+
+.bg-darker-soft{
+	background-color:rgba(0,0,0,0.05);
+}
+
+.bg-darker-medium{
+	background-color:rgba(0,0,0,0.1);
+}
+
+.button-frame-lighter{
+	border-color:rgba(255,255,255,0.2);
+}
+
+.button-frame-lighter:hover{
+	background-color:rgba(255,255,255,0.5);
+	border-color:rgba(255,255,255,0);
+	color:rgba(0,0,0,0.75);
+}
+
+.button-lighter{
+	background-color:rgba(255,255,255,0.2);
+}
+
+.button-lighter:hover{
+	background-color:rgba(255,255,255,0.5);
+	color:rgba(0,0,0,0.75);
+}
+
+.button-frame-darker{
+	border-color:rgba(0,0,0,0.1);
+}
+
+.button-frame-darker:hover{
+	background-color:rgba(0,0,0,0.3);
+	border-color:rgba(0,0,0,0);
+	color:rgba(255,255,255,0.8);
+}
+
+.button-darker{
+	background-color:rgba(0,0,0,0.1);
+}
+
+.button-darker:hover{
+	background-color:rgba(0,0,0,0.3);
+	color:rgba(255,255,255,0.9);
+}
+
+/*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ PAGES CONTAINER
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+
+#pages-container{
+	background-color:#333;
+}
+
+#pages-container > article{
+	background-color:#f5f5f5;
+	color:#393939;
+}
+
+#profile-picture-container{
+	background-color:rgba(0,0,0,0.15);
+}
+
+#page-resume .skill-bar-vertical > div{
+	border-color:rgba(255,255,255,0.3) rgba(0,0,0,0) rgba(0,0,0,0.1) rgba(0,0,0,0);
+}
+
+#page-resume .skill-bar-horizontal > div{
+	border-color:rgba(255,255,255,0.3);
+}
+
+#education-accordion{
+	border-color:rgba(0,0,0,0.05);
+}
+
+#experience-accordion > div:not(:last-child){
+	border-color:rgba(255,255,255,0.1);
+}	
+	
+#education-accordion > div.ms-accordion-deactive{
+	border-color:rgba(0,0,0,0.05);
+}	
+	
+#education-accordion > div.ms-accordion-active{
+	background-color:#f5f5f5;
+	border-color:rgba(0,0,0,0.05) rgba(0,0,0,0.15);
+}	
+
+#portofolio-ajax-container > .portofolio-item-container .scrim{
+	background-color:rgba(0,0,0,0.6);
+	color:#fff;
+}
+
+#portofolio-preview ul > li:not(:last-child){
+	border-color:rgba(0,0,0,0.1);
+}
+
+#testimonial-accordion > div:not(:last-child){
+	border-color:rgba(0,0,0,0.05);
+}	
+	
+#pricing-list > div:not(:last-child){
+	border-color:rgba(255,255,255,0.2);
+}	
+	
+#package-list ul > li:not(:last-child){
+	border-color:rgba(255,255,255,0.15);
+}
+
+#contact-form textarea,
+#contact-form input[type=text]{
+	border-color:rgba(0,0,0,0.1);
+}
+
+/*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ MAIN MENU
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+
+#main-menu{
+	background-color:#111;
+	color:#fff;
+}
+
+#main-menu > div > .text{
+	color:#fff;
+	background-color:#111;
+}
+
+#main-menu > div > .text > .arrow{
+	background-color:#111;
+}
+
+/*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ SOCIAL MEDIA LINK
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+
+#social-media-link .fa-stack-1x{
+	color:#fff;
+}
+
+#social-media-toggle{
+	color:#fff;
+}
+
+/*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ BACK TO TOP BUTTON
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+
+#back-to-top-button .fa-stack-2x{
+	color:#333;
+}
+
+#back-to-top-button .fa-stack-1x{
+	color:#f9f9f9;
+}

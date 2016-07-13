@@ -1,0 +1,536 @@
+/*
+========================================================================
+ EXCLUSIVE ON themeforest.net
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ Project Name		: Resumy - Colorful CV/Resume Template
+ Author 			: Mias Marthinus
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ Copyright (c) 2016 - Mias Studio 
+========================================================================
+
+
+
+========================================================================
+ TABLE OF CONTENT
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+[1] layout
+	[1.1] pages container
+		[1.1.1] page resume
+		[1.1.2] page portofolio
+		[1.1.3] page services
+		[1.1.4] page contact
+	[1.2] main menu
+	[1.3] social media link
+	[1.4] back to top button
+[2] typography
+
+========================================================================
+*/
+
+@charset "utf-8";
+
+@media only screen and (orientation:portrait){
+
+/*
+========================================================================
+ LAYOUT
+========================================================================
+*/
+
+#canvas > *{
+	position:absolute;
+	display:block;
+}
+
+.get-some-space{
+	margin-top:5vw;
+}
+
+.get-more-space{
+	margin-top:15vw;
+}
+
+.get-neat{
+	padding:0 5vw;
+}
+
+.get-neat-all{
+	padding:5vw;
+}
+
+.get-neat-all-close{
+	padding:2.5vw;
+}
+
+.get-neat-right{
+	padding-bottom:2.5vw;
+}
+
+.get-neat-left{
+	padding-top:2.5vw;
+}
+
+.get-neat-top{
+	padding-top:5vw;
+}
+
+.get-neat-bottom{
+	padding-bottom:5vw;
+}
+
+.button{
+	margin:2vw 1vw;
+	padding:1.25vw 2.5vw;
+	border-radius:0.5vw;
+}
+
+.button-frame-lighter,
+.button-frame-darker{
+	border-style:solid;
+	border-width:0.2vw;
+}
+
+/*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ PAGES-CONTAINER
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+
+#pages-container{
+	width:100%;
+	height:calc( 100vh - 10vw );
+	top:0;
+	left:0;
+}
+
+/* each page */
+#pages-container > *{
+	width:100%;
+	height:100%;
+	overflow-x:hidden;
+	overflow-y:auto;
+}
+
+#pages-container > article > *{
+	position:relative;
+	overflow:hidden;
+}
+
+#pages-container > article > header,
+#pages-container > article > section{
+	padding:15vw 5vw;
+}
+
+#pages-container > article > section.section-full{
+	padding:0;
+}
+
+#pages-container > article > footer{
+	padding:5vw;
+}
+
+#pages-container > article > header > .watermark{
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	opacity:0.08;
+	text-align:center;
+}
+	
+/*
+########################################################################
+ PAGE RESUME
+########################################################################
+*/
+
+#page-resume > header > .ms-row{
+	position:relative;
+}
+
+#profile-picture-container{
+	position:relative;
+	width:40vw;
+	height:40vw;
+	margin:0 auto 2.5vw auto;
+	padding:1vw;
+	border-radius:50%;
+}
+
+#profile-picture{
+	position:relative;
+	width:100%;
+	height:100%;
+	overflow:hidden;
+	border-radius:50%;
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:center;
+}
+
+#page-resume .skill-bar-vertical{
+	position:relative;
+	height:50vw;
+	margin-top:7.5vw;
+	margin-bottom:2.5vw;
+	overflow:hidden;
+	border-radius:2vw;
+	border-style:solid;
+	border-width:0 0 2vw 0;
+}
+
+#page-resume .skill-bar-vertical > div{
+	position:absolute;
+	width:100%;
+	top:auto;
+	bottom:0;
+	left:0;
+	border-style:solid;
+	border-width:1vw 0 10vw 0;
+}
+
+#page-resume .skill-bar-horizontal{
+	margin:2vw 0 5vw 0;
+	overflow:hidden;
+	border-radius:0 0.25vw 0.25vw 0;
+}
+
+#page-resume .skill-bar-horizontal > div{
+	height:1vw;
+	border-style:solid;
+	border-width:0 2vw 0 0;
+}
+
+#experience-accordion img{
+	height:10vw;
+}
+
+#education-accordion{
+	border-style:solid;
+	border-width:1vw 0;
+}
+
+#education-accordion > div,
+#experience-accordion > div{
+	padding:5vw 5vw;
+}
+
+#experience-accordion > div:not(:last-child){
+	border-style:solid;
+	border-width:0 0 0.25vw 0;
+}
+
+#education-accordion > div:not(:last-child){
+	border-style:solid;
+	border-width:0 1vw 0.25vw 1vw;
+}
+
+#education-accordion > div:last-child{
+	border-style:solid;
+	border-width:0 1vw 0 1vw;
+}
+
+#education-accordion .ms-accordion-body,
+#experience-accordion .ms-accordion-body{
+	padding-top:2.5vw;
+	padding-bottom:2.5vw;
+}
+
+/*
+########################################################################
+ PAGE PORTOFOLIO
+########################################################################
+*/
+
+#portofolio-ajax-container > .portofolio-item-container > div{
+	position:relative;
+	width:100%;
+	margin:1vw 0;
+	overflow:hidden;
+	vertical-align:top;
+	cursor:pointer;
+}
+
+#portofolio-ajax-container > .portofolio-item-container > div img{
+	width:100%;
+	margin-bottom:5vw;
+}
+
+#portofolio-ajax-container > .portofolio-item-container > div > .scrim{
+	display:none;
+}
+
+#portofolio-preview ul > li{
+	padding:2vw 0;
+}
+
+#portofolio-preview ul > li:not(:last-child){
+	border-style:solid;
+	border-width:0 0 0.125vw 0;
+}
+
+#portofolio-back-button{
+	position:absolute !important;
+	top:2.5vw;
+	left:auto;
+	right:5vw;
+	margin:0;
+}
+
+/*
+########################################################################
+ PAGE SERVICES
+########################################################################
+*/
+
+#services-item-container{
+	font-size:0;
+	line-height:0;
+	word-spacing:0;
+	letter-spacing:0;
+}
+
+#services-item-container > div{
+	margin:5vw 0;
+	vertical-align:top;
+}
+
+#services-item-container img{
+	width:25%;
+}
+
+#testimonial-accordion img{
+	width:50%;
+	border-radius:50%;
+}
+
+#testimonial-accordion > div{
+	padding:5vw 2.5vw;
+}
+
+#testimonial-accordion > div:not(:last-child){
+	border-style:solid;
+	border-width:0 0 0.125vw 0;
+}
+
+
+#pricing-list > div:not(:last-child){
+	border-style:solid;
+	border-width:0 0 0.125vw 0;
+}
+
+#package-list ul > li:not(:last-child){
+	border-style:solid;
+	border-width:0 0 0.125vw 0;
+}
+
+/*
+########################################################################
+ PAGE CONTACT
+########################################################################
+*/
+
+#contact-form textarea,
+#contact-form input[type=text]{
+	width:100%;
+	min-width:100%;
+	max-width:100%;
+	padding:2.5vw;
+	border-style:solid;
+	border-width:0 0 0.25vw 0;
+	background-color:rgba(0,0,0,0);
+}
+
+#contact-form textarea:focus,
+#contact-form input[type=text]:focus{
+	padding:2.5vw 5vw;
+}
+
+#map-container{
+	height:50vw;
+}
+
+/*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ MAIN MENU
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+
+#main-menu{
+	width:100%;
+	height:10vw;
+	top:auto;
+	bottom:0;
+	left:0;
+	padding:0;
+	text-align:right;
+}
+
+#main-menu > div{
+	width:10vw;
+	height:10vw;
+	margin:0 5vw;
+	text-align:center;
+}
+
+#main-menu > div.active{
+	cursor:default;
+}
+
+#main-menu > div:not(.active){
+	cursor:pointer;
+}
+
+/*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ SOCIAL MEDIA LINK
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+
+#social-media-link{
+	top:auto;
+	bottom:15vw;
+	left:7vw;
+	z-index:2;
+	opacity:0;
+	transform-origin:bottom;
+	-webkit-transform:scale(0,0);
+		-ms-transform:scale(0,0);
+			transform:scale(0,0);
+}
+
+#social-media-link.show{
+	opacity:1;
+	-webkit-transform:scale(1,1);
+		-ms-transform:scale(1,1);
+			transform:scale(1,1);
+}
+
+#social-media-link > a{
+	display:block;
+	width:100%;
+	margin:2.5vw 0;
+}
+
+#social-media-link > a:hover{
+	opacity:0.5;
+}
+
+/*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ BACK TO TOP BUTTON
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+
+#back-to-top-button{
+	top:auto;
+	bottom:15vw;
+	left:auto;
+	right:5vw;
+}
+
+/*
+============================================================================
+ TYPOGRAPHY
+============================================================================
+*/
+
+.text-heading-1,
+h1{
+	font-size:5.5vw;
+	line-height:9vw;
+	word-spacing:0.5vw;
+	letter-spacing:0.5vw;
+}
+
+.text-heading-2,
+h2{
+	font-size:5vw;
+	line-height:8.25vw;
+	word-spacing:0.4vw;
+	letter-spacing:0.4vw;
+}
+
+.text-heading-3,
+h3{
+	font-size:4.5vw;
+	line-height:7.5vw;
+	word-spacing:0.3vw;
+	letter-spacing:0.3vw;
+}
+
+.text-heading-4,
+h4{
+	font-size:4vw;
+	line-height:6.75vw;
+	word-spacing:0.2vw;
+	letter-spacing:0.2vw;
+}
+
+.text-heading-5,
+h5{
+	font-size:3.5vw;
+	line-height:6vw;
+	word-spacing:0.1vw;
+	letter-spacing:0.1vw;
+}
+
+.text-heading-6,
+body,
+ul,
+p,
+h6{
+	font-size:3vw;
+	word-spacing:0.05vw;
+	letter-spacing:0.05vw;
+	line-height:5.25vw;
+}
+
+/*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ PAGE CONTAINER
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+
+#pages-container > article > header > .watermark{
+	font-size:50vw;
+	line-height:50vw;
+}
+
+/*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ MAIN MENU
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+
+#main-menu > div{
+	font-size:4vw;
+	line-height:9.8vw;
+}
+
+/*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ SOCIAL MEDIA LINK
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+
+#social-media-link{
+	font-size:3vw;
+	line-height:3vw;
+}
+
+/*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ BACK TO TOP BUTTON
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+
+#back-to-top-button{
+	font-size:5vw;
+	line-height:5vw;
+}
+
+	
+}

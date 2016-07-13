@@ -1,0 +1,591 @@
+/*
+========================================================================
+ EXCLUSIVE ON themeforest.net
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ Project Name		: Resumy - Colorful CV/Resume Template
+ Author 			: Mias Marthinus
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ Copyright (c) 2016 - Mias Studio 
+========================================================================
+
+
+
+========================================================================
+ TABLE OF CONTENT
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+[1] layout
+	[1.1] pages container
+		[1.1.1] page resume
+		[1.1.2] page portofolio
+		[1.1.3] page services
+		[1.1.4] page contact
+	[1.2] main menu
+	[1.3] social media link
+	[1.4] back to top button
+[2] typography
+
+========================================================================
+*/
+
+@charset "utf-8";
+
+@media only screen and (orientation:landscape){
+
+/*
+========================================================================
+ LAYOUT
+========================================================================
+*/
+
+#canvas > *{
+	position:absolute;
+	display:block;
+}
+
+.get-some-space{
+	margin-top:2.5vw;
+}
+
+.get-more-space{
+	margin-top:7.5vw;
+}
+
+.get-neat{
+	padding:0 2.5vw;
+}
+
+.get-neat-all{
+	padding:2.5vw;
+}
+
+.get-neat-all-close{
+	padding:1.25vw;
+}
+
+.get-neat-right{
+	padding-right:2.5vw;
+}
+
+.get-neat-left{
+	padding-left:2.5vw;
+}
+
+.get-neat-top{
+	padding-top:2.5vw;
+}
+
+.get-neat-bottom{
+	padding-bottom:2.5vw;
+}
+
+.button{
+	margin:0.5vw 0.25vw;
+	padding:0.5vw 1.5vw;
+	border-radius:0.5vw;
+}
+
+.button-frame-lighter,
+.button-frame-darker{
+	border-style:solid;
+	border-width:0.2vw;
+}
+
+/*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ PAGES-CONTAINER
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+
+#pages-container{
+	width:100%;
+	height:calc( 100vh - 5vw );
+	top:5vw;
+	left:0;
+}
+
+/* each page */
+#pages-container > *{
+	width:100%;
+	height:100%;
+	overflow-x:hidden;
+	overflow-y:auto;
+}
+
+#pages-container > article > *{
+	position:relative;
+	overflow:hidden;
+}
+
+#pages-container > article > header{
+	padding:7.5vw 15vw;
+}
+
+#pages-container > article > header > .watermark{
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	opacity:0.08;
+	text-align:center;
+}
+
+#pages-container > article > section{
+	padding:7.5vw 20vw;
+}	
+
+#pages-container > article > section.section-full{
+	padding:0;
+}
+
+#pages-container > article > footer{
+	padding:2.5vw 20vw;
+}
+	
+/*
+########################################################################
+ PAGE RESUME
+########################################################################
+*/
+
+#page-resume > header{
+	height:40vw;
+}
+
+#page-resume > header > .ms-row{
+	position:absolute;
+	width:70%;
+	height:100%;
+	z-index:1;
+}
+
+#page-resume > header > .ms-row > div{
+	position:relative;
+	height:100%;
+}
+
+#profile-picture-container{
+	position:relative;
+	width:26vw;
+	height:26vw;
+	padding:0.75vw;
+	border-radius:50%;
+}
+
+#profile-picture{
+	position:relative;
+	width:100%;
+	height:100%;
+	overflow:hidden;
+	border-radius:50%;
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:center;
+}
+
+#page-resume .skill-bar-vertical{
+	position:relative;
+	height:20vw;
+	margin-bottom:1.25vw;
+	overflow:hidden;
+	border-radius:1vw;
+	border-style:solid;
+	border-width:0 0 1vw 0;
+}
+
+#page-resume .skill-bar-vertical > div{
+	position:absolute;
+	width:100%;
+	top:auto;
+	bottom:0;
+	left:0;
+	border-style:solid;
+	border-width:0.5vw 0 5vw 0;
+}
+
+#page-resume .skill-bar-horizontal{
+	margin:1vw 0 2.5vw 0;
+	overflow:hidden;
+	border-radius:0 0.25vw 0.25vw 0;
+}
+
+#page-resume .skill-bar-horizontal > div{
+	height:0.5vw;
+	border-style:solid;
+	border-width:0 1vw 0 0;
+}
+
+#experience-accordion img{
+	height:5vw;
+}
+
+#education-accordion{
+	border-style:solid;
+	border-width:0.5vw 0;
+}
+
+#education-accordion > div,
+#experience-accordion > div{
+	padding:2.5vw 1.25vw;
+}
+
+#experience-accordion > div:not(:last-child){
+	border-style:solid;
+	border-width:0 0 0.125vw 0;
+}
+
+#education-accordion > div:not(:last-child){
+	border-style:solid;
+	border-width:0 0.5vw 0.125vw 0.5vw;
+}
+
+#education-accordion > div:last-child{
+	border-style:solid;
+	border-width:0 0.5vw 0 0.5vw;
+}
+
+#education-accordion .ms-accordion-body,
+#experience-accordion .ms-accordion-body{
+	padding-top:1.25vw;
+	padding-bottom:1.25vw;
+}
+
+/*
+########################################################################
+ PAGE PORTOFOLIO
+########################################################################
+*/
+
+#portofolio-ajax-container > .portofolio-item-container > div{
+	display:inline-block;
+	position:relative;
+	width:calc( ( 100% / 3 ) - 0.75vw );
+	margin:0.25vw;
+	overflow:hidden;
+	vertical-align:top;
+	cursor:pointer;
+}
+
+#portofolio-ajax-container > .portofolio-item-container > div img{
+	width:100%;
+}
+
+#portofolio-ajax-container > .portofolio-item-container > div > .scrim{
+	opacity:0;
+	-webkit-transform:scale(5,5) rotate(180deg);
+		-ms-transform:scale(5,5) rotate(180deg);
+			transform:scale(5,5) rotate(180deg);
+}
+
+#portofolio-ajax-container > .portofolio-item-container > div:hover > .scrim{
+	opacity:1;
+	-webkit-transform:scale(1,1) rotate(0deg);
+		-ms-transform:scale(1,1) rotate(0deg);
+			transform:scale(1,1) rotate(0deg);
+}
+
+#portofolio-preview ul > li{
+	padding:1vw 0;
+}
+
+#portofolio-preview ul > li:not(:last-child){
+	border-style:solid;
+	border-width:0 0 0.125vw 0;
+}
+
+#portofolio-back-button{
+	position:absolute !important;
+	top:1.25vw;
+	left:auto;
+	right:2.5vw;
+}
+
+/*
+########################################################################
+ PAGE SERVICES
+########################################################################
+*/
+
+#services-item-container{
+	font-size:0;
+	line-height:0;
+	word-spacing:0;
+	letter-spacing:0;
+}
+
+#services-item-container > div{
+	display:inline-block;
+	width:calc( 100% / 2 );
+	margin:2.5vw 0;
+	vertical-align:top;
+}
+
+#services-item-container img{
+	width:25%;
+}
+
+#testimonial-accordion img{
+	width:30%;
+	border-radius:50%;
+}
+
+#testimonial-accordion > div{
+	padding:2.5vw 1.25vw;
+}
+
+#testimonial-accordion > div:not(:last-child){
+	border-style:solid;
+	border-width:0 0 0.125vw 0;
+}
+
+
+#pricing-list > div:not(:last-child){
+	border-style:solid;
+	border-width:0 0 0.125vw 0;
+}
+
+#package-list ul > li:not(:last-child){
+	border-style:solid;
+	border-width:0 0 0.125vw 0;
+}
+
+/*
+########################################################################
+ PAGE CONTACT
+########################################################################
+*/
+
+#contact-form textarea,
+#contact-form input[type=text]{
+	width:100%;
+	min-width:100%;
+	max-width:100%;
+	padding:1.25vw;
+	border-style:solid;
+	border-width:0 0 0.25vw 0;
+	background-color:rgba(0,0,0,0);
+}
+
+#contact-form textarea:focus,
+#contact-form input[type=text]:focus{
+	padding:1.25vw 2.5vw;
+}
+
+#map-container{
+	height:30vw;
+}
+
+/*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ MAIN MENU
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+
+#main-menu{
+	width:100%;
+	height:5vw;
+	top:0;
+	left:0;
+	padding-right:5vw;
+	text-align:right;
+}
+
+#main-menu > div{
+	width:5vw;
+	height:5vw;
+	margin:0 1.5vw;
+	text-align:center;
+}
+
+#main-menu > div.active{
+	cursor:default;
+}
+
+#main-menu > div:not(.active){
+	cursor:pointer;
+}
+
+#main-menu > div > .text{
+	position:absolute;
+	height:3vw;
+	width:10vw;
+	top:4vw;
+	left:-2.5vw;
+	opacity:0;
+	border-radius:0.5vw;
+	transform-origin:top;
+	-webkit-transform:scale(0,0);
+		-ms-transform:scale(0,0);
+			transform:scale(0,0);
+}
+
+#main-menu > div:not(.active):hover > .text{
+	top:6vw;
+	opacity:1;
+	-webkit-transform:scale(1,1);
+		-ms-transform:scale(1,1);
+			transform:scale(1,1);
+}
+
+#main-menu > div > .text > .arrow{
+	position:absolute;
+	width:1vw;
+	height:1vw;
+	top:-0.5vw;
+	left:4.5vw;
+	transform-origin:center;
+	-webkit-transform:rotate(45deg);
+		-ms-transform:rotate(45deg);
+			transform:rotate(45deg);
+}
+
+/*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ SOCIAL MEDIA LINK
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+
+#social-media-link{
+	height:5vw;
+	top:0;
+	left:0;
+	padding-left:5vw;
+	z-index:2;
+}
+
+#social-media-link > a{
+	margin:0 0.75vw 0 0;
+}
+
+#social-media-link > a:hover{
+	opacity:0.5;
+}
+
+/*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ BACK TO TOP BUTTON
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+
+#back-to-top-button{
+	top:auto;
+	bottom:2.5vw;
+	left:auto;
+	right:5vw;
+}
+
+/*
+========================================================================
+ TYPOGRAPHY
+========================================================================
+*/
+
+/*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ HEADING
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+
+.text-heading-1,
+h1{
+	font-size:3.5vw;
+	line-height:5.25vw;
+	word-spacing:0.6vw;
+	letter-spacing:0.1vw;
+}
+
+.text-heading-2,
+h2{
+	font-size:3vw;
+	line-height:4.5vw;
+	word-spacing:0.5vw;
+	letter-spacing:0.08vw;
+}
+
+.text-heading-3,
+h3{
+	font-size:2.5vw;
+	line-height:3.75vw;
+	word-spacing:0.4vw;
+	letter-spacing:0.06vw;
+}
+
+.text-heading-4,
+h4{
+	font-size:2vw;
+	line-height:3vw;
+	word-spacing:0.3vw;
+	letter-spacing:0.04vw;
+}
+
+.text-heading-5,
+h5{
+	font-size:1.5vw;
+	line-height:2.25vw;
+	word-spacing:0.2vw;
+	letter-spacing:0.02vw;
+}
+
+.text-heading-6,
+body,
+ul,
+p,
+h6{
+	font-size:1vw;
+	line-height:1.5vw;
+	word-spacing:0.1vw;
+	letter-spacing:0;
+}	
+
+/*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ PAGE CONTAINER
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+
+#pages-container > article > header > .watermark{
+	font-size:25vw;
+	line-height:25vw;
+}
+
+/*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ MAIN MENU
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+
+#main-menu > div{
+	font-size:2vw;
+	line-height:4.8vw;
+}
+
+#main-menu > div > .text{
+	font-size:1vw;
+	line-height:3vw;
+	text-transform:uppercase;
+	font-weight:700;
+}
+
+/*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ SOCIAL MEDIA LINK
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+
+#social-media-link{
+	line-height:5vw;
+}
+
+/*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ BACK TO TOP BUTTON
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+
+#back-to-top-button{
+	font-size:2.5vw;
+	line-height:2.5vw;
+}
+
+}
