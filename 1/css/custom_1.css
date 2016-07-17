@@ -37,8 +37,64 @@
 */
 
 @charset "utf-8";
+.button-contact{
+	border:1px solid #fff;
+	background: #fff;
+	color:#f06d72;
+}
+.resume-content{
+	text-align: left;
+}
 .ms-text-center2{
 	padding-top:60px;
+}
+.get-some-space2{
+	width: 100%;
+	text-align: left;
+	line-height: 5.5vw;
+	margin:0 auto;
+}
+.list-icon{
+	width: 2vw;
+	height: 2vw;
+	display: block;
+	float: left;
+	margin: 20px 10px;
+	background: #5da5db;
+	-webkit-transform: rotateZ(45deg);
+	transform: rotateZ(45deg);
+}
+.get-some-space2:first-child{
+	margin-top:30px;
+}
+.get-some-space2 span{
+	width: 50%;
+	float: left;
+	/*background: red;*/
+	color:#999;
+}
+
+.get-some-space2 span.right{
+	float: right;
+	/*background: green;*/
+	/*text-align: left;*/
+}
+@media screen and (max-width: 600px) {
+	.list-icon{
+		width: 6vw;
+		height: 6vw;
+		margin: 5px 5px;
+	}
+	.get-some-space2{
+		line-height: 11vw;
+	}
+	.get-some-space2 span{
+		width:100%;
+		float: left;
+		text-align: center;
+		margin:0 auto;
+	}
+
 }
 /*
 ========================================================================
@@ -51,7 +107,9 @@
  PAGE RESUME
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 */
-
+/*.get-neat-all-close:hover{*/
+	/*background-color: #5da5db;*/
+/*}*/
 /* BACKGROUND ACCENT */
 #main-menu-resume.active,
 #main-menu-resume:hover,
@@ -76,19 +134,19 @@
 */
 
 /* BACKGROUND ACCENT */
-#main-menu-portofolio.active,
-#main-menu-portofolio:hover,
-.page-portofolio-bg-color,
-#page-portofolio .accent-bg,
-#page-portofolio .accent-bg-hover:hover{
+#main-menu-skills.active,
+#main-menu-skills:hover,
+.page-skills-bg-color,
+#page-skills .accent-bg,
+#page-skills .accent-bg-hover:hover{
 	background-color: #f06d72;
 	color:#fff;
 }
 
 /* COLOR ACCENT */
-#page-portofolio .accent-color,
-#page-portofolio .accent-color-hover:hover,
-#main-menu-portofolio .accent-color{
+#page-skills .accent-color,
+#page-skills .accent-color-hover:hover,
+#main-menu-skills .accent-color{
 	color:#f06d72;
 }
 

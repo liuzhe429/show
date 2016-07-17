@@ -170,7 +170,7 @@
 	background-position:center;
 }
 
-#page-resume .skill-bar-vertical{
+.skill-bar-vertical{
 	position:relative;
 	height:50vw;
 	margin-top:7.5vw;
@@ -181,7 +181,7 @@
 	border-width:0 0 2vw 0;
 }
 
-#page-resume .skill-bar-vertical > div{
+.skill-bar-vertical > div{
 	position:absolute;
 	width:100%;
 	top:auto;
@@ -191,13 +191,13 @@
 	border-width:1vw 0 10vw 0;
 }
 
-#page-resume .skill-bar-horizontal{
+.skill-bar-horizontal{
 	margin:2vw 0 5vw 0;
 	overflow:hidden;
 	border-radius:0 0.25vw 0.25vw 0;
 }
 
-#page-resume .skill-bar-horizontal > div{
+.skill-bar-horizontal > div{
 	height:1vw;
 	border-style:solid;
 	border-width:0 2vw 0 0;

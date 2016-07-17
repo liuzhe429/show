@@ -51,12 +51,12 @@ $(window).load(function(){
 			
 			}
 			
-			,portofolio_first_time_load = false
+			,skills_first_time_load = false
 			
-			,portofolioInitiate = function(){
+			,skillsInitiate = function(){
 				
 				//proccess each item
-				$('#portofolio-ajax-container').children('.portofolio-item-container').children().each(function(){
+				$('#skills-ajax-container').children('.skills-item-container').children().each(function(){
 					
 					var 
 						container = $(this)
@@ -68,24 +68,24 @@ $(window).load(function(){
 					//on click action
 					$(this).on('click', function(){
 						//set content
-						$('#portofolio-preview-image').attr('src', image)
-						$('#portofolio-preview-title').html(title)
-						$('#portofolio-preview-information').html(information)
-						$('#portofolio-preview-description').html(description)
+						$('#skills-preview-image').attr('src', image)
+						$('#skills-preview-title').html(title)
+						$('#skills-preview-information').html(information)
+						$('#skills-preview-description').html(description)
 						
 						//open preview
-						$('#portofolio-preview').scrollTop(0)	
-						$('#pages-container').ms().openPage('#portofolio-preview')
+						$('#skills-preview').scrollTop(0)
+						$('#pages-container').ms().openPage('#skills-preview')
 						back_to_top_button.hide()
 					})
 				})
 				
 				//proccess category button
-				$('#portofolio-ajax-container').children('.portofolio-category-button-container').children().each(function(){
+				$('#skills-ajax-container').children('.skills-category-button-container').children().each(function(){
 					
 					var 
 						this_button = $(this)
-						,target = $('#portofolio-ajax-container').children('.portofolio-item-container')
+						,target = $('#skills-ajax-container').children('.skills-item-container')
 					
 					//if the button is not category all
 					if( !$(this).hasClass('ms-category-all') ){
@@ -99,7 +99,7 @@ $(window).load(function(){
 							item_match.removeClass('hide')
 							item_not_match.addClass('hide')
 							
-							$('#portofolio-ajax-container').children('.portofolio-category-button-container').children('.accent-bg')
+							$('#skills-ajax-container').children('.skills-category-button-container').children('.accent-bg')
 							.removeClass('accent-bg')
 							.addClass('button-frame-darker')
 							
@@ -115,7 +115,7 @@ $(window).load(function(){
 						$(this).on('click', function(){
 							item_match.removeClass('hide')
 							
-							$('#portofolio-ajax-container').children('.portofolio-category-button-container').children('.accent-bg')
+							$('#skills-ajax-container').children('.skills-category-button-container').children('.accent-bg')
 							.removeClass('accent-bg')
 							.addClass('button-frame-darker')
 							
@@ -129,7 +129,7 @@ $(window).load(function(){
 				
 			}
 		
-			,portofolioRequest = function( request_var ){
+			,skillsRequest = function( request_var ){
 				
 				// var
 				// 	container = $('#portofolio-ajax-container')
@@ -168,9 +168,9 @@ $(window).load(function(){
 					if( active_page == ( 'page-' + target ) ){ return false } //target = false
 					
 					//first time load portofolio
-					if( !portofolio_first_time_load && target == 'portofolio' ){
-						portofolio_first_time_load = true
-						portofolioRequest()
+					if( !skills_first_time_load && target == 'skills' ){
+						skills_first_time_load = true
+						skillsRequest()
 					}
 					
 					var 
@@ -204,7 +204,7 @@ $(window).load(function(){
 		
 		
 		window.getPortofolio = function( request_var ){
-			portofolioRequest( request_var )	
+			skillsRequest( request_var )
 		}
 			
 		
@@ -229,8 +229,8 @@ $(window).load(function(){
 			goToPage('resume')
 		})
 		
-		$('.link-page-portofolio').on('click', function(){
-			goToPage('portofolio')
+		$('.link-page-skills').on('click', function(){
+			goToPage('skills')
 		})
 		
 		$('.link-page-services').on('click', function(){
@@ -247,7 +247,7 @@ $(window).load(function(){
 		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 		*/
 		
-		$('#pages-container').children('article').not('#portofolio-preview').each(function(){
+		$('#pages-container').children('article').not('#skills-preview').each(function(){
 			
 			var
 				target = $(this)
@@ -290,8 +290,8 @@ $(window).load(function(){
 		 INITIATE PORTOFOLIO
 		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 		*/
-		
-		portofolioInitiate()
+
+	skillsInitiate()
 		
 		/*
 		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -299,8 +299,8 @@ $(window).load(function(){
 		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 		*/
 		
-		$('.portofolio-back-button').on('click', function(){
-			$('#pages-container').ms().openPage('#page-portofolio')
+		$('.skills-back-button').on('click', function(){
+			$('#pages-container').ms().openPage('#page-skills')
 			back_to_top_button.show()
 		})
 		
@@ -384,6 +384,11 @@ $(window).load(function(){
 		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 		*/
 		
-		$('body').removeClass('loading')
-		
+		$('body').removeClass('loading');
+		$(".bg-lighter-medium").hover(function () {
+			$(this).addClass("accent-bg");
+		},function () {
+			$(this).removeClass("accent-bg");
+		});
+
 })

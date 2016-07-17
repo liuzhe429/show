@@ -184,7 +184,7 @@
 	background-position:center;
 }
 
-#page-resume .skill-bar-vertical{
+.skill-bar-vertical{
 	position:relative;
 	height:20vw;
 	margin-bottom:1.25vw;
@@ -194,7 +194,7 @@
 	border-width:0 0 1vw 0;
 }
 
-#page-resume .skill-bar-vertical > div{
+.skill-bar-vertical > div{
 	position:absolute;
 	width:100%;
 	top:auto;
@@ -204,13 +204,13 @@
 	border-width:0.5vw 0 5vw 0;
 }
 
-#page-resume .skill-bar-horizontal{
+.skill-bar-horizontal{
 	margin:1vw 0 2.5vw 0;
 	overflow:hidden;
 	border-radius:0 0.25vw 0.25vw 0;
 }
 
-#page-resume .skill-bar-horizontal > div{
+.skill-bar-horizontal > div{
 	height:0.5vw;
 	border-style:solid;
 	border-width:0 1vw 0 0;
@@ -257,7 +257,7 @@
 ########################################################################
 */
 
-#portofolio-ajax-container > .portofolio-item-container > div{
+#skills > .skills-item-container > div{
 	display:inline-block;
 	position:relative;
 	width:calc( ( 100% / 3 ) - 0.75vw );
@@ -267,34 +267,34 @@
 	cursor:pointer;
 }
 
-#portofolio-ajax-container > .portofolio-item-container > div img{
+#skills-ajax-container > .skills-item-container > div img{
 	width:100%;
 }
 
-#portofolio-ajax-container > .portofolio-item-container > div > .scrim{
+#skills-ajax-container > .skills-item-container > div > .scrim{
 	opacity:0;
 	-webkit-transform:scale(5,5) rotate(180deg);
 		-ms-transform:scale(5,5) rotate(180deg);
 			transform:scale(5,5) rotate(180deg);
 }
 
-#portofolio-ajax-container > .portofolio-item-container > div:hover > .scrim{
+#skills-ajax-container > .skills-item-container > div:hover > .scrim{
 	opacity:1;
 	-webkit-transform:scale(1,1) rotate(0deg);
 		-ms-transform:scale(1,1) rotate(0deg);
 			transform:scale(1,1) rotate(0deg);
 }
 
-#portofolio-preview ul > li{
+#skills-preview ul > li{
 	padding:1vw 0;
 }
 
-#portofolio-preview ul > li:not(:last-child){
+#skills-preview ul > li:not(:last-child){
 	border-style:solid;
 	border-width:0 0 0.125vw 0;
 }
 
-#portofolio-back-button{
+#skills-back-button{
 	position:absolute !important;
 	top:1.25vw;
 	left:auto;
