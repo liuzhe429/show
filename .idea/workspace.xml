@@ -2,17 +2,517 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a7afc85-1896-48a5-b8e8-2a77d5da626d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/1/fonts/fontawesome-webfont .eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/1/fonts/fontawesome-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/1/fonts/fontawesome-webfont.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/1/img/resume.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/1/img/resume2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/1/card_bottom.html" afterPath="$PROJECT_DIR$/1/card_bottom.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/1/css/custom_1.css" afterPath="$PROJECT_DIR$/1/css/custom_1.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/1/css/landscape.css" afterPath="$PROJECT_DIR$/1/css/landscape.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/1/css/portrait.css" afterPath="$PROJECT_DIR$/1/css/portrait.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/1/js/default.js" afterPath="$PROJECT_DIR$/1/js/default.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pc/js/jquery-2.2.0.min.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1/js/jquery-2.2.0.min.js" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/1/bak.html" afterPath="$PROJECT_DIR$/pc/bak.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/1/card_bottom.html" afterPath="$PROJECT_DIR$/pc/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/1/css/comfortaa.css" afterPath="$PROJECT_DIR$/pc/css/comfortaa.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/1/css/custom_1.css" afterPath="$PROJECT_DIR$/pc/css/custom_1.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/1/css/default.css" afterPath="$PROJECT_DIR$/pc/css/default.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/1/css/font-awesome.min.css" afterPath="$PROJECT_DIR$/pc/css/font-awesome.min.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/1/css/font/Comfortaa1.woff2" afterPath="$PROJECT_DIR$/pc/css/font/Comfortaa1.woff2" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/1/css/font/Comfortaa10.woff2" afterPath="$PROJECT_DIR$/pc/css/font/Comfortaa10.woff2" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/1/css/font/Comfortaa2.woff2" afterPath="$PROJECT_DIR$/pc/css/font/Comfortaa2.woff2" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/1/css/font/Comfortaa3.woff2" afterPath="$PROJECT_DIR$/pc/css/font/Comfortaa3.woff2" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/1/css/font/Comfortaa4.woff2" afterPath="$PROJECT_DIR$/pc/css/font/Comfortaa4.woff2" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/1/css/font/Comfortaa5.woff2" afterPath="$PROJECT_DIR$/pc/css/font/Comfortaa5.woff2" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/1/css/font/Comfortaa6.woff2" afterPath="$PROJECT_DIR$/pc/css/font/Comfortaa6.woff2" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/1/css/font/Comfortaa7.woff2" afterPath="$PROJECT_DIR$/pc/css/font/Comfortaa7.woff2" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/1/css/font/Comfortaa8.woff2" afterPath="$PROJECT_DIR$/pc/css/font/Comfortaa8.woff2" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/1/css/font/Comfortaa9.woff2" afterPath="$PROJECT_DIR$/pc/css/font/Comfortaa9.woff2" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/1/css/font/Montserrat-Bold.woff2" afterPath="$PROJECT_DIR$/pc/css/font/Montserrat-Bold.woff2" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/1/css/font/Montserrat-Regular.woff2" afterPath="$PROJECT_DIR$/pc/css/font/Montserrat-Regular.woff2" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/1/css/landscape.css" afterPath="$PROJECT_DIR$/pc/css/landscape.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/1/css/miasstudio-3.5.1.min.css" afterPath="$PROJECT_DIR$/pc/css/miasstudio-3.5.1.min.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/1/css/portrait.css" afterPath="$PROJECT_DIR$/pc/css/portrait.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/1/fonts/fontawesome-webfont .eot" afterPath="$PROJECT_DIR$/pc/fonts/fontawesome-webfont .eot" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/1/fonts/fontawesome-webfont.woff" afterPath="$PROJECT_DIR$/pc/fonts/fontawesome-webfont.woff" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/1/fonts/fontawesome-webfont.woff2" afterPath="$PROJECT_DIR$/pc/fonts/fontawesome-webfont.woff2" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/1/img/business.png" afterPath="$PROJECT_DIR$/pc/img/business.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/1/img/illumination.png" afterPath="$PROJECT_DIR$/pc/img/illumination.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/1/img/instantlogosearch-steam.png" afterPath="$PROJECT_DIR$/pc/img/instantlogosearch-steam.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/1/img/logomono-airbnb-mono.png" afterPath="$PROJECT_DIR$/pc/img/logomono-airbnb-mono.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/1/img/logomono-dropbox-mono.png" afterPath="$PROJECT_DIR$/pc/img/logomono-dropbox-mono.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/1/img/resume.png" afterPath="$PROJECT_DIR$/pc/img/resume.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/1/img/resume2.png" afterPath="$PROJECT_DIR$/pc/img/resume2.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/1/img/technology.png" afterPath="$PROJECT_DIR$/pc/img/technology.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/1/img/tool.png" afterPath="$PROJECT_DIR$/pc/img/tool.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/1/js/default.js" afterPath="$PROJECT_DIR$/pc/js/default.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/1/js/i7.js" afterPath="$PROJECT_DIR$/pc/js/i7.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/1/js/miasstudio-1.4.0.e2e.js" afterPath="$PROJECT_DIR$/pc/js/miasstudio-1.4.0.e2e.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JieBao80year(hengshuping)/aodesai/js/jquery-1.10.2.js" afterPath="$PROJECT_DIR$/JieBao80year(hengshuping)/aodesai/js/jquery-1.10.2.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JieBao80year(hengshuping)/aodesai/js/wxqq.js" afterPath="$PROJECT_DIR$/JieBao80year(hengshuping)/aodesai/js/wxqq.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JieBao80year(hengshuping)/css/jquery.fullPage.css" afterPath="$PROJECT_DIR$/JieBao80year(hengshuping)/css/jquery.fullPage.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JieBao80year(hengshuping)/css/style.css" afterPath="$PROJECT_DIR$/JieBao80year(hengshuping)/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JieBao80year(hengshuping)/index.html" afterPath="$PROJECT_DIR$/JieBao80year(hengshuping)/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JieBao80year(hengshuping)/js/hm.js" afterPath="$PROJECT_DIR$/JieBao80year(hengshuping)/js/hm.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JieBao80year(hengshuping)/js/jquery-1.8.3.min.js" afterPath="$PROJECT_DIR$/JieBao80year(hengshuping)/js/jquery-1.8.3.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JieBao80year(hengshuping)/js/jquery-ui-1.10.3.min.js" afterPath="$PROJECT_DIR$/JieBao80year(hengshuping)/js/jquery-ui-1.10.3.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MgRuiTengwxfu/js/wxqq.js" afterPath="$PROJECT_DIR$/MgRuiTengwxfu/js/wxqq.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MgRuiTengwxfu/js/zepto.view.js" afterPath="$PROJECT_DIR$/MgRuiTengwxfu/js/zepto.view.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ZhongHuaV3/images/index02.html" afterPath="$PROJECT_DIR$/ZhongHuaV3/images/index02.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ZhongHuaV3/index02.html" afterPath="$PROJECT_DIR$/ZhongHuaV3/index02.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ZhongHuaV3/indexliu.html" afterPath="$PROJECT_DIR$/ZhongHuaV3/indexliu.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ZhongHuaV3/js/jquery.min.js" afterPath="$PROJECT_DIR$/ZhongHuaV3/js/jquery.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ZhongHuaV3/js/wxqq.js" afterPath="$PROJECT_DIR$/ZhongHuaV3/js/wxqq.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ZhongHuaV3/suonata0410/js/wxqq.js" afterPath="$PROJECT_DIR$/ZhongHuaV3/suonata0410/js/wxqq.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ZhongHuaV32/index.html" afterPath="$PROJECT_DIR$/ZhongHuaV32/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ZhongHuaV32/js/jquery.min.js" afterPath="$PROJECT_DIR$/ZhongHuaV32/js/jquery.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/aodesai/index_iphone.html" afterPath="$PROJECT_DIR$/aodesai/index_iphone.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/aodesai/js/jquery-1.10.2.js" afterPath="$PROJECT_DIR$/aodesai/js/jquery-1.10.2.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/aodesai/js/wxqq.js" afterPath="$PROJECT_DIR$/aodesai/js/wxqq.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/m/animate.css" afterPath="$PROJECT_DIR$/m/animate.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/m/css/resume.css" afterPath="$PROJECT_DIR$/m/css/resume.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/m/index.html" afterPath="$PROJECT_DIR$/m/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/m/js/resume.js" afterPath="$PROJECT_DIR$/m/js/resume.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/m/less/resume.less" afterPath="$PROJECT_DIR$/m/less/resume.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/lib/nav.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/lib/nav.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/lib/toc.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/lib/toc.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/autoprefixer-stylus/node_modules/autoprefixer/node_modules/browserslist/index.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/autoprefixer-stylus/node_modules/autoprefixer/node_modules/browserslist/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/autoprefixer-stylus/node_modules/multi-stage-sourcemap/bower_components/power-assert/build/power-assert.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/autoprefixer-stylus/node_modules/multi-stage-sourcemap/bower_components/power-assert/build/power-assert.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/autoprefixer-stylus/node_modules/multi-stage-sourcemap/node_modules/source-map/lib/source-map/array-set.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/autoprefixer-stylus/node_modules/multi-stage-sourcemap/node_modules/source-map/lib/source-map/array-set.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/autoprefixer-stylus/node_modules/multi-stage-sourcemap/node_modules/source-map/lib/source-map/base64-vlq.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/autoprefixer-stylus/node_modules/multi-stage-sourcemap/node_modules/source-map/lib/source-map/base64-vlq.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/autoprefixer-stylus/node_modules/multi-stage-sourcemap/node_modules/source-map/lib/source-map/binary-search.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/autoprefixer-stylus/node_modules/multi-stage-sourcemap/node_modules/source-map/lib/source-map/binary-search.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/autoprefixer-stylus/node_modules/multi-stage-sourcemap/node_modules/source-map/lib/source-map/source-map-consumer.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/autoprefixer-stylus/node_modules/multi-stage-sourcemap/node_modules/source-map/lib/source-map/source-map-consumer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/autoprefixer-stylus/node_modules/multi-stage-sourcemap/node_modules/source-map/lib/source-map/source-map-generator.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/autoprefixer-stylus/node_modules/multi-stage-sourcemap/node_modules/source-map/lib/source-map/source-map-generator.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/autoprefixer-stylus/node_modules/multi-stage-sourcemap/node_modules/source-map/test/source-map/test-source-map-consumer.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/autoprefixer-stylus/node_modules/multi-stage-sourcemap/node_modules/source-map/test/source-map/test-source-map-consumer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/autoprefixer-stylus/node_modules/multi-stage-sourcemap/node_modules/source-map/test/source-map/test-source-map-generator.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/autoprefixer-stylus/node_modules/multi-stage-sourcemap/node_modules/source-map/test/source-map/test-source-map-generator.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/autoprefixer-stylus/node_modules/multi-stage-sourcemap/node_modules/source-map/test/source-map/test-source-node.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/autoprefixer-stylus/node_modules/multi-stage-sourcemap/node_modules/source-map/test/source-map/test-source-node.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/autoprefixer-stylus/node_modules/multi-stage-sourcemap/node_modules/source-map/test/source-map/util.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/autoprefixer-stylus/node_modules/multi-stage-sourcemap/node_modules/source-map/test/source-map/util.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/autoprefixer-stylus/node_modules/postcss/d.ts/container.d.ts" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/autoprefixer-stylus/node_modules/postcss/d.ts/container.d.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/autoprefixer-stylus/node_modules/postcss/d.ts/postcss.d.ts" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/autoprefixer-stylus/node_modules/postcss/d.ts/postcss.d.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/autoprefixer-stylus/node_modules/postcss/lib/css-syntax-error.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/autoprefixer-stylus/node_modules/postcss/lib/css-syntax-error.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/autoprefixer-stylus/node_modules/postcss/node_modules/js-base64/base64.html" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/autoprefixer-stylus/node_modules/postcss/node_modules/js-base64/base64.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/autoprefixer-stylus/node_modules/postcss/node_modules/source-map/dist/source-map.debug.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/autoprefixer-stylus/node_modules/postcss/node_modules/source-map/dist/source-map.debug.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/autoprefixer-stylus/node_modules/postcss/node_modules/source-map/dist/source-map.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/autoprefixer-stylus/node_modules/postcss/node_modules/source-map/dist/source-map.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/autoprefixer-stylus/node_modules/postcss/node_modules/source-map/dist/source-map.min.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/autoprefixer-stylus/node_modules/postcss/node_modules/source-map/dist/source-map.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/autoprefixer-stylus/node_modules/postcss/node_modules/source-map/lib/array-set.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/autoprefixer-stylus/node_modules/postcss/node_modules/source-map/lib/array-set.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/autoprefixer-stylus/node_modules/postcss/node_modules/source-map/lib/base64-vlq.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/autoprefixer-stylus/node_modules/postcss/node_modules/source-map/lib/base64-vlq.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/autoprefixer-stylus/node_modules/postcss/node_modules/source-map/lib/base64.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/autoprefixer-stylus/node_modules/postcss/node_modules/source-map/lib/base64.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/autoprefixer-stylus/node_modules/postcss/node_modules/source-map/lib/binary-search.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/autoprefixer-stylus/node_modules/postcss/node_modules/source-map/lib/binary-search.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/autoprefixer-stylus/node_modules/postcss/node_modules/source-map/lib/quick-sort.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/autoprefixer-stylus/node_modules/postcss/node_modules/source-map/lib/quick-sort.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/autoprefixer-stylus/node_modules/postcss/node_modules/source-map/lib/source-map-consumer.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/autoprefixer-stylus/node_modules/postcss/node_modules/source-map/lib/source-map-consumer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/autoprefixer-stylus/node_modules/postcss/node_modules/source-map/lib/source-map-generator.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/autoprefixer-stylus/node_modules/postcss/node_modules/source-map/lib/source-map-generator.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/css-select/node_modules/nth-check/compile.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/css-select/node_modules/nth-check/compile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/css-select/node_modules/nth-check/test.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/css-select/node_modules/nth-check/test.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/htmlparser2/lib/Tokenizer.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/htmlparser2/lib/Tokenizer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/htmlparser2/node_modules/domhandler/.travis.yml" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/htmlparser2/node_modules/domhandler/.travis.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/htmlparser2/node_modules/domhandler/lib/node.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/htmlparser2/node_modules/domhandler/lib/node.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/htmlparser2/node_modules/readable-stream/lib/_stream_readable.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/htmlparser2/node_modules/readable-stream/lib/_stream_readable.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/htmlparser2/node_modules/readable-stream/lib/_stream_writable.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/htmlparser2/node_modules/readable-stream/lib/_stream_writable.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/htmlparser2/test/Feeds/02-atom.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/htmlparser2/test/Feeds/02-atom.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/array/chunk.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/array/chunk.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/array/compact.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/array/compact.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/array/difference.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/array/difference.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/array/drop.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/array/drop.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/array/dropRight.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/array/dropRight.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/array/dropRightWhile.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/array/dropRightWhile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/array/dropWhile.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/array/dropWhile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/array/fill.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/array/fill.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/array/findIndex.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/array/findIndex.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/array/findLastIndex.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/array/findLastIndex.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/array/flatten.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/array/flatten.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/array/flattenDeep.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/array/flattenDeep.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/array/indexOf.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/array/indexOf.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/array/initial.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/array/initial.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/array/intersection.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/array/intersection.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/array/last.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/array/last.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/array/lastIndexOf.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/array/lastIndexOf.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/array/pull.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/array/pull.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/array/pullAt.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/array/pullAt.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/array/remove.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/array/remove.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/array/sortedIndex.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/array/sortedIndex.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/array/take.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/array/take.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/array/takeRight.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/array/takeRight.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/array/takeRightWhile.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/array/takeRightWhile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/array/takeWhile.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/array/takeWhile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/array/union.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/array/union.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/array/unzipWith.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/array/unzipWith.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/array/without.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/array/without.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/array/xor.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/array/xor.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/array/zipWith.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/array/zipWith.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/chain/chain.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/chain/chain.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/chain/tap.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/chain/tap.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/collection/countBy.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/collection/countBy.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/collection/findLast.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/collection/findLast.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/collection/groupBy.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/collection/groupBy.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/collection/invoke.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/collection/invoke.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/collection/partition.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/collection/partition.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/collection/reject.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/collection/reject.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/collection/sample.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/collection/sample.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/collection/shuffle.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/collection/shuffle.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/collection/size.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/collection/size.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/collection/sortBy.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/collection/sortBy.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/date/now.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/date/now.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/function/ary.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/function/ary.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/function/curry.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/function/curry.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/function/curryRight.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/function/curryRight.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/function/flow.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/function/flow.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/function/modArgs.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/function/modArgs.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/function/negate.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/function/negate.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/function/rearg.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/function/rearg.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/function/restParam.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/function/restParam.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/index.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/internal/baseFindIndex.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/internal/baseFindIndex.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/internal/baseIndexOf.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/internal/baseIndexOf.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/internal/cacheIndexOf.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/internal/cacheIndexOf.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/internal/createWrapper.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/internal/createWrapper.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/internal/deburrLetter.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/internal/deburrLetter.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/internal/equalByTag.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/internal/equalByTag.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/internal/getLength.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/internal/getLength.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/internal/indexOfNaN.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/internal/indexOfNaN.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/lang/gt.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/lang/gt.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/lang/gte.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/lang/gte.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/lang/isArguments.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/lang/isArguments.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/lang/isArray.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/lang/isArray.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/lang/isEmpty.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/lang/isEmpty.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/lang/isObject.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/lang/isObject.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/lang/isPlainObject.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/lang/isPlainObject.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/lang/isString.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/lang/isString.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/lang/lt.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/lang/lt.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/lang/lte.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/lang/lte.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/lang/toArray.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/lang/toArray.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/lang/toPlainObject.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/lang/toPlainObject.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/number/inRange.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/number/inRange.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/number/random.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/number/random.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/object/findKey.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/object/findKey.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/object/findLastKey.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/object/findLastKey.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/object/forIn.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/object/forIn.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/object/forInRight.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/object/forInRight.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/object/forOwn.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/object/forOwn.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/object/forOwnRight.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/object/forOwnRight.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/object/invert.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/object/invert.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/object/keys.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/object/keys.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/object/keysIn.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/object/keysIn.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/object/mapKeys.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/object/mapKeys.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/object/mapValues.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/object/mapValues.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/object/transform.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/object/transform.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/object/values.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/object/values.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/object/valuesIn.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/object/valuesIn.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/string/deburr.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/string/deburr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/string/startsWith.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/string/startsWith.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/utility/method.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/utility/method.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/utility/property.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/utility/property.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/utility/propertyOf.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/utility/propertyOf.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/utility/range.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/utility/range.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/utility/times.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/node_modules/lodash/utility/times.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/test/api/attributes.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/test/api/attributes.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/test/api/css.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/test/api/css.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/test/api/traversing.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/test/api/traversing.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/test/fixtures.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/test/fixtures.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/test/parse.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/cheerio/test/parse.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/index.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/lib/nodefs-handler.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/lib/nodefs-handler.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/anymatch/node_modules/micromatch/lib/expand.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/anymatch/node_modules/micromatch/lib/expand.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/anymatch/node_modules/micromatch/node_modules/braces/index.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/anymatch/node_modules/micromatch/node_modules/braces/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/async-each/test.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/async-each/test.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/.travis.yml" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/.travis.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/asn1/lib/ber/reader.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/asn1/lib/ber/reader.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/asn1/lib/index.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/asn1/lib/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/asn1/tst/ber/reader.test.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/asn1/tst/ber/reader.test.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/asn1/tst/ber/writer.test.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/asn1/tst/ber/writer.test.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/async/dist/async.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/async/dist/async.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/async/lib/async.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/async/lib/async.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/aws4/aws4.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/aws4/aws4.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/aws4/node_modules/lru-cache/node_modules/pseudomap/test/basic.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/aws4/node_modules/lru-cache/node_modules/pseudomap/test/basic.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/block-stream/block-stream.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/block-stream/block-stream.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/boom/test/index.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/boom/test/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/commander/index.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/commander/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/dashdash/lib/dashdash.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/dashdash/lib/dashdash.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/ecc-jsbn/index.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/ecc-jsbn/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/ecc-jsbn/lib/ec.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/ecc-jsbn/lib/ec.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/ecc-jsbn/lib/sec.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/ecc-jsbn/lib/sec.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/extend/.travis.yml" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/extend/.travis.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/extsprintf/lib/extsprintf.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/extsprintf/lib/extsprintf.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/forever-agent/index.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/forever-agent/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/fstream-ignore/node_modules/minimatch/minimatch.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/fstream-ignore/node_modules/minimatch/minimatch.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/fstream-ignore/node_modules/minimatch/node_modules/brace-expansion/example.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/fstream-ignore/node_modules/minimatch/node_modules/brace-expansion/example.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/fstream-ignore/test/common.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/fstream-ignore/test/common.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/fstream/examples/pipe.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/fstream/examples/pipe.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/fstream/examples/symlink-write.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/fstream/examples/symlink-write.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/fstream/lib/file-reader.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/fstream/lib/file-reader.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/fstream/lib/proxy-writer.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/fstream/lib/proxy-writer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/fstream/lib/reader.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/fstream/lib/reader.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/gauge/progress-bar.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/gauge/progress-bar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/gauge/test/progress-bar.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/gauge/test/progress-bar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/graceful-fs/polyfills.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/graceful-fs/polyfills.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/hawk/example/usage.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/hawk/example/usage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/hawk/lib/browser.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/hawk/lib/browser.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/hawk/lib/crypto.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/hawk/lib/crypto.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/hawk/lib/server.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/hawk/lib/server.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/hawk/test/browser.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/hawk/test/browser.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/hawk/test/readme.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/hawk/test/readme.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/hawk/test/server.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/hawk/test/server.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/hawk/test/uri.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/hawk/test/uri.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/hoek/test/escaper.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/hoek/test/escaper.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/hoek/test/index.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/hoek/test/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/http-signature/lib/signer.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/http-signature/lib/signer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/ini/ini.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/ini/ini.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/is-my-json-valid/index.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/is-my-json-valid/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/isstream/test.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/isstream/test.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/jodid25519/lib/core.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/jodid25519/lib/core.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/jodid25519/lib/curve255.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/jodid25519/lib/curve255.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/jsbn/index.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/jsbn/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/json-stringify-safe/test/stringify_test.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/json-stringify-safe/test/stringify_test.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/jsonpointer/jsonpointer.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/jsonpointer/jsonpointer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/jsonpointer/test.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/jsonpointer/test.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/lodash.pad/index.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/lodash.pad/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/lodash.padend/index.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/lodash.padend/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/lodash.padstart/index.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/lodash.padstart/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/lodash.repeat/index.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/lodash.repeat/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/lodash.tostring/index.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/lodash.tostring/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/mkdirp/.travis.yml" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/mkdirp/.travis.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/nan/tools/1to2.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/nan/tools/1to2.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/node-pre-gyp/appveyor.yml" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/node-pre-gyp/appveyor.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/node-pre-gyp/lib/reveal.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/node-pre-gyp/lib/reveal.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/node-pre-gyp/lib/util/versioning.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/node-pre-gyp/lib/util/versioning.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/node-pre-gyp/node_modules/nopt/examples/my-program.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/node-pre-gyp/node_modules/nopt/examples/my-program.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/node-pre-gyp/node_modules/nopt/test/basic.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/node-pre-gyp/node_modules/nopt/test/basic.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/node-uuid/benchmark/benchmark.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/node-uuid/benchmark/benchmark.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/node-uuid/bin/uuid" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/node-uuid/bin/uuid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/node-uuid/test/compare_v1.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/node-uuid/test/compare_v1.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/node-uuid/test/test.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/node-uuid/test/test.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/node-uuid/uuid.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/node-uuid/uuid.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/oauth-sign/index.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/oauth-sign/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/oauth-sign/test.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/oauth-sign/test.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/process-nextick-args/.travis.yml" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/process-nextick-args/.travis.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/qs/.travis.yml" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/qs/.travis.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/qs/test/parse.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/qs/test/parse.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/qs/test/stringify.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/qs/test/stringify.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/rc/node_modules/minimist/.travis.yml" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/rc/node_modules/minimist/.travis.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/readable-stream/.travis.yml" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/readable-stream/.travis.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/readable-stream/lib/_stream_readable.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/readable-stream/lib/_stream_readable.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/readable-stream/lib/_stream_writable.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/readable-stream/lib/_stream_writable.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/request/lib/har.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/request/lib/har.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/rimraf/node_modules/glob/glob.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/rimraf/node_modules/glob/glob.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/rimraf/node_modules/glob/node_modules/minimatch/minimatch.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/rimraf/node_modules/glob/node_modules/minimatch/minimatch.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/rimraf/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/example.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/rimraf/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/example.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/rimraf/rimraf.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/rimraf/rimraf.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/semver/semver.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/semver/semver.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/semver/test/clean.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/semver/test/clean.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/semver/test/gtr.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/semver/test/gtr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/semver/test/index.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/semver/test/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/semver/test/ltr.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/semver/test/ltr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/semver/test/major-minor-patch.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/semver/test/major-minor-patch.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/sshpk/.travis.yml" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/sshpk/.travis.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/sshpk/lib/fingerprint.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/sshpk/lib/fingerprint.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/sshpk/lib/formats/pem.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/sshpk/lib/formats/pem.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/sshpk/lib/formats/pkcs8.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/sshpk/lib/formats/pkcs8.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/sshpk/lib/key.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/sshpk/lib/key.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/sshpk/lib/private-key.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/sshpk/lib/private-key.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/sshpk/lib/signature.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/sshpk/lib/signature.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/tar-pack/index.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/tar-pack/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/tar/lib/extended-header-writer.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/tar/lib/extended-header-writer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/tar/lib/header.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/tar/lib/header.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/tar/lib/parse.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/tar/lib/parse.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/tar/tar.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/tar/tar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/tar/test/error-on-broken.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/tar/test/error-on-broken.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/tar/test/pack-no-proprietary.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/tar/test/pack-no-proprietary.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/tar/test/pack.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/tar/test/pack.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/tough-cookie/lib/cookie.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/tough-cookie/lib/cookie.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/tough-cookie/lib/memstore.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/tough-cookie/lib/memstore.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/tough-cookie/lib/pubsuffix.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/fsevents/node_modules/tough-cookie/lib/pubsuffix.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/readdirp/node_modules/graceful-fs/polyfills.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/readdirp/node_modules/graceful-fs/polyfills.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/readdirp/node_modules/minimatch/minimatch.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/readdirp/node_modules/minimatch/minimatch.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/readdirp/node_modules/readable-stream/.travis.yml" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/readdirp/node_modules/readable-stream/.travis.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/readdirp/node_modules/readable-stream/lib/_stream_readable.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/readdirp/node_modules/readable-stream/lib/_stream_readable.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/readdirp/node_modules/readable-stream/lib/_stream_writable.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/readdirp/node_modules/readable-stream/lib/_stream_writable.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/readdirp/node_modules/readable-stream/node_modules/process-nextick-args/.travis.yml" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/readdirp/node_modules/readable-stream/node_modules/process-nextick-args/.travis.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/readdirp/test/readdirp.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/chokidar/node_modules/readdirp/test/readdirp.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/colors-cli/.travis.yml" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/colors-cli/.travis.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/colors-cli/bin/colors" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/colors-cli/bin/colors" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/commander/index.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/commander/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/ejs/ejs.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/ejs/ejs.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/ejs/ejs.min.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/ejs/ejs.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/ejs/lib/ejs.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/ejs/lib/ejs.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/ejs/test/ejs.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/ejs/test/ejs.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/highlight.js/lib/languages/accesslog.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/highlight.js/lib/languages/accesslog.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/highlight.js/lib/languages/armasm.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/highlight.js/lib/languages/armasm.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/highlight.js/lib/languages/asciidoc.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/highlight.js/lib/languages/asciidoc.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/highlight.js/lib/languages/ceylon.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/highlight.js/lib/languages/ceylon.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/highlight.js/lib/languages/clojure.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/highlight.js/lib/languages/clojure.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/highlight.js/lib/languages/d.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/highlight.js/lib/languages/d.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/highlight.js/lib/languages/dns.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/highlight.js/lib/languages/dns.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/highlight.js/lib/languages/elixir.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/highlight.js/lib/languages/elixir.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/highlight.js/lib/languages/haml.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/highlight.js/lib/languages/haml.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/highlight.js/lib/languages/julia.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/highlight.js/lib/languages/julia.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/highlight.js/lib/languages/less.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/highlight.js/lib/languages/less.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/highlight.js/lib/languages/lisp.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/highlight.js/lib/languages/lisp.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/highlight.js/lib/languages/livescript.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/highlight.js/lib/languages/livescript.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/highlight.js/lib/languages/markdown.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/highlight.js/lib/languages/markdown.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/highlight.js/lib/languages/mojolicious.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/highlight.js/lib/languages/mojolicious.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/highlight.js/lib/languages/nginx.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/highlight.js/lib/languages/nginx.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/highlight.js/lib/languages/perl.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/highlight.js/lib/languages/perl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/highlight.js/lib/languages/profile.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/highlight.js/lib/languages/profile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/highlight.js/lib/languages/puppet.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/highlight.js/lib/languages/puppet.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/highlight.js/lib/languages/ruby.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/highlight.js/lib/languages/ruby.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/highlight.js/lib/languages/scheme.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/highlight.js/lib/languages/scheme.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/highlight.js/lib/languages/scss.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/highlight.js/lib/languages/scss.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/highlight.js/lib/languages/smalltalk.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/highlight.js/lib/languages/smalltalk.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/highlight.js/lib/languages/tp.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/highlight.js/lib/languages/tp.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/highlight.js/lib/languages/vhdl.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/highlight.js/lib/languages/vhdl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/highlight.js/lib/languages/x86asm.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/highlight.js/lib/languages/x86asm.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/highlight.js/lib/languages/xquery.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/highlight.js/lib/languages/xquery.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/lib/utils/readline.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/lib/utils/readline.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/lib/utils/screen-manager.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/lib/utils/screen-manager.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/cli-width/.travis.yml" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/cli-width/.travis.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/cli-width/coverage/lcov-report/prettify.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/cli-width/coverage/lcov-report/prettify.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/figures/index.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/figures/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/array/chunk.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/array/chunk.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/array/compact.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/array/compact.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/array/difference.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/array/difference.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/array/drop.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/array/drop.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/array/dropRight.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/array/dropRight.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/array/dropRightWhile.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/array/dropRightWhile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/array/dropWhile.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/array/dropWhile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/array/fill.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/array/fill.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/array/findIndex.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/array/findIndex.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/array/findLastIndex.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/array/findLastIndex.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/array/flatten.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/array/flatten.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/array/flattenDeep.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/array/flattenDeep.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/array/indexOf.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/array/indexOf.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/array/initial.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/array/initial.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/array/intersection.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/array/intersection.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/array/last.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/array/last.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/array/lastIndexOf.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/array/lastIndexOf.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/array/pull.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/array/pull.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/array/pullAt.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/array/pullAt.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/array/remove.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/array/remove.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/array/sortedIndex.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/array/sortedIndex.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/array/take.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/array/take.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/array/takeRight.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/array/takeRight.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/array/takeRightWhile.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/array/takeRightWhile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/array/takeWhile.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/array/takeWhile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/array/union.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/array/union.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/array/unzipWith.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/array/unzipWith.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/array/without.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/array/without.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/array/xor.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/array/xor.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/array/zipWith.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/array/zipWith.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/chain/chain.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/chain/chain.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/chain/tap.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/chain/tap.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/collection/countBy.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/collection/countBy.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/collection/findLast.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/collection/findLast.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/collection/groupBy.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/collection/groupBy.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/collection/invoke.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/collection/invoke.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/collection/partition.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/collection/partition.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/collection/reject.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/collection/reject.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/collection/sample.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/collection/sample.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/collection/shuffle.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/collection/shuffle.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/collection/size.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/collection/size.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/collection/sortBy.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/collection/sortBy.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/date/now.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/date/now.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/function/ary.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/function/ary.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/function/curry.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/function/curry.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/function/curryRight.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/function/curryRight.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/function/flow.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/function/flow.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/function/modArgs.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/function/modArgs.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/function/negate.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/function/negate.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/function/rearg.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/function/rearg.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/function/restParam.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/function/restParam.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/index.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/internal/baseFindIndex.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/internal/baseFindIndex.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/internal/baseIndexOf.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/internal/baseIndexOf.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/internal/cacheIndexOf.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/internal/cacheIndexOf.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/internal/createWrapper.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/internal/createWrapper.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/internal/deburrLetter.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/internal/deburrLetter.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/internal/equalByTag.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/internal/equalByTag.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/internal/getLength.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/internal/getLength.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/internal/indexOfNaN.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/internal/indexOfNaN.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/lang/gt.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/lang/gt.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/lang/gte.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/lang/gte.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/lang/isArguments.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/lang/isArguments.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/lang/isArray.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/lang/isArray.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/lang/isEmpty.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/lang/isEmpty.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/lang/isObject.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/lang/isObject.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/lang/isPlainObject.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/lang/isPlainObject.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/lang/isString.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/lang/isString.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/lang/lt.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/lang/lt.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/lang/lte.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/lang/lte.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/lang/toArray.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/lang/toArray.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/lang/toPlainObject.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/lang/toPlainObject.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/number/inRange.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/number/inRange.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/number/random.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/number/random.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/object/findKey.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/object/findKey.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/object/findLastKey.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/object/findLastKey.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/object/forIn.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/object/forIn.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/object/forInRight.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/object/forInRight.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/object/forOwn.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/object/forOwn.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/object/forOwnRight.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/object/forOwnRight.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/object/invert.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/object/invert.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/object/keys.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/object/keys.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/object/keysIn.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/object/keysIn.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/object/mapKeys.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/object/mapKeys.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/object/mapValues.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/object/mapValues.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/object/transform.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/object/transform.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/object/values.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/object/values.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/object/valuesIn.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/object/valuesIn.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/string/deburr.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/string/deburr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/string/startsWith.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/string/startsWith.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/utility/method.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/utility/method.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/utility/property.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/utility/property.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/utility/propertyOf.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/utility/propertyOf.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/utility/range.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/utility/range.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/utility/times.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/lodash/utility/times.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/rx-lite/rx.lite.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/inquirer/node_modules/rx-lite/rx.lite.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/marked/lib/marked.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/marked/lib/marked.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/marked/marked.min.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/marked/marked.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/semver/semver.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/semver/semver.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/semver/test/clean.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/semver/test/clean.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/semver/test/gtr.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/semver/test/gtr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/semver/test/index.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/semver/test/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/semver/test/ltr.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/semver/test/ltr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/semver/test/major-minor-patch.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/semver/test/major-minor-patch.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/shelljs/src/common.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/shelljs/src/common.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/shelljs/src/dirs.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/shelljs/src/dirs.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/shelljs/src/exec.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/shelljs/src/exec.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/shelljs/src/sed.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/shelljs/src/sed.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/ssr/node_modules/iconv-lite/.travis.yml" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/ssr/node_modules/iconv-lite/.travis.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/ssr/node_modules/iconv-lite/encodings/dbcs-codec.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/ssr/node_modules/iconv-lite/encodings/dbcs-codec.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/ssr/node_modules/iconv-lite/encodings/dbcs-data.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/ssr/node_modules/iconv-lite/encodings/dbcs-data.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/ssr/node_modules/iconv-lite/encodings/utf7.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/ssr/node_modules/iconv-lite/encodings/utf7.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/ssr/node_modules/yargs/index.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/ssr/node_modules/yargs/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/ssr/node_modules/yargs/lib/parser.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/ssr/node_modules/yargs/lib/parser.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/ssr/node_modules/yargs/lib/validation.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/ssr/node_modules/yargs/lib/validation.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/stylus/lib/functions/index.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/stylus/lib/functions/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/stylus/lib/lexer.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/stylus/lib/lexer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/stylus/lib/nodes/expression.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/stylus/lib/nodes/expression.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/stylus/lib/nodes/hsla.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/stylus/lib/nodes/hsla.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/stylus/lib/nodes/rgba.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/stylus/lib/nodes/rgba.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/stylus/lib/parser.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/stylus/lib/parser.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/stylus/lib/utils.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/stylus/lib/utils.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/stylus/node_modules/glob/glob.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/stylus/node_modules/glob/glob.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/stylus/node_modules/glob/node_modules/minimatch/minimatch.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/stylus/node_modules/glob/node_modules/minimatch/minimatch.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/stylus/node_modules/glob/node_modules/minimatch/node_modules/sigmund/bench.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/stylus/node_modules/glob/node_modules/minimatch/node_modules/sigmund/bench.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/stylus/node_modules/glob/node_modules/minimatch/test/basic.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/stylus/node_modules/glob/node_modules/minimatch/test/basic.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/stylus/node_modules/glob/node_modules/minimatch/test/brace-expand.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/stylus/node_modules/glob/node_modules/minimatch/test/brace-expand.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/stylus/node_modules/glob/node_modules/minimatch/test/defaults.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/stylus/node_modules/glob/node_modules/minimatch/test/defaults.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/stylus/node_modules/mkdirp/.travis.yml" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/stylus/node_modules/mkdirp/.travis.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/stylus/node_modules/sax/examples/strict.dtd" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/stylus/node_modules/sax/examples/strict.dtd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/stylus/node_modules/sax/test/issue-23.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/stylus/node_modules/sax/test/issue-23.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/stylus/node_modules/sax/test/issue-47.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/stylus/node_modules/sax/test/issue-47.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/stylus/node_modules/sax/test/script.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/stylus/node_modules/sax/test/script.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/stylus/node_modules/sax/test/xmlns-issue-41.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/stylus/node_modules/sax/test/xmlns-issue-41.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/stylus/node_modules/source-map/lib/source-map/array-set.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/stylus/node_modules/source-map/lib/source-map/array-set.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/stylus/node_modules/source-map/lib/source-map/base64-vlq.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/stylus/node_modules/source-map/lib/source-map/base64-vlq.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/stylus/node_modules/source-map/lib/source-map/binary-search.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/stylus/node_modules/source-map/lib/source-map/binary-search.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/stylus/node_modules/source-map/lib/source-map/source-map-consumer.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/stylus/node_modules/source-map/lib/source-map/source-map-consumer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/stylus/node_modules/source-map/lib/source-map/source-map-generator.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/stylus/node_modules/source-map/lib/source-map/source-map-generator.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/stylus/node_modules/source-map/test/source-map/test-source-map-consumer.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/stylus/node_modules/source-map/test/source-map/test-source-map-consumer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/stylus/node_modules/source-map/test/source-map/test-source-map-generator.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/stylus/node_modules/source-map/test/source-map/test-source-map-generator.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/stylus/node_modules/source-map/test/source-map/test-source-node.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/stylus/node_modules/source-map/test/source-map/test-source-node.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/stylus/node_modules/source-map/test/source-map/util.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/stylus/node_modules/source-map/test/source-map/util.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/node_modules/underscore/underscore.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/node_modules/underscore/underscore.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/theme/blog/source/css/_partial/reset.styl" afterPath="$PROJECT_DIR$/node_modules/zdoc/theme/blog/source/css/_partial/reset.styl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/theme/default/source/css/_partial/reset.styl" afterPath="$PROJECT_DIR$/node_modules/zdoc/theme/default/source/css/_partial/reset.styl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/theme/doc/source/css/_partial/reset.styl" afterPath="$PROJECT_DIR$/node_modules/zdoc/theme/doc/source/css/_partial/reset.styl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/theme/handbook/source/css/_partial/reset.styl" afterPath="$PROJECT_DIR$/node_modules/zdoc/theme/handbook/source/css/_partial/reset.styl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/theme/resume/source/css/_partial/reset.styl" afterPath="$PROJECT_DIR$/node_modules/zdoc/theme/resume/source/css/_partial/reset.styl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/theme/resume/source/js/jquery.2.1.4.min.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/theme/resume/source/js/jquery.2.1.4.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/theme/resume/source/js/pdfmake.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/theme/resume/source/js/pdfmake.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/zdoc/theme/resume/source/js/vfs_fonts.js" afterPath="$PROJECT_DIR$/node_modules/zdoc/theme/resume/source/js/vfs_fonts.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/p/js/index.js" afterPath="$PROJECT_DIR$/p/js/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/p/js/tween.js" afterPath="$PROJECT_DIR$/p/js/tween.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ttk/js/wxqq.js" afterPath="$PROJECT_DIR$/ttk/js/wxqq.js" />
     </list>
     <ignored path="resume.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,11 +533,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="card_bottom.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/1/card_bottom.html">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pc/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="1336" column="37" selection-start-line="1336" selection-start-column="37" selection-end-line="1336" selection-end-column="37" />
+            <state relative-caret-position="332">
+              <caret line="1367" column="25" selection-start-line="1367" selection-start-column="25" selection-end-line="1367" selection-end-column="25" />
               <folding>
                 <element signature="n#section#0;n#article#0;n#main#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#3;n#section#0;n#article#1;n#main#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -51,7 +551,7 @@
         </entry>
       </file>
       <file leaf-file-name="bak.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/1/bak.html">
+        <entry file="file://$PROJECT_DIR$/pc/bak.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="216">
               <caret line="271" column="124" selection-start-line="271" selection-start-column="124" selection-end-line="271" selection-end-column="124" />
@@ -65,9 +565,9 @@
         </entry>
       </file>
       <file leaf-file-name="default.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/1/js/default.js">
+        <entry file="file://$PROJECT_DIR$/pc/js/default.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
+            <state relative-caret-position="-186">
               <caret line="370" column="12" selection-start-line="370" selection-start-column="12" selection-end-line="370" selection-end-column="12" />
               <folding />
             </state>
@@ -75,9 +575,9 @@
         </entry>
       </file>
       <file leaf-file-name="miasstudio-3.5.1.min.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/1/css/miasstudio-3.5.1.min.css">
+        <entry file="file://$PROJECT_DIR$/pc/css/miasstudio-3.5.1.min.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-408">
+            <state relative-caret-position="-696">
               <caret line="1" column="1064" selection-start-line="1" selection-start-column="1064" selection-end-line="1" selection-end-column="1064" />
               <folding />
             </state>
@@ -85,9 +585,9 @@
         </entry>
       </file>
       <file leaf-file-name="miasstudio-1.4.0.e2e.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/1/js/miasstudio-1.4.0.e2e.js">
+        <entry file="file://$PROJECT_DIR$/pc/js/miasstudio-1.4.0.e2e.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="421">
+            <state relative-caret-position="-3491">
               <caret line="1" column="12188" selection-start-line="1" selection-start-column="12188" selection-end-line="1" selection-end-column="12188" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
@@ -97,7 +597,7 @@
         </entry>
       </file>
       <file leaf-file-name="custom_1.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/1/css/custom_1.css">
+        <entry file="file://$PROJECT_DIR$/pc/css/custom_1.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="336">
               <caret line="42" column="18" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="18" />
@@ -132,6 +632,7 @@
         <option value="$PROJECT_DIR$/1/css/custom_1.css" />
         <option value="$PROJECT_DIR$/1/js/default.js" />
         <option value="$PROJECT_DIR$/1/card_bottom.html" />
+        <option value="$PROJECT_DIR$/pc/index.html" />
       </list>
     </option>
   </component>
@@ -186,92 +687,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="resume" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resume" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resume" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resume" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resume" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resume" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resume" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resume" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resume" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fonts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resume" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resume" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -357,12 +772,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1468724973853</updated>
-      <workItem from="1468724975183" duration="18076000" />
+      <workItem from="1468724975183" duration="18256000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18076000" />
+    <option name="totallyTimeSpent" value="18256000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -371,6 +786,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17950754" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -381,7 +797,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -394,7 +809,7 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/1/css/comfortaa.css">
+    <entry file="file://$PROJECT_DIR$/pc/css/comfortaa.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
@@ -402,9 +817,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/1/js/miasstudio-1.4.0.e2e.js">
+    <entry file="file://$PROJECT_DIR$/pc/js/miasstudio-1.4.0.e2e.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
+        <state relative-caret-position="-3491">
           <caret line="1" column="12188" selection-start-line="1" selection-start-column="12188" selection-end-line="1" selection-end-column="12188" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
@@ -412,7 +827,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/1/js/i7.js">
+    <entry file="file://$PROJECT_DIR$/pc/js/i7.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="0" column="624" selection-start-line="0" selection-start-column="622" selection-end-line="0" selection-end-column="624" />
@@ -420,7 +835,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/1/css/default.css">
+    <entry file="file://$PROJECT_DIR$/pc/css/default.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="178">
           <caret line="27" column="1" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="1" />
@@ -428,7 +843,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/1/css/portrait.css">
+    <entry file="file://$PROJECT_DIR$/pc/css/portrait.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="215">
           <caret line="152" column="27" selection-start-line="152" selection-start-column="27" selection-end-line="152" selection-end-column="27" />
@@ -436,7 +851,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/1/css/landscape.css">
+    <entry file="file://$PROJECT_DIR$/pc/css/landscape.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="215">
           <caret line="19" column="31" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="31" />
@@ -444,7 +859,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/1/css/font-awesome.min.css">
+    <entry file="file://$PROJECT_DIR$/pc/css/font-awesome.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-697">
           <caret line="3" column="3229" selection-start-line="3" selection-start-column="3216" selection-end-line="3" selection-end-column="3229" />
@@ -452,15 +867,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/1/css/miasstudio-3.5.1.min.css">
+    <entry file="file://$PROJECT_DIR$/pc/css/miasstudio-3.5.1.min.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-408">
+        <state relative-caret-position="-696">
           <caret line="1" column="1064" selection-start-line="1" selection-start-column="1064" selection-end-line="1" selection-end-column="1064" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/1/css/custom_1.css">
+    <entry file="file://$PROJECT_DIR$/pc/css/custom_1.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
           <caret line="42" column="18" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="18" />
@@ -468,7 +883,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/1/bak.html">
+    <entry file="file://$PROJECT_DIR$/pc/bak.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="271" column="124" selection-start-line="271" selection-start-column="124" selection-end-line="271" selection-end-column="124" />
@@ -480,18 +895,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/1/js/default.js">
+    <entry file="file://$PROJECT_DIR$/pc/js/default.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
+        <state relative-caret-position="-186">
           <caret line="370" column="12" selection-start-line="370" selection-start-column="12" selection-end-line="370" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/1/card_bottom.html">
+    <entry file="file://$PROJECT_DIR$/pc/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="1336" column="37" selection-start-line="1336" selection-start-column="37" selection-end-line="1336" selection-end-column="37" />
+        <state relative-caret-position="332">
+          <caret line="1367" column="25" selection-start-line="1367" selection-start-column="25" selection-end-line="1367" selection-end-column="25" />
           <folding>
             <element signature="n#section#0;n#article#0;n#main#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#3;n#section#0;n#article#1;n#main#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />

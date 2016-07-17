@@ -77,7 +77,7 @@ var Effect = {
             return c / 2 * (-Math.pow(2, -10 * --t) + 2) + b;
         }
     },
-    Circ: {//圆形曲线的缓动（sqrt(1-t^2)）；
+    Circ: {//圆形曲线的缓动（sqrt(pc-t^2)）；
         easeIn: function (t, b, c, d) {
             return -c * (Math.sqrt(1 - (t /= d) * t) - 1) + b;
         },
@@ -125,7 +125,7 @@ var Effect = {
             return a * Math.pow(2, -10 * (t -= 1)) * Math.sin((t * d - s) * (2 * Math.PI) / p) * .5 + c + b;
         }
     },
-    Back: {//超过范围的三次方缓动（(s+1)*t^3 - s*t^2）；
+    Back: {//超过范围的三次方缓动（(s+pc)*t^3 - s*t^2）；
         easeIn: function (t, b, c, d, s) {
             if (s == undefined) s = 1.70158;
             return c * (t /= d) * t * ((s + 1) * t - s) + b;
@@ -167,7 +167,7 @@ var Effect = {
  effect：是指定的动画效果，它可以由一个简单数字来快捷表示某种常用的动画效果，也可以以数组的方式来指定某个不常用的动画效果。还可以不给effect参数传值，则动画使用默认的效果（我们指定减速的效果为默认效果）
  如果用数字来快捷表示某种常用效果效，则
  0：减速效果Expo
- 1:匀速效果:linear
+ pc:匀速效果:linear
  2:弹性:Elastic
  3:返回：Back
  4：反弹：Bounce
@@ -181,7 +181,7 @@ var Effect = {
  zhufengEffect.zfBounce.easeInOut
  zhufengEffect["zfBounce"]["easeInOut"];
  var a=['zfBounce','easeInOut'];
- zhufengEffect[a[0]][a[1]];//要明白这一行和161，162是一样的
+ zhufengEffect[a[0]][a[pc]];//要明白这一行和161，162是一样的
 
  */
 /*

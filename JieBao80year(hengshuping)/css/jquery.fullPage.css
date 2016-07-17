@@ -20,7 +20,7 @@ html, body {
     /* Touch detection for Windows 8 */
     -ms-touch-action: none;
 
-    /* IE 11 on Windows Phone 8.1*/
+    /* IE 11 on Windows Phone 8.pc*/
     touch-action: none;
 }
 .fp-section {

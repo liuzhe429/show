@@ -86,7 +86,7 @@ body {
   z-index: 201;
   opacity: 1;
   background: -webkit-linear-gradient(top left, lightskyblue, lightsalmon);
-  /* Safari 5.1 - 6.0 */
+  /* Safari 5.pc - 6.0 */
   background: linear-gradient(lightskyblue, lightsalmon);
   /* 标准的语法（必须放在最后） */
   background: rgba(0, 0, 0, 0.9);
@@ -852,7 +852,7 @@ body {
   border-radius: 10px;
   opacity: 0;
   background: -webkit-linear-gradient(top left, lightskyblue, lightsalmon);
-  /* Safari 5.1 - 6.0 */
+  /* Safari 5.pc - 6.0 */
   background: linear-gradient(lightskyblue, lightsalmon);
   /* 标准的语法（必须放在最后） */
 }

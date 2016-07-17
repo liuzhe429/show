@@ -255,7 +255,7 @@
             return;
         }
 
-        var url = 'https://suggest.taobao.com/sug?code=utf-8&q=i&_ksTS=1465197221632_1509&callback=jsonp1510&area=b2c&code=utf-8&k=1&bucketid=16&src=tmall_pc&isg2=AsbGpzYbnXU3a8JP-A81jNaGlrZIfwrj';
+        var url = 'https://suggest.taobao.com/sug?code=utf-8&q=i&_ksTS=1465197221632_1509&callback=jsonp1510&area=b2c&code=utf-8&k=pc&bucketid=16&src=tmall_pc&isg2=AsbGpzYbnXU3a8JP-A81jNaGlrZIfwrj';
 
         jsonp('https://suggest.taobao.com/sug',{q:val},'callback',function(data){
             var list = data.result;

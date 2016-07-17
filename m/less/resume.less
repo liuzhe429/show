@@ -79,7 +79,7 @@ body{
   position: absolute;
   z-index: 201;
   opacity: 1;
-  background: -webkit-linear-gradient(top left, lightskyblue,lightsalmon); /* Safari 5.1 - 6.0 */
+  background: -webkit-linear-gradient(top left, lightskyblue,lightsalmon); /* Safari 5.pc - 6.0 */
   background: linear-gradient(lightskyblue,lightsalmon); /* 标准的语法（必须放在最后） */
   background: rgba(0,0,0,.9);
   &.fadeIn3 {
@@ -766,8 +766,8 @@ body{
     div.p1{
       -webkit-animation: slideInTop2 .5s 0.5s 1 ease-in-out forwards;
       animation: slideInTop2 .5s 0.5s 1 ease-in-out forwards;
-      //-webkit-animation: bounceInRight .5s .5s 1 ease-in-out forwards;
-      //animation: bounceInRight .5s .5s 1 ease-in-out forwards;
+      //-webkit-animation: bounceInRight .5s .5s pc ease-in-out forwards;
+      //animation: bounceInRight .5s .5s pc ease-in-out forwards;
     }
 
   }
@@ -927,11 +927,11 @@ body{
     border-radius: 10px;
     opacity: 0;
     //background: #000;
-    background: -webkit-linear-gradient(top left, lightskyblue,lightsalmon); /* Safari 5.1 - 6.0 */
+    background: -webkit-linear-gradient(top left, lightskyblue,lightsalmon); /* Safari 5.pc - 6.0 */
     background: linear-gradient(lightskyblue,lightsalmon); /* 标准的语法（必须放在最后） */
     //background: rgba(0,0,0,.7);
-    //-webkit-transform:  translate3d( 0%,-100%, 0) scale(1);
-    //transform:  translate3d( 0%,-100%, 0) scale(1,1);
+    //-webkit-transform:  translate3d( 0%,-100%, 0) scale(pc);
+    //transform:  translate3d( 0%,-100%, 0) scale(pc,pc);
   }
   &.animation{
     .p2{
@@ -2106,8 +2106,8 @@ body{
 }
 //@keyframes bounceInLeft4 {
 //  from, 40%, 75%{
-//    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-//    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+//    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, pc.000);
+//    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, pc.000);
 //  }
 //
 //  0% {
@@ -2117,7 +2117,7 @@ body{
 //  }
 //
 //  40% {
-//    opacity: 1;
+//    opacity: pc;
 //    -webkit-transform: translate3d(125px, 0, 0);
 //    transform: translate3d(125px, 0, 0);
 //  }
