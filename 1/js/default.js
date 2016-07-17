@@ -131,26 +131,26 @@ $(window).load(function(){
 		
 			,portofolioRequest = function( request_var ){
 				
-				var
-					container = $('#portofolio-ajax-container')
-					,url = 'engine/php/portofolio.php?' + request_var
-				
-				$('body').addClass('loading')
-				
-				$.ajax({
-					url : url,
-					dataType : 'html'
-				})
-				.done(function( data ){
-					container.html(data)
-					portofolioInitiate()
-				})
-				.fail(function(){
-					container.html('fail')
-				})
-				.always(function(){
-					$('body').removeClass('loading')
-				})
+				// var
+				// 	container = $('#portofolio-ajax-container')
+				// 	,url = 'engine/php/portofolio.php?' + request_var
+				//
+				// $('body').addClass('loading')
+				//
+				// $.ajax({
+				// 	url : url,
+				// 	dataType : 'html'
+				// })
+				// .done(function( data ){
+				// 	container.html(data)
+				// 	portofolioInitiate()
+				// })
+				// .fail(function(){
+				// 	container.html('fail')
+				// })
+				// .always(function(){
+				// 	$('body').removeClass('loading')
+				// })
 			}
 			
 			,goToPage = function( target ){

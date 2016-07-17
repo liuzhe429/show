@@ -37,7 +37,9 @@
 */
 
 @charset "utf-8";
-
+.ms-text-center2{
+	padding-top:60px;
+}
 /*
 ========================================================================
  THEME COLOR
@@ -56,7 +58,7 @@
 .page-resume-bg-color,
 #page-resume .accent-bg,
 #page-resume .accent-bg-hover:hover{
-	background-color:#3498db;
+	background-color: #5da5db;
 	color:#fff;
 }
 
@@ -64,7 +66,7 @@
 #page-resume .accent-color,
 #page-resume .accent-color-hover:hover,
 #main-menu-resume .accent-color{
-	color:#3498db;
+	color:#5da5db;
 }
 
 /*
@@ -79,7 +81,7 @@
 .page-portofolio-bg-color,
 #page-portofolio .accent-bg,
 #page-portofolio .accent-bg-hover:hover{
-	background-color:#F62459;
+	background-color: #f06d72;
 	color:#fff;
 }
 
@@ -87,7 +89,7 @@
 #page-portofolio .accent-color,
 #page-portofolio .accent-color-hover:hover,
 #main-menu-portofolio .accent-color{
-	color:#F62459;
+	color:#f06d72;
 }
 
 
