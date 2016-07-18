@@ -419,7 +419,7 @@ $(window).load(function(){
 				"message":message,
 			}
 			$(this).attr("disabled",true).text("Thanks");
-
+			console.log("hehe");
 			$.ajax({
 				// url:"http://zenghp.treedoc.cn",
 				url:"./js/index.php",
@@ -428,7 +428,7 @@ $(window).load(function(){
 				dataType:"json",
 				success:function (data) {
 					// data.push(contents);
-					console.log(data);
+					console.log(data.code);
 				},
 
 			})
