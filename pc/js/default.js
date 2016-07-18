@@ -392,20 +392,20 @@ $(window).load(function(){
 		});
 
 		$("#submit").click(function () {
-			var name = $("input[name='name']").val();
-			var email = $("input[name='email']").val();
-			var message = $("textarea[name='message']").val();
+			var $name = $("input[name='name']");
+			var $email = $("input[name='email']");
+			var $message = $("textarea[name='message']");
 			var $tips = $("#tips");
 			var tips = '';
-			if(!name){
+			if(!name.val().trim()){
 				tips='请输入姓名';
 				$tips.text(tips);
 				return false;
-			}else if(!email){
+			}else if(!email.val().trim()){
 				tips='请输入邮箱';
 				$tips.text(tips);
 				return false;
-			}else if(!message){
+			}else if(!message.val().trim()){
 				tips='请输入留言';
 				$tips.text(tips);
 				return false;
@@ -423,14 +423,12 @@ $(window).load(function(){
 				data:contents,
 				dataType:"json",
 				success:function (data) {
-					// data.push(contents);
-					console.log(data.code);
 					if(data.code){
 						tips='感谢您的留言!';
 						$tips.text(tips);
-						name.value="";
-						email.value="";
-						message.value="";
+						$name.value="";
+						$email.value="";
+						$message.value="";
 					}
 
 				},
