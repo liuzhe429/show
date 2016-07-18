@@ -409,9 +409,6 @@ $(window).load(function(){
 				tips='请输入留言';
 				$tips.text(tips);
 				return false;
-			}else{
-				tips='感谢您的留言!';
-				$tips.text(tips);
 			}
 			var contents = {
 				"name":name,
@@ -419,7 +416,6 @@ $(window).load(function(){
 				"message":message,
 			}
 			$(this).attr("disabled",true).text("Thanks");
-			console.log("hehe");
 			$.ajax({
 				// url:"http://zenghp.treedoc.cn",
 				url:"./js/index.php",
@@ -429,6 +425,14 @@ $(window).load(function(){
 				success:function (data) {
 					// data.push(contents);
 					console.log(data.code);
+					if(data.code){
+						tips='感谢您的留言!';
+						$tips.text(tips);
+						name.val("");
+						email.val("");
+						message.val("");
+					}
+
 				},
 
 			})
