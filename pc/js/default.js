@@ -421,13 +421,12 @@ $(window).load(function(){
 			$(this).attr("disabled",true).text("Thanks");
 
 			$.ajax({
-				url:"./js/message.json",
+				url:"http://zenghp.treedoc.cn",
 				type:"POST",
 				data:contents,
 				dataType:"json",
 				success:function (data) {
-					// var data = JSON.parse(data);
-					data.push(contents);
+					// data.push(contents);
 					console.log(data);
 				},
 
