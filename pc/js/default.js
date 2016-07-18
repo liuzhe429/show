@@ -428,9 +428,9 @@ $(window).load(function(){
 					if(data.code){
 						tips='感谢您的留言!';
 						$tips.text(tips);
-						name.val("");
-						email.val("");
-						message.val("");
+						name.value="";
+						email.value="";
+						message.value="";
 					}
 
 				},
