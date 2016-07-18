@@ -132,7 +132,7 @@
 }
 
 #pages-container > article > section{
-	padding:7.5vw 20vw;
+	padding:7.5vw 12vw;
 }	
 
 #pages-container > article > section.section-full{
@@ -533,7 +533,7 @@ ul,
 p,
 h6{
 	font-size:1vw;
-	line-height:1.5vw;
+	line-height:2.5vw;
 	word-spacing:0.1vw;
 	letter-spacing:0;
 }	
