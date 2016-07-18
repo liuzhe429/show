@@ -391,4 +391,47 @@ $(window).load(function(){
 			$(this).removeClass("accent-bg");
 		});
 
+		$("#submit").click(function () {
+			var name = $("input[name='name']").val();
+			var email = $("input[name='email']").val();
+			var message = $("textarea[name='message']").val();
+			var $tips = $("#tips");
+			var tips = '';
+			if(!name){
+				tips='请输入姓名';
+				$tips.text(tips);
+				return false;
+			}else if(!email){
+				tips='请输入邮箱';
+				$tips.text(tips);
+				return false;
+			}else if(!message){
+				tips='请输入留言';
+				$tips.text(tips);
+				return false;
+			}else{
+				tips='感谢您的留言!';
+				$tips.text(tips);
+			}
+			var contents = {
+				"name":name,
+				"email":email,
+				"message":message,
+			}
+			$(this).attr("disabled",true).text("Thanks");
+
+			$.ajax({
+				url:"./js/message.json",
+				type:"POST",
+				data:contents,
+				dataType:"json",
+				success:function (data) {
+					// var data = JSON.parse(data);
+					data.push(contents);
+					console.log(data);
+				},
+
+			})
+		})
+
 })
