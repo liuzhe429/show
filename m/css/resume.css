@@ -228,8 +228,8 @@ body {
   z-index: 10;
 }
 .page1.animation > div.p1 {
-  -webkit-animation: bounce 1s 1s 1 ease-in-out forwards;
-  animation: bounce 1s 1s 1 ease-in-out forwards;
+  -webkit-animation: bounce 1s 0.2s 1 ease-in-out forwards;
+  animation: bounce 1s 0.2s 1 ease-in-out forwards;
 }
 .page1 div.p2 {
   left: 0.3rem;
@@ -241,8 +241,8 @@ body {
   transform: translate3d(-1000%, 0, 0);
 }
 .page1.animation > div.p2 {
-  -webkit-animation: slideInLeft 0.5s 1s 1 ease-in-out forwards;
-  animation: slideInLeft 1.5 1s 1 ease-in-out forwards;
+  -webkit-animation: slideInLeft 0.5s 0.2s 1 ease-in-out forwards;
+  animation: slideInLeft 0.5s 0.2s 1 ease-in-out forwards;
 }
 .page1 div.p3 {
   right: 145px;
@@ -254,8 +254,8 @@ body {
   transform: translate3d(0, 1115%, 0);
 }
 .page1.animation > div.p3 {
-  -webkit-animation: slideInDown 0.5s 1s 1 ease-in-out forwards;
-  animation: slideInDown 0.5s 1s 1 ease-in-out forwards;
+  -webkit-animation: slideInDown 0.5s 0.2s 1 ease-in-out forwards;
+  animation: slideInDown 0.5s 0.2s 1 ease-in-out forwards;
 }
 .page1 div.p4 {
   right: 0px;
@@ -267,8 +267,8 @@ body {
   transform: translate3d(1100%, 0, 0);
 }
 .page1.animation > div.p4 {
-  -webkit-animation: slideInRight 0.5s 1s 1 ease-in-out forwards;
-  animation: slideInRight 0.5s 1s 1 ease-in-out forwards;
+  -webkit-animation: slideInRight 0.5s 0.2s 1 ease-in-out forwards;
+  animation: slideInRight 0.5s 0.2s 1 ease-in-out forwards;
 }
 .page1 div.p5 {
   width: 3px;
@@ -288,8 +288,8 @@ body {
   transform: rotateZ(37deg);
 }
 .page1.animation > div.p5 {
-  -webkit-animation: slideInTop 1.5s 1s 2 ease-in-out forwards;
-  animation: slideInTop 1.5s 1s 2 ease-in-out forwards;
+  -webkit-animation: slideInTop 1.5s 0.2s 2 ease-in-out forwards;
+  animation: slideInTop 1.5s 0.2s 2 ease-in-out forwards;
 }
 .page1 div.p6 {
   width: 3px;
@@ -309,8 +309,8 @@ body {
   transform: rotateZ(37deg);
 }
 .page1.animation > div.p6 {
-  -webkit-animation: slideInTop 1.5s 1.5s 2 ease-in-out forwards;
-  animation: slideInTop 1.5s 1.5s 2 ease-in-out forwards;
+  -webkit-animation: slideInTop 1.5s 0.5s 2 ease-in-out forwards;
+  animation: slideInTop 1.5s 0.5s 2 ease-in-out forwards;
 }
 .page1 div.p7 {
   width: 100px;
@@ -326,8 +326,8 @@ body {
   opacity: 0;
 }
 .page1.animation > div.p7 {
-  -webkit-animation: fadeIn 1.5s 1.5s 1 ease-in-out forwards;
-  animation: fadeIn 1.5s 1.5s 1 ease-in-out forwards;
+  -webkit-animation: fadeIn 1.5s 0.2s 1 ease-in-out forwards;
+  animation: fadeIn 1.5s 0.2s 1 ease-in-out forwards;
 }
 .page2 > div span {
   width: auto;
@@ -344,8 +344,8 @@ body {
   z-index: 10;
 }
 .page2.animation > div.p1 {
-  -webkit-animation: slideInTop2 0.5s 0.5s 1 ease-in-out forwards;
-  animation: slideInTop2 0.5s 0.5s 1 ease-in-out forwards;
+  -webkit-animation: slideInTop2 0.5s 0.2s 1 ease-in-out forwards;
+  animation: slideInTop2 0.5s 0.2s 1 ease-in-out forwards;
 }
 .page2 div.p2 {
   right: 0px;
@@ -357,8 +357,8 @@ body {
   transform: translate3d(100%, 0, 0);
 }
 .page2.animation > div.p2 {
-  -webkit-animation: slideInRight 0.5s 0.5s 1 ease-in-out forwards;
-  animation: slideInRight 0.5s 0.5s 1 ease-in-out forwards;
+  -webkit-animation: slideInRight 0.5s 0.2s 1 ease-in-out forwards;
+  animation: slideInRight 0.5s 0.2s 1 ease-in-out forwards;
 }
 .page2 div.p3 {
   right: 60px;
@@ -370,8 +370,8 @@ body {
   transform: scale(0.1);
 }
 .page2.animation > div.p3 {
-  -webkit-animation: rotate360 3s 2s infinite linear forwards;
-  animation: rotate360 3s 2s infinite linear forwards;
+  -webkit-animation: rotate360 3s 1s infinite linear forwards;
+  animation: rotate360 3s 1s infinite linear forwards;
 }
 .page2 div.p4 {
   right: 60px;
@@ -383,8 +383,8 @@ body {
   transform: scale(0.1);
 }
 .page2.animation > div.p4 {
-  -webkit-animation: rotate360 32s 3s infinite linear forwards;
-  animation: rotate360 3s 3s infinite linear forwards;
+  -webkit-animation: rotate360 32s 1.5s infinite linear forwards;
+  animation: rotate360 3s 1.5s infinite linear forwards;
 }
 .page2 div.p4-1 {
   right: 110px;
@@ -475,8 +475,8 @@ body {
   -webkit-transform: rotateZ(-10deg);
 }
 .page2.animation > div.p8 {
-  -webkit-animation: bounceInLeft 1s 1.2s 1 ease-in-out forwards;
-  animation: bounceInLeft 1s 1.2s 1 ease-in-out forwards;
+  -webkit-animation: bounceInLeft 1s 0.5s 1 ease-in-out forwards;
+  animation: bounceInLeft 1s 0.5s 1 ease-in-out forwards;
 }
 .page2 div.p9 {
   width: 130px;
@@ -834,8 +834,9 @@ body {
 .page5 .p1 {
   left: 30%;
   top: 3%;
-  width: 34%;
-  height: 60px;
+  width: 40%;
+  height: 70px;
+  line-height: 70px;
   border-radius: 10px;
   background: #ffd800;
   opacity: 0;
@@ -906,43 +907,43 @@ body {
   opacity: 0;
 }
 .page5 .p2-n-2 {
-  bottom: 23%;
+  bottom: 20%;
 }
 .page5 .p2-n-3 {
-  bottom: 36%;
+  bottom: 30%;
 }
 .page5 .p2-n-4 {
-  bottom: 49%;
+  bottom: 40%;
 }
 .page5 .p2-n-5 {
-  bottom: 62%;
+  bottom: 50%;
 }
 .page5 .p2-n-6 {
-  bottom: 75%;
+  bottom: 60%;
 }
 .page5.animation .p2-n {
   -webkit-animation: fadeIn 1s 1.5s 1 ease-in-out forwards;
   animation: fadeIn 1s 1.5s 1 ease-in-out forwards;
 }
 .page5.animation .p2-n-2 {
-  -webkit-animation-delay: 2s;
-  animation-delay: 2s;
+  -webkit-animation-delay: 1.8s;
+  animation-delay: 1.8s;
 }
 .page5.animation .p2-n-3 {
-  -webkit-animation-delay: 2.5s;
-  animation-delay: 2.5s;
+  -webkit-animation-delay: 2.1s;
+  animation-delay: 2.1s;
 }
 .page5.animation .p2-n-4 {
-  -webkit-animation-delay: 3s;
-  animation-delay: 3s;
+  -webkit-animation-delay: 2.4s;
+  animation-delay: 2.4s;
 }
 .page5.animation .p2-n-5 {
-  -webkit-animation-delay: 3.5s;
-  animation-delay: 3.5s;
+  -webkit-animation-delay: 2.7s;
+  animation-delay: 2.7s;
 }
 .page5.animation .p2-n-6 {
-  -webkit-animation-delay: 4s;
-  animation-delay: 4s;
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
 }
 .page5 .p30 {
   bottom: 16%;
@@ -971,34 +972,46 @@ body {
   bottom: 8%;
 }
 .page5 .p3-3 {
-  bottom: 22%;
+  bottom: 18%;
 }
 .page5 .p3-4 {
-  bottom: 22%;
+  bottom: 18%;
 }
 .page5 .p3-5 {
-  bottom: 34%;
+  bottom: 28%;
 }
 .page5 .p3-6 {
-  bottom: 34%;
+  bottom: 28%;
 }
 .page5 .p3-7 {
-  bottom: 47%;
+  bottom: 38%;
 }
 .page5 .p3-8 {
-  bottom: 47%;
+  bottom: 38%;
 }
 .page5 .p3-9 {
-  bottom: 60%;
+  bottom: 48%;
 }
 .page5 .p3-10 {
-  bottom: 60%;
+  bottom: 48%;
 }
 .page5 .p3-11 {
-  bottom: 73%;
+  bottom: 58%;
 }
 .page5 .p3-12 {
-  bottom: 73%;
+  bottom: 58%;
+}
+.page5 .p3-13 {
+  bottom: 68%;
+}
+.page5 .p3-14 {
+  bottom: 68%;
+}
+.page5 .p3-15 {
+  bottom: 78%;
+}
+.page5 .p3-16 {
+  bottom: 78%;
 }
 .page5.animation .p30 {
   -webkit-animation: bounceInLeft 1s 1.5s 1 ease-in-out forwards;
@@ -1012,49 +1025,61 @@ body {
   -webkit-animation-delay: 1.5s;
   animation-delay: 1.5s;
 }
-.page5.animation .p3-2 {
-  -webkit-animation-delay: 2s;
-  animation-delay: 2s;
-}
 .page5.animation .p3-3 {
-  -webkit-animation-delay: 1.5s;
-  animation-delay: 1.5s;
+  -webkit-animation-delay: 1.8s;
+  animation-delay: 1.8s;
 }
 .page5.animation .p3-4 {
-  -webkit-animation-delay: 2s;
-  animation-delay: 2s;
+  -webkit-animation-delay: 1.8s;
+  animation-delay: 1.8s;
 }
 .page5.animation .p3-5 {
-  -webkit-animation-delay: 2.5s;
-  animation-delay: 2.5s;
+  -webkit-animation-delay: 2.1s;
+  animation-delay: 2.1s;
 }
 .page5.animation .p3-6 {
-  -webkit-animation-delay: 3s;
-  animation-delay: 3s;
+  -webkit-animation-delay: 2.1s;
+  animation-delay: 2.1s;
 }
 .page5.animation .p3-7 {
-  -webkit-animation-delay: 2.5s;
-  animation-delay: 2.5s;
+  -webkit-animation-delay: 2.4s;
+  animation-delay: 2.4s;
 }
 .page5.animation .p3-8 {
+  -webkit-animation-delay: 2.4s;
+  animation-delay: 2.4s;
+}
+.page5.animation .p3-9 {
+  -webkit-animation-delay: 2.7s;
+  animation-delay: 2.7s;
+}
+.page5.animation .p3-10 {
+  -webkit-animation-delay: 2.7s;
+  animation-delay: 2.7s;
+}
+.page5.animation .p3-11 {
   -webkit-animation-delay: 3s;
   animation-delay: 3s;
 }
-.page5.animation .p3-9 {
-  -webkit-animation-delay: 3.5s;
-  animation-delay: 3.5s;
-}
-.page5.animation .p3-10 {
-  -webkit-animation-delay: 3.5s;
-  animation-delay: 3.5s;
-}
-.page5.animation .p3-11 {
-  -webkit-animation-delay: 4s;
-  animation-delay: 4s;
-}
 .page5.animation .p3-12 {
-  -webkit-animation-delay: 4s;
-  animation-delay: 4s;
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+}
+.page5.animation .p3-13 {
+  -webkit-animation-delay: 3.3s;
+  animation-delay: 3.3s;
+}
+.page5.animation .p3-14 {
+  -webkit-animation-delay: 3.3s;
+  animation-delay: 3.3s;
+}
+.page5.animation .p3-15 {
+  -webkit-animation-delay: 3.6s;
+  animation-delay: 3.6s;
+}
+.page5.animation .p3-16 {
+  -webkit-animation-delay: 3.8s;
+  animation-delay: 3.8s;
 }
 .page6.animation div.p1 {
   -webkit-animation: bounceInLeft 0.5s 0.5s 1 ease-in-out forwards;
@@ -2266,7 +2291,7 @@ body {
 }
 @-webkit-keyframes slideInLeft {
   from {
-    -webkit-transform: translate3d(1000px, 0, 0);
+    -webkit-transform: translate3d(-1000px, 0, 0);
     transform: translate3d(-1000px, 0, 0);
     visibility: visible;
   }
