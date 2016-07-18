@@ -395,25 +395,29 @@ $(window).load(function(){
 			var $name = $("input[name='name']");
 			var $email = $("input[name='email']");
 			var $message = $("textarea[name='message']");
+
+			var nameV = $name.val().trim()
+			var emailV = $email.val().trim()
+			var messageV = $message.val().trim()
 			var $tips = $("#tips");
 			var tips = '';
-			if(!name.val().trim()){
+			if(!nameV){
 				tips='请输入姓名';
 				$tips.text(tips);
 				return false;
-			}else if(!email.val().trim()){
+			}else if(!emailV){
 				tips='请输入邮箱';
 				$tips.text(tips);
 				return false;
-			}else if(!message.val().trim()){
+			}else if(!messageV){
 				tips='请输入留言';
 				$tips.text(tips);
 				return false;
 			}
 			var contents = {
-				"name":name,
-				"email":email,
-				"message":message,
+				"name":nameV,
+				"email":emailV,
+				"message":messageV,
 			}
 			$(this).attr("disabled",true).text("Thanks");
 			$.ajax({
@@ -426,9 +430,9 @@ $(window).load(function(){
 					if(data.code){
 						tips='感谢您的留言!';
 						$tips.text(tips);
-						$name.value="";
-						$email.value="";
-						$message.value="";
+						$name.val("");
+						$email.val("");
+						$message.val("");
 					}
 
 				},
