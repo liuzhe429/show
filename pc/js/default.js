@@ -421,7 +421,8 @@ $(window).load(function(){
 			$(this).attr("disabled",true).text("Thanks");
 
 			$.ajax({
-				url:"http://zenghp.treedoc.cn",
+				// url:"http://zenghp.treedoc.cn",
+				url:"./js/index.php",
 				type:"POST",
 				data:contents,
 				dataType:"json",
