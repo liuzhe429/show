@@ -92,7 +92,8 @@ module.exports = {
     proxy: getProxy(),
     https: false,
     hotOnly: false,
-    before: app => {}
+    before: app => {},
+    publicPath: process.env.NODE_ENV !== 'production' ? 'http://liuzhe429.github.io/show/jiekuan-app/dist/' : '/'
   },
 
   pluginOptions: {
