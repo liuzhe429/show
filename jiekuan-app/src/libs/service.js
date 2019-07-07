@@ -15,6 +15,7 @@ const axios = Axios.create({
   }
 });
 axios.defaults.withCredentials = true;
+axios.defaults.baseURL = 'http://loan.com/';
 // 添加请求拦截器
 axios.interceptors.request.use(
   function (config) {

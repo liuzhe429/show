@@ -23,10 +23,9 @@ function getProxy() {
 // webpack输出
 module.exports = {
   baseUrl: process.env.baseUrl,
-
   // 将构建好的文件输出到哪里
   outputDir: process.env.outputDir,
-
+  publicPath: process.env.NODE_ENV === 'production' ? 'http://liuzhe429.github.io/show/jiekuan-app/dist/' : '/',
   productionSourceMap: true,
   lintOnSave: true,
 
@@ -92,8 +91,7 @@ module.exports = {
     proxy: getProxy(),
     https: false,
     hotOnly: false,
-    before: app => {},
-    publicPath: process.env.NODE_ENV !== 'production' ? 'http://liuzhe429.github.io/show/jiekuan-app/dist/' : '/'
+    before: app => {}
   },
 
   pluginOptions: {
