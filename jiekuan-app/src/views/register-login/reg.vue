@@ -62,7 +62,7 @@ export default {
       this.toast = this.$createToast({
         txt: msg,
         type: type || 'txt',
-        time: 2000,
+        time: time || 2000,
       })
       this.toast.show()
     },
@@ -88,7 +88,7 @@ export default {
     },
     handleGetMsg(mobile) {
       if (this.verifyMsg(mobile, true)) {
-        this.$service.post('/api/getVerifyCode', {
+        this.$service.post('/getVerifyCode', {
           token: Cookies.get('ip_token'),
           mobile: this.mobile,
         }, true).then(res => {
@@ -104,8 +104,7 @@ export default {
               time: 2000
             });
           }
-        }).catch(err => {
-          console.log(err);
+        }).catch(() => {
         });
       }
     },

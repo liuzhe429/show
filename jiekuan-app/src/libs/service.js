@@ -4,6 +4,9 @@ const axios = Axios.create({
   baseURL: '/',
   responseType: 'json',
   withCredentials: true,
+  // proxy: {
+  //   host: 'http://loan.com/'
+  // },
   transformRequest: [
     function (data) {
       data = Qs.stringify(data);
@@ -14,8 +17,10 @@ const axios = Axios.create({
     'Content-Type': 'application/x-www-form-urlencoded'
   }
 });
+if (process.env.NODE_ENV === 'production') {
+  axios.defaults.baseURL = 'http://loan.com/';
+}
 axios.defaults.withCredentials = true;
-axios.defaults.baseURL = 'http://loan.com/';
 // 添加请求拦截器
 axios.interceptors.request.use(
   function (config) {
@@ -54,7 +59,11 @@ function returnApi(api) {
   if (!api || typeof api !== 'string') {
     return _api;
   }
-  _api = api;
+  if (process.env.NODE_ENV === 'production') {
+    _api = api;
+  } else {
+    _api = '/api'+ api;
+  }
   return _api;
 }
 /**

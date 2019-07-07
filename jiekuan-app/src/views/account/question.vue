@@ -11,7 +11,7 @@
 <script>
 export default {
   created() {
-    // this.$service.post('/api/queryCardList', {
+    // this.$service.post('/queryCardList', {
     //   token: this.$Cookies.get('token')
     // }).then(res => {
     // }).catch(() => {

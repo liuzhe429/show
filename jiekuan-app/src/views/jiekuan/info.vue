@@ -126,7 +126,7 @@ export default {
       this.carLoan = '无';
       this.housingLoan = '无';
       this.$router.push('/shenhe');
-      // this.$service.post(`/api/loanApply`, {
+      // this.$service.post(`/loanApply`, {
       //   amount: this.amount,
       //   periods: this.periods,
       //   loanName: this.loanName,

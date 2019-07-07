@@ -92,7 +92,7 @@ export default {
     handleGetMsg(mobile) {
       if (!this.verifyMsg(mobile, true)) return;
       if (this.sendSmsBtnDisabled === true && this.time > 0) return;
-      this.$service.post('/api/getVerifyCode', {
+      this.$service.post('/getVerifyCode', {
         token: Cookies.get('ip_token'),
         mobile: this.mobile,
       }, true).then(res => {

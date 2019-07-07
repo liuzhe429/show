@@ -11,7 +11,7 @@ export default {
   name: 'app',
   beforeCreate(){
     if (!Cookies.get('ip_token')) {
-      this.$service.post('/api/getIpToken').then(res => {
+      this.$service.post('/getIpToken').then(res => {
         Cookies.set('ip_token', res.ip_token);
       }).catch(() => {
         // console.log(err);
