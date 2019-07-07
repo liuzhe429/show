@@ -2,11 +2,11 @@
   <div class="p_account_page">
     <div class="top">
       <div class="left">
-        <p class="phone">187****79797</p>
-        <p class="username">王先生</p>
+        <p class="phone">{{secrecyMobile(userInfo.mobile)}}</p>
+        <p class="username">{{userInfo.name}}</p>
       </div>
       <div class="right">
-        <i class="cubeic-notification"></i>
+        <img src="@/assets/notifications-none.png" alt="" style="width:30px;">
       </div>
     </div>
     <div class="account_item">
@@ -14,19 +14,19 @@
         <img src="@/assets/bankcard.png" alt="" slot="icon" style="width:24px;margin:0px 15px 0px 5px;">
       </mt-cell>
       <p class="line"><i></i></p>
-      <mt-cell title="我的额度" is-link icon="back">
+      <mt-cell title="我的额度" is-link icon="back" to="/shenhe">
         <img src="@/assets/bankcard.png" alt="" slot="icon" style="width:24px;margin:0px 15px 0px 5px;">
       </mt-cell>
-      <p class="line"><i></i></p>
+      <!-- <p class="line"><i></i></p>
       <mt-cell title="帮助中心" is-link icon="back">
         <img src="@/assets/bankcard.png" alt="" slot="icon" style="width:24px;margin:0px 15px 0px 5px;">
-      </mt-cell>
+      </mt-cell> -->
       <i class="blank"></i>
       <mt-cell title="常见问题" is-link icon="back" to="/question">
         <img src="@/assets/bankcard.png" alt="" slot="icon" style="width:24px;margin:0px 15px 0px 5px;">
       </mt-cell>
       <p class="line"><i></i></p>
-      <mt-cell title="在线客服" is-link icon="back">
+      <mt-cell title="在线客服" is-link icon="back" to="tel:13764567708">
         <img src="@/assets/bankcard.png" alt="" slot="icon" style="width:24px;margin:0px 15px 0px 5px;">
       </mt-cell>
       <p class="line"><i></i></p>
@@ -40,9 +40,38 @@
 </template>
 <script>
 import Tabbar from '@/components/tabbar';
+import { secrecyMobile } from '@/libs/utils'
 export default {
   components: {
     Tabbar
+  },
+  data(){
+    return {
+      userInfo: {
+        mobile: '',
+        name: ''
+      }
+    }
+  },
+  created() {
+    this.getUserInfo();
+  },
+  methods: {
+    // 手机号脱敏
+    secrecyMobile(val){
+      return secrecyMobile(val);
+    },
+    // // 获取用户信息
+    getUserInfo() {
+      this.$service.post('/getUserInfo',{
+        token: this.$Cookies.get('token')
+      }).then(res => {
+        if (res.userInfo) {
+          this.userInfo = res.userInfo;
+        }
+        console.log(res);
+      });
+    }
   }
 }
 </script>
@@ -70,9 +99,11 @@ export default {
         font-size: 18px;
         height: 50px;
         line-height: 50px;
+        font-weight: bold;
       }
       .username{
-        font-size: 14px;
+        font-size: 18px;
+        font-weight: bold;
       }
     }
     .right{
@@ -90,7 +121,7 @@ export default {
       width: 100%;
       background: #fff;
       i {
-        background: #d9d9d9;
+        background: #eee;
         height: 1px;
         display: block;
         margin-left: 54px;

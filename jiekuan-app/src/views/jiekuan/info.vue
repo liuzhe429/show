@@ -54,14 +54,16 @@
     <!-- <mt-field label="有无房贷" placeholder="请输入有无房贷" v-model="housingLoan" disableClear></mt-field> -->
     <mt-field label="信用卡额度" placeholder="请输入信用卡额度" v-model="creditLimit" disableClear></mt-field>
     <div class="post_btn">
-      <cube-button class="btn" @click="handlePost">提交资料</cube-button>
+      <cube-button class="btn" @click="canClick ? handlePost() : ''">提交资料</cube-button>
     </div>
   </div>
 </template>
 <script>
+import { showToastOnly } from '@/libs/utils';
 export default {
   data(){
     return {
+      canClick: true,
       sexOptions: [{
         value: 'man',
         text: '男'
@@ -113,6 +115,7 @@ export default {
       // changeHouseOption(value, index, text) 
     },
     handlePost(){
+      this.canClick = false;
       this.amount = 1000;
       this.periods = 3;
       this.loanName = 'hahha';
@@ -126,22 +129,30 @@ export default {
       this.carLoan = '无';
       this.housingLoan = '无';
       this.$router.push('/shenhe');
-      // this.$service.post(`/loanApply`, {
-      //   amount: this.amount,
-      //   periods: this.periods,
-      //   loanName: this.loanName,
-      //   sex: this.sex,
-      //   idcard: this.idcard,
-      //   loanType: this.type,
-      //   birth: this.birth,
-      //   contact: this.contact,
-      //   income: this.income,
-      //   creditLimit: this.creditLimit,
-      //   carLoan: this.carLoan,
-      //   housingLoan: this.housingLoan
-      // }).then(res => {
-      //   console.log(res);
-      // });
+      this.$service.post(`/loanApply`, {
+        amount: this.amount,
+        periods: this.periods,
+        loanName: this.loanName,
+        sex: this.sex,
+        idcard: this.idcard,
+        loanType: this.type,
+        birth: this.birth,
+        contact: this.contact,
+        income: this.income,
+        creditLimit: this.creditLimit,
+        carLoan: this.carLoan,
+        housingLoan: this.housingLoan
+      }).then(res => {
+        if (res.code !== 0) {
+          this.canClick = true;
+          showToastOnly({
+            that: this,
+            msg: res.msg,
+            time: 2000
+          });
+        }
+        // console.log(res);
+      });
     }
   }
 }

@@ -33,7 +33,10 @@ module.exports = {
     loaderOptions: {
       postcss: {
         plugins: [
-          require('postcss-px2rem')({ remUnit: 100 }) // 换算的基数
+          require('postcss-px2rem')({ remUnit: 100 }), // 换算的基数
+          require('autoprefixer')({
+            browsers: ['last 10 versions']
+          })
         ]
       },
       stylus: {

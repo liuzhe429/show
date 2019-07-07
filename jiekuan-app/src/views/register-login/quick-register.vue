@@ -13,7 +13,7 @@
     <main class="p_quick_register_page_content">
       <cube-input
         class="input_cell"
-        v-model="phone"
+        v-model="mobile"
         placeholder="请输入您的手机号">
       </cube-input>
       <cube-button class="msg_btn" @click="handleGetMsg">获取验证码</cube-button>
@@ -21,16 +21,34 @@
   </div>
 </template>
 <script>
-
+import {showToastOnly} from '@/libs/utils';
 export default {
   data() {
     return {
-      phone: ''
+      type: this.$route.query.type || '',
+      mobile: ''
     }
   },
   methods: {
     handleGetMsg() {
-      this.$router.push('/verifiy');
+      let phonereg = /^1([358][0-9]|4[579]|66|7[0135678]|9[89])[0-9]{8}$/;
+      if (this.mobile === '') {
+        showToastOnly({
+          that: this,
+          msg: '手机号不能为空哦',
+          time: 2000
+        });
+        return false;
+      } else if (!phonereg.test(this.mobile)) {
+        showToastOnly({
+          that: this,
+          msg: '请输入正确的手机号',
+          time: 2000
+        });
+        return false;
+      } else {
+        this.$router.push(`/verifiy?type=${this.type}&mobile=${this.mobile}`);
+      }
     }
   }
 }
@@ -49,8 +67,8 @@ export default {
     padding: 0 10px;
   }
   .step_line{
-    height: 30px;
-    line-height: 30px;
+    height: 45px;
+    line-height: 45px;
     background: #fff;
     margin-bottom: 10px;
     color: #101010;
@@ -58,17 +76,20 @@ export default {
       color:#F76968;
     }
   }
-  .input_cell {
-    border: none;
-    margin-bottom: 10px;
-  }
-  /deep/ .mint-cell-wrapper{
-    background-image: none;
-  }
-  .msg_btn{
-    background: #F76968;
-    font-size: 16px;
-  }
+  .p_quick_register_page_content{
+    padding: 0 20px;
+    .input_cell {
+      border: none;
+      margin-bottom: 10px;
+    }
+    /deep/ .mint-cell-wrapper{
+      background-image: none;
+    }
+    .msg_btn{
+      background: #F76968;
+      font-size: 16px;
+    }
+  } 
 }
 </style>
 

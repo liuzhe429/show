@@ -49,7 +49,9 @@
   },
   "postcss": {
     "plugins": {
-      "autoprefixer": {},
+      "autoprefixer": {
+        "browsers": ["last 10 versions"]
+      },
       "postcss-px-to-viewport": {
         "viewportWidth": 375,
         "viewportHeight": 667,
@@ -62,11 +64,7 @@
     }
   },
   "browserslist": [
-    "> 1%",
-    "last 10 versions",
-    "not ie <= 11",
-    "Android >= 4.0",
-    "iOS >= 8"
+    "last 10 versions"
   ],
   "transformModules": {
     "cube-ui": {

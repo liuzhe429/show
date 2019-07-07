@@ -21,6 +21,7 @@
 </template>
 <script>
 import Cookies from 'js-cookie';
+import {showToastOnly} from '@/libs/utils';
 export default {
   data() {
     return {
@@ -75,13 +76,15 @@ export default {
     verifyMsg(mobile, needToast){
       let phonereg = /^1([358][0-9]|4[579]|66|7[0135678]|9[89])[0-9]{8}$/;
       if (this.phoneNum === '') {
-        needToast && this.showToastTxtOnly({
+        needToast && showToastOnly({
+          that: this,
           msg: '手机号不能为空哦',
           time: 2000
         });
         return false;
       } else if (!phonereg.test(mobile)) {
-        needToast && this.showToastTxtOnly({
+        needToast && showToastOnly({
+          that: this,
           msg: '请输入正确的手机号',
           time: 2000
         });
@@ -99,12 +102,14 @@ export default {
         if (res.code === 0) {
           this.time = 60;
           this.countDown();
-          this.showToastTxtOnly({
+          showToastOnly({
+            that: this,
             msg: '发送成功',
             time: 1000
           });
         } else {
-          this.showToastTxtOnly({
+          showToastOnly({
+            that: this,
             msg: res.msg,
             time: 2000
           });
@@ -120,13 +125,15 @@ export default {
       let flag = this.verifyMsg(this.mobile, true);
       if (flag) {
         if (type === 'reg' && !/^\d{6}$/.test(this.msg)) {
-          this.showToastTxtOnly({
+          showToastOnly({
+            that: this,
             msg: '请输入正确的验证码',
             time: 1000
           });
           return false;
         } else if (this.password === '') {
-          this.showToastTxtOnly({
+          showToastOnly({
+            that: this,
             msg: '请输入密码',
             time: 2000
           });
@@ -151,7 +158,8 @@ export default {
               type === 'login' ? this.canLoginClick = true : this.canClick = true;
             } else {
               type === 'login' &&  Cookies.set('token', res.data.token);
-              type === 'reg' && this.showToastTxtOnly({
+              type === 'reg' && showToastOnly({
+                that: this,
                 msg: '注册成功',
                 time: 2000
               });

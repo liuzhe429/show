@@ -23,7 +23,7 @@
 export default {
   methods: {
     handleVerify() {
-      this.$router.push('/quick-register');
+      this.$router.push('/quick-register?type=forget');
     }
   }
 }

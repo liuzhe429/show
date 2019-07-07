@@ -1,10 +1,14 @@
 <template>
   <div class="p_apply_page">
-    <mt-header fixed title="借款">
+    <mt-header fixed title="审核结果">
       <mt-button @click="$router.go(-1)" slot="left">
         <img src="@/assets/back.png" alt="" style="width:20px;height:20px;"/>
       </mt-button>
     </mt-header>
+    <div class="content">
+      <img src="@/assets/shenhe.png" alt="" style="width:150px;"/>
+      <p class="title_tips_red">抱歉根据系统综合评定，您暂未通过本次借款申请，请补充资料后，再次提交。谢谢</p>
+    </div>
     <div class="content">
       <img src="@/assets/jieqian.png" alt="" style="width:150px;"/>
       <p class="title">初始审核通过，审批金额：</p>
@@ -14,7 +18,6 @@
     <div class="apply_btn">
       <cube-button class="btn" @click="handleApply">我要借钱</cube-button>
     </div>
-    
   </div>
 </template>
 <script>
@@ -55,6 +58,17 @@ export default {
     .title_tips{
       margin: 20px 0 10px;
       color: #9C9C9C;
+    }
+    .title_tips_red{
+      color: #F56968;
+      left: 31px;
+      height: 94px;
+      line-height: 20px;
+      color: rgba(245, 105, 104, 1);
+      font-size: 16px;
+      text-align: left;
+      width: 280px;
+      margin:57px auto;
     }
     .input_msg{
       max-width: 215px;

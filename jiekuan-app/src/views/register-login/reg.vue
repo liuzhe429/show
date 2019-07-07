@@ -19,6 +19,7 @@
 </template>
 <script>
 import Cookies from 'js-cookie';
+import {showToastOnly} from '@/libs/utils';
 export default {
   data() {
     return {
@@ -72,13 +73,15 @@ export default {
     verifyMsg(mobile, needToast){
       let phonereg = /^1([358][0-9]|4[579]|66|7[0135678]|9[89])[0-9]{8}$/;
       if (this.phoneNum === '') {
-        needToast && this.showToastTxtOnly({
+        needToast && showToastOnly({
+          that: this,
           msg: '手机号不能为空哦',
           time: 2000
         });
         return false;
       } else if (!phonereg.test(mobile)) {
-        needToast && this.showToastTxtOnly({
+        needToast && showToastOnly({
+          that: this,
           msg: '请输入正确的手机号',
           time: 2000
         });
@@ -94,12 +97,14 @@ export default {
         }, true).then(res => {
           if (res.code === 0) {
             this.countDown();
-            this.showToastTxtOnly({
+            showToastOnly({
+              that: this,
               msg: '发送成功',
               time: 1000
             });
           } else {
-            this.showToastTxtOnly({
+            showToastOnly({
+              that: this,
               msg: res.msg,
               time: 2000
             });

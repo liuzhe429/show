@@ -9,7 +9,7 @@
     <cube-input
       class="input_cell"
       v-model="mobile"
-      placeholder="用户名/邮箱/手机号">
+      placeholder="手机号">
     </cube-input>
     <cube-input
       type="password"
@@ -30,7 +30,7 @@
   </div>
 </template>
 <script>
-import {login} from '@/libs/utils';
+import {login, showToastOnly} from '@/libs/utils';
 export default {
   data() {
     return {
@@ -46,27 +46,30 @@ export default {
     handleClose() {
       this.$router.push('/');
     },
-    showToastTxtOnly(obj) {
-      let {msg, time = 2000, type = 'txt'} = obj;
-      this.toast = this.$createToast({
-        txt: msg,
-        type: type,
-        time: time,
-      })
-      this.toast.show()
-    },
     handleLogin() {
+      let phonereg = /^1([358][0-9]|4[579]|66|7[0135678]|9[89])[0-9]{8}$/;
       if (this.mobile === '') {
-        this.showToastTxtOnly({
+        showToastOnly({
+          that: this,
           msg: '手机号不能为空哦',
           time: 2000
         });
+        return false;
+      } else if (!phonereg.test(this.mobile)) {
+        showToastOnly({
+          that: this,
+          msg: '请输入正确的手机号',
+          time: 2000
+        });
+        return false;
       } else if (this.password === '') {
-        this.showToastTxtOnly({
+        showToastOnly({
+          that: this,
           msg: '密码不能为空哦',
           time: 2000
         });
-      } else {
+        return false;
+      } else if (this.canClick){
         this.canClick = false;
         login({
           that: this,
@@ -74,14 +77,17 @@ export default {
           password: this.password
         }).then(res => {
           if (res.code !== 0){
-            this.canClick = true;
-            this.showToastTxtOnly({
+            setTimeout(() => {
+              this.canClick = true;
+            }, 1000);
+            showToastOnly({
+              that: this,
               msg: res.msg,
               time: 2000
             });
             return;
           }
-          this.$router.go(-1);
+          this.$router.replace('/');
         });
       }
     }
@@ -96,8 +102,9 @@ export default {
   right: 0;
   top: 0;
   bottom: 0;
-  padding:45px 10px 10px;
+  padding:45px 20px 10px;
   overflow-x: hidden;
+  background: #fff;
   .login_title{
     font-size: 28px;
     text-align: left;

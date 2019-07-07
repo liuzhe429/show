@@ -10,28 +10,42 @@
       <span class="active">2.输入验证码</span>
       <span> > 3.设置密码</span>       
     </p>
-    <p class="sent_tips"> 验证短信已发送到177****0000 </p>
+    <p class="sent_tips">验证短信已发送到{{mobile}}</p>
     <main class="p_verify_page_content">
       <cube-input
         class="input_cell"
-        v-model="username"
+        v-model="verifyCode"
         placeholder="请输入短信中的验证码">
       </cube-input>
-      <cube-button class="msg_btn" @click="handlePost">提交验证码</cube-button>
+      <cube-button class="msg_btn" @click="canClick ? handlePost() : ''">提交验证码</cube-button>
     </main>
   </div>
 </template>
 <script>
-
+import {showToastOnly} from '@/libs/utils';
 export default {
   data() {
     return {
-      username: '',
+      verifyCode: '',
+      mobile: this.$route.query.mobile,
+      type: this.$route.query.type,
+      canClick: true
     }
   },
   methods: {
     handlePost() {
-      this.$router.push('/setpassword');
+      this.canClick = false;
+      if (!/^\d{6}$/.test(this.verifyCode)) {
+        showToastOnly({
+          that: this,
+          msg: '请输入正确的验证码',
+          time: 2000
+        });
+        this.canClick = true;
+        return false;
+      } else {
+        this.$router.push(`/setpassword?type=${this.type}&mobile=${this.mobile}&verifyCode=${this.verifyCode}`);
+      }
     }
   }
 }
@@ -50,8 +64,8 @@ export default {
     padding: 0 10px;
   }
   .step_line{
-    height: 30px;
-    line-height: 30px;
+    height: 45px;
+    line-height: 45px;
     background: #fff;
     margin-bottom: 10px;
     color: #101010;

@@ -6,11 +6,12 @@ const Login = resolve => require(['@views/register-login/login'], resolve);
 const Register = resolve => require(['@views/register-login/reg'], resolve);
 const QuickRegister = resolve => require(['@views/register-login/quick-register'], resolve);
 const Verifiy = resolve => require(['@views/register-login/verifiy'], resolve);
-const SetPassword= resolve => require(['@views/register-login/setPassword'], resolve);
+const SetPassword= resolve => require(['@views/register-login/set-password'], resolve);
 const ForgetPassword = resolve => require(['@views/register-login/forget'], resolve);
 const Account = resolve => require(['@views/account'], resolve);
 const Setup = resolve => require(['@views/account/setup'], resolve);
 const BankCard = resolve => require(['@views/account/bankcard'], resolve);
+const AddBankCard = resolve => require(['@views/account/add-bankcard'], resolve);
 const Question = resolve => require(['@views/account/question'], resolve);
 const Info = resolve => require(['@views/jiekuan/info'], resolve);
 const Shenhe = resolve => require(['@views/jiekuan/shenhe'], resolve);
@@ -93,6 +94,11 @@ const routes = [
     path: '/bankcard',
     name: '我的银行卡',
     component: BankCard,
+  },
+  {
+    path: '/add-bankcard',
+    name: '添加银行卡',
+    component: AddBankCard,
   },
   {
     path: '/setup',
