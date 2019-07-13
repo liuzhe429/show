@@ -1,6 +1,6 @@
 <template>
   <div class="p_quick_register_page">
-    <mt-header fixed title="注册">
+    <mt-header fixed :title="type === 'forget' ? '忘记密码' : '注册'">
       <mt-button @click="$router.go(-1)" slot="left">
         <img src="@/assets/back.png" alt="" style="width:20px;height:20px;"/>
       </mt-button>
@@ -47,7 +47,27 @@ export default {
         });
         return false;
       } else {
-        this.$router.push(`/verifiy?type=${this.type}&mobile=${this.mobile}`);
+        this.$service.post('/getVerifyCode', {
+          token: this.$Cookies.get('ip_token'),
+          mobile: this.mobile,
+          type: this.type ? 2 : 1
+        }, true).then(res => {
+          if (res.code === 0) {
+            showToastOnly({
+              that: this,
+              msg: '发送成功',
+              time: 1000
+            });
+            this.$router.push(`/verifiy?type=${this.type}&mobile=${this.mobile}`);
+          } else {
+            showToastOnly({
+              that: this,
+              msg: res.msg,
+              time: 2000
+            });
+          }
+        }).catch(() => {
+        });
       }
     }
   }

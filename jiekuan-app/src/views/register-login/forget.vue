@@ -1,6 +1,6 @@
 <template>
   <div class="p_register_page">
-    <mt-header fixed title="找回密码">
+    <mt-header fixed :title="type === 'forget' ? '忘记密码' : '找回密码'">
       <mt-button @click="$router.go(-1)" slot="left">
         <img src="@/assets/back.png" alt="" style="width:20px;height:20px;"/>
       </mt-button>
@@ -21,8 +21,14 @@
 <script>
 
 export default {
+  data() {
+    return {
+      type: this.$route.query.type
+    }
+  },
   methods: {
     handleVerify() {
+      // forgetPassword
       this.$router.push('/quick-register?type=forget');
     }
   }
@@ -42,8 +48,8 @@ export default {
     padding: 0 10px;
   }
   .step_line{
-    height: 30px;
-    line-height: 30px;
+    height: 45px;
+    line-height: 45px;
     background: #fff;
     margin-bottom: 10px;
     color: #101010;

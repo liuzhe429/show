@@ -23,7 +23,7 @@
       <router-link to="/quick-register">
         手机快速注册
       </router-link>
-      <router-link to="/forget">
+      <router-link to="/forget?type=forget">
         忘记密码
       </router-link>
     </p>
@@ -105,6 +105,7 @@ export default {
   padding:45px 20px 10px;
   overflow-x: hidden;
   background: #fff;
+  user-select: none;
   .login_title{
     font-size: 28px;
     text-align: left;

@@ -65,15 +65,15 @@ export default {
     return {
       canClick: true,
       sexOptions: [{
-        value: 'man',
+        value: '1',
         text: '男'
       },{
-        value: 'woman',
+        value: '2',
         text: '女'
       }],
       sexTitle: '性别',
       loanOptions: [{
-        value: 0,
+        value: 2,
         text: '无'
       }, {
         value: 1,
@@ -87,15 +87,15 @@ export default {
       periods: this.$route.query.periods,
       loanName: '',
       // sex: this.sex,
-      sex: 'man',
+      sex: '1',
       idcard: '',
       loanType: this.$route.query.type,
       birth: '1990-01-01',
       contact: '',
       income: '',
       creditLimit: '',
-      carLoan: 0,
-      housingLoan: 0
+      carLoan: 2,
+      housingLoan: 2
     }
   },
   methods: {
@@ -112,37 +112,31 @@ export default {
     changeHouseOption(value) {
       this.housingLoan = value;
       // console.log(value, index, text);
-      // changeHouseOption(value, index, text) 
+      // changeHouseOption(value, index, text)
     },
     handlePost(){
       this.canClick = false;
-      this.amount = 1000;
-      this.periods = 3;
-      this.loanName = 'hahha';
-      this.sex = '男';
       this.idcard = '13053319980425489';
-      this.loanType = '2';
       this.birth = '1996-01-02';
       this.contact = '15201800977';
       this.income = 10000;
       this.creditLimit = 10000;
-      this.carLoan = '无';
-      this.housingLoan = '无';
-      this.$router.push('/shenhe');
+      
       this.$service.post(`/loanApply`, {
         amount: this.amount,
         periods: this.periods,
         loanName: this.loanName,
         sex: this.sex,
         idcard: this.idcard,
-        loanType: this.type,
+        loanType: this.loanType,
         birth: this.birth,
         contact: this.contact,
         income: this.income,
         creditLimit: this.creditLimit,
         carLoan: this.carLoan,
-        housingLoan: this.housingLoan
-      }).then(res => {
+        housingLoan: this.housingLoan,
+        token: this.$Cookies.get('token')
+      }, true).then(res => {
         if (res.code !== 0) {
           this.canClick = true;
           showToastOnly({
@@ -150,8 +144,9 @@ export default {
             msg: res.msg,
             time: 2000
           });
+        } else {
+          this.$router.push('/shenhe-wait');
         }
-        // console.log(res);
       });
     }
   }
@@ -168,7 +163,7 @@ export default {
   right: 0;
   top: 0;
   bottom: 0;
-  padding:75px 0px 10px;
+  padding:45px 0px 10px;
   background: #fff;
   /deep/ .mint-field{
     border-bottom: 1px solid #eee;

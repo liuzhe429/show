@@ -50,6 +50,14 @@ export default {
         });
         this.canClick = true;
         return false;
+      } else if (!/^(?![0-9]+$)(?![a-z]+$)(?![A-Z]+$)^.{8,32}$/.test(this.password)) {
+        showToastOnly({
+          that: this,
+          msg: '密码格式错误',
+          time: 2000
+        });
+        this.canClick = true;
+        return false;
       } else if (this.surePassword === '') {
         showToastOnly({
           that: this,
@@ -67,7 +75,9 @@ export default {
         this.canClick = true;
         return false;
       } else {
-        this.$service.post('/regist', {
+        
+        this.$service.post(this.type === 'forget' ? '/forgetPassword' : '/regist', {
+          name:'arlene',
           mobile: this.mobile,
           verifyCode: this.verifyCode,
           password: this.password
