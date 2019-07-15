@@ -100,6 +100,7 @@
           <template slot-scope="scope">
             <el-button size="mini" type="primary" @click="shenheApply(scope.row, 1)">通过</el-button><i style="margin:0 2px;"/>
             <el-button size="mini" type="danger" @click="shenheApply(scope.row, 2)">拒绝</el-button><i style="margin:0 2px;"/>
+            <el-button size="mini" type="success" @click="add(scope.row)" v-if="scope.row.repay_status === 1">查看</el-button>
             <el-button size="mini" type="success" @click="add(scope.row)" v-if="scope.row.repay_status !== 1">还款</el-button>
           </template>
         </el-table-column>
@@ -162,34 +163,38 @@ export default {
   },
   methods: {
     add(row) {
-      this.$router.push(`/admin/home/huankuan?userId=${row.user_id}&orderId=${row.order_id}&period=${row.periods}`);
+      let type;
+      if (row.repay_status === 1){
+        type = 'chakan';
+      }
+      this.$router.push(`/admin/home/huankuan?userId=${row.user_id}&orderId=${row.order_id}&period=${row.periods}&type=${type}`);
     },
     confirmDeny() {
-      // this.$service.get('/admin/order/audit', {
-      //   orderId: this.formData.order_id,
-      //   auditStatus: this.type,
-      //   auditMoney: this.auditMoney,
-      //   adminToken: this.$Cookies.get('adminToken')
-      // }, true).then(res => {
-      //   if (res.code === 0) {
-      //     showToastOnly({
-      //       that: this,
-      //       msg: '审批成功',
-      //       time: 2000
-      //     });
-      //     this.getData();
-      //   } else {
-      //     showToastOnly({
-      //       that: this,
-      //       msg: res.msg,
-      //       time: 2000
-      //     });
-      //   }
-      //   this.dialogVisible = false;
-      //   this.auditMoney = '';
-      //   this.type = '';
-      // }).catch(() => {
-      // });
+      this.$service.get('/admin/order/audit', {
+        orderId: this.formData.order_id,
+        auditStatus: 2,
+        auditMoney: 0,
+        adminToken: this.$Cookies.get('adminToken')
+      }, true).then(res => {
+        if (res.code === 0) {
+          showToastOnly({
+            that: this,
+            msg: '拒绝成功',
+            time: 2000
+          });
+          this.getData();
+        } else {
+          showToastOnly({
+            that: this,
+            msg: res.msg,
+            time: 2000
+          });
+        }
+        this.denyVisible = false;
+        this.auditMoney = '';
+        this.type = '';
+      }).catch(() => {
+      });
     },
     handleClose(){
       this.dialogVisible = false;
