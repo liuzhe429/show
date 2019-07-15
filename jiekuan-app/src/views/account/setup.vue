@@ -6,21 +6,43 @@
       </mt-button>
     </mt-header>
     <div class="p_setup_page_content">
-      <mt-cell title="修改登录密码" is-link to="/forget"></mt-cell>
+      <mt-cell title="修改登录密码" is-link to="/forget?type=edit"></mt-cell>
       <p class="line"><i></i></p>
-      <mt-cell title="身份证" is-link to="/bankcard"></mt-cell>
+      <mt-cell title="身份证" is-link to="/add-id"></mt-cell>
     </div>
     <cube-button outline class="quit_btn" @click="handleQuit">安全退出</cube-button>
   </div>
 </template>
 <script>
+import { showToastOnly } from '@/libs/utils';
 export default {
   methods: {
     handleBack() {
       this.$router.go(-1);
     },
     handleQuit() {
-      alert('退出接口还没有哦');
+      // logout
+      this.$service.post('/logout', {
+        token: this.$Cookies.get('token')
+      }, true).then(res => {
+        if(res.code === 0) {
+          showToastOnly({
+            that: this,
+            msg: '退出成功',
+            time: 2000
+          });
+          setTimeout(() => {
+            this.$router.push('/login');
+          }, 1000);
+        } else{
+          showToastOnly({
+            that: this,
+            msg: res.msg,
+            time: 2000
+          });
+          this.canClick = true;
+        }
+      });
     }
   }
 }
@@ -38,7 +60,6 @@ export default {
   background: #F5F5F5;
   .p_setup_page_content{
      margin-bottom: 30px;
-     margin-top: 20px;
     /deep/ .mint-cell-title {
       text-align: left;
     }
@@ -64,6 +85,8 @@ export default {
   .quit_btn{
     color: #9c9c9c;
     background: #fff;
+    position: fixed;
+    bottom: 0;
   }
   .quit_btn.cube-btn-outline::after{
     border: none;

@@ -2,7 +2,7 @@
   <div class="p_jiekuan_page">
     <mt-header fixed title="借款方案" class="header"></mt-header>
     <ul class="jiekuan_type_list">
-      <li class="item" @click="goJieKuan('identity')">
+      <li class="item" @click="goJieKuan(1)">
         <div class="left">
           <p>身份证借款:</p>
           <p class="amount">3000-20000</p>
@@ -12,7 +12,7 @@
           <span>立即借款</span>
         </div>
       </li>
-      <li class="item" @click="goJieKuan('creditCard')">
+      <li class="item" @click="goJieKuan(1)">
         <div class="left">
           <p >信用卡借款:</p>
           <p class="amount">3000-20000</p>
@@ -22,7 +22,7 @@
           <span>立即借款</span>
         </div>
       </li>
-      <li class="item" @click="goJieKuan('cream')">
+      <li class="item" @click="goJieKuan(3)">
         <div class="left">
           <p >精英借款:</p>
           <p class="amount">3000-20000</p>

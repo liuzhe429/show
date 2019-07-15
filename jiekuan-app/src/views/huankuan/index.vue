@@ -1,7 +1,29 @@
 <template>
   <div class="p_huankuan_page">
     <mt-header fixed title="还款列表" class="header"></mt-header>
-    <div class="no_list">
+    <ul v-if="repayList.length > 0" class="repay_list">
+      <li v-for="(item, index) in repayList" :key="index" class="per_item">
+        <div v-if="item.repayPlan.length>0">
+          <p class="order_title">订单： {{item.orderId}}</p>
+          <div class="item_total">
+            <div class="item" v-for="(per, index) in item.repayPlan" :key="index">
+              <div class="left">
+                <p class="tips">{{per.period}}期</p>
+                <p class="tips">还款金额：{{per.repaid}}元</p>
+                <p class="tips">还款时间：{{per.repay_time}}</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- <div v-for="(per, index) in item.repayPlan" :key="index">
+            <p>{{per.period}}</p>
+            <p>{{per.repaid}}</p>
+            <p>{{per.repay_time}}</p>
+          </div> -->
+        </div>
+      </li>
+    </ul>
+    <div class="no_list" v-if="repayList.length === 0">
       还未申请任何贷款
     </div>
     <Tabbar selected="2"></Tabbar>
@@ -14,45 +36,18 @@ export default {
     Tabbar
   },
   data() {
-    return {}
+    return {
+      repayList: []
+    }
   },
   created(){
-    // this.$service.post('/repayList',{
-    //   token: this.$Cookies.get('token')
-    // }).then(res => {
-    //   console.log(res);
-    // });
-    // // 我的银行卡列表  todo
-    // this.$service.post('/queryCardList',{
-    //   token: this.$Cookies.get('token')
-    // }).then(res => {
-    //   console.log(res);
-    // });
-    // // 获取用户信息
-    // this.$service.post('/getUserInfo',{
-    //   token: this.$Cookies.get('token')
-    // }).then(res => {
-    //   console.log(res);
-    // });
-    // 添加身份证信息
-    // this.$service.post('/addIdCard',{
-    //   token: this.$Cookies.get('token'),
-    //   idno: '123456'
-    // }).then(res => {
-    //   console.log(res);
-    // });
-    // 
-    // 修改密码
-    // this.$service.post('/modifyPassword',{
-    //   token: this.$Cookies.get('token'),
-    //   newPassword: '11111',
-    //   oldPassword: '123456'
-    // }).then(res => {
-    //   console.log(res);
-    // });
-  },
-  
-  methods: {
+    this.$service.post('/repayList',{
+      token: this.$Cookies.get('token')
+    }, true).then(res => {
+      if(res.data && res.data.repayList) {
+        this.repayList = res.data.repayList;
+      }
+    });
   }
 }
 </script>
@@ -77,6 +72,52 @@ export default {
     padding-bottom: 60px;
     box-sizing: border-box;
   }
+  .repay_list{
+    padding-bottom: 50px;
+  }
+  .per_item{
+    margin-bottom: 20px;
+    .order_title{
+      height: 30px;
+      line-height: 30px;
+      text-align: left;
+      font-size: 14px;
+      text-indent: 10px;
+    }
+    .item_total{
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .item{
+      padding: 0px 15px;
+      background: #fff;
+      height: 105px;
+      box-sizing: border-box;
+      text-align: left;
+      display: flex;
+      align-items: center;
+      .left{
+        flex: 1;
+        text-indent: 10px;
+        .amount{
+          text-indent: 0;
+          height: 41px;
+          line-height: 41px;
+          color: rgba(16, 16, 16, 1);
+          font-size: 28px;
+        }
+        .tips{
+          height: 23px;
+          line-height: 20px;
+          color: #999;
+          font-size: 14px;
+          margin-top: 7px;
+        }
+      }
+    }
+  }
+  
+ 
 }
 </style>
 

@@ -36,6 +36,8 @@ body{
   text-align: center;
   color: #2c3e50;
   font-size: 12px;
+  width: 100%;
+  height: 100%;
   /* background:#F8F8F8; */
 }
 .mint-header {

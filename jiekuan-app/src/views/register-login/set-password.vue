@@ -28,6 +28,7 @@
 </template>
 <script>
 import {showToastOnly} from '@/libs/utils';
+import { setTimeout } from 'timers';
 export default {
   data() {
     return {
@@ -75,21 +76,27 @@ export default {
         this.canClick = true;
         return false;
       } else {
-        
-        this.$service.post(this.type === 'forget' ? '/forgetPassword' : '/regist', {
+        this.$service.post(this.type? '/forgetPassword' : '/regist', {
           name:'arlene',
           mobile: this.mobile,
           verifyCode: this.verifyCode,
           password: this.password
         }, true).then(res => {
           if(res.code === 0) {
-            this.$router.push('/');
+            showToastOnly({
+              that: this,
+              msg: `密码设置成功`,
+              time: 2000
+            });
+            setTimeout(() => {
+              this.$router.push('/');
+            }, 1000);
           } else{
-          showToastOnly({
-            that: this,
-            msg: res.msg,
-            time: 2000
-          });
+            showToastOnly({
+              that: this,
+              msg: res.msg,
+              time: 2000
+            });
             this.canClick = true;
           }
         });

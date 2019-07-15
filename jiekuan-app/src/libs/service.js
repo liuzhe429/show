@@ -27,7 +27,7 @@ axios.interceptors.request.use(
     let tokens = null;
     // 获取存储在cookie中的值，如果存在则在每个ajax请求的头部加上
     document.cookie.split(';').forEach((e) => {
-      if (e.split('=')[0].trim() === 'token') {
+      if (e.split('=')[0].trim() === 'adminToken') {
         tokens = e.split('=')[1];
       }
     });
@@ -94,7 +94,7 @@ function get(api, data, allback = 0) {
     formData.params = data;
   }
   // 请求数据
-  return returnResponse(formData, allback);
+  return returnResponse(formData, allback, api);
 }
 
 /**
@@ -115,10 +115,10 @@ function post(api, data, allback = 0) {
     data
   };
   // 请求数据
-  return returnResponse(formData, allback);
+  return returnResponse(formData, allback, api);
 }
 // 返回请求数据
-function returnResponse(formData, allback) {
+function returnResponse(formData, allback, api) {
   // 使用Promise方法异步处理请求
   var promise = new Promise((resolve, reject) => {
     axios(formData)
@@ -126,7 +126,7 @@ function returnResponse(formData, allback) {
         if (allback) {
           resolve(response.data);
         } else {
-          resolve(checkState(response.data));
+          resolve(checkState(response.data, api));
         }
       })
       .catch(function (error) {
@@ -136,16 +136,19 @@ function returnResponse(formData, allback) {
   return promise;
 }
 // 数据过滤
-function checkState(res) {
+function checkState(res, api) {
   let newData = '';
   switch (res.code) {
     case 0:
       newData = res.data;
       break;
-    case 3:
-      break;
-    case -1001:
-      window.location = res.data;
+    case 9998:
+      // 登录过期
+      if(api.indexOf('admin') > 0) {
+        window.location.href = '/'
+      } else {
+        window.location.href = '/admin/login'
+      }
       break;
     default:
       break;
@@ -153,7 +156,33 @@ function checkState(res) {
 
   return newData;
 }
+// 上传图片
+function uploadForm(api, formData, allback) {
+  let newApi = returnApi(api);
+  let instance = Axios.create({
+    baseURL: '/',
+    responseType: 'json',
+    withCredentials: true,
+    headers: {
+      'Content-Type': 'multipart/form-data'
+    }
+  });
+  let promise = new Promise((resolve, reject) => {
+    instance.post(newApi, formData).then((res) => {
+      // 后端返回的数据挂载在res.data内
+      if (allback) {
+        resolve(res.data);
+      } else {
+        resolve(checkState(res.data));
+      }
+    }).catch((err) => {
+      reject(err);
+    });
+  });
+  return promise;
+}
 export default {
   get: get,
-  post: post
+  post: post,
+  uploadForm: uploadForm
 };

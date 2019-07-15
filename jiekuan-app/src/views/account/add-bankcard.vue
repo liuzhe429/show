@@ -14,6 +14,7 @@
 </template>
 <script>
 import { showToastOnly } from '@/libs/utils';
+import { setTimeout } from 'timers';
 export default {
   data(){
     return {
@@ -25,6 +26,22 @@ export default {
   },
   methods: {
     handlePost(){
+      if (this.bankCode === '') {
+        showToastOnly({
+          that: this,
+          msg: '请输入银行名称',
+          time: 2000
+        });
+        return;
+      }
+      if (this.cardNo === '') {
+        showToastOnly({
+          that: this,
+          msg: '请输入卡号',
+          time: 2000
+        });
+        return;
+      }
       this.canClick = false;
       this.$service.post('/addCard',{
         token: this.$Cookies.get('token'),
@@ -44,7 +61,9 @@ export default {
             msg: '添加成功',
             time: 2000
           });
-          this.$router.go(-1);
+          setTimeout(() => {
+            this.$router.go(-1);
+          }, 1000);
         }
       });
     }

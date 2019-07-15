@@ -42,9 +42,9 @@ export default {
       amount: '',
       type: this.$route.query.type,
       list: {
-        identity: [3, 6, 9, 12],
-        creditCard: [6, 12, 24],
-        cream: [12, 24]
+        1: [3, 6, 9, 12],
+        2: [6, 12, 24],
+        3: [12, 24]
       },
       active: 0
     }

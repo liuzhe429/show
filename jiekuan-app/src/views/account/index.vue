@@ -1,9 +1,12 @@
 <template>
   <div class="p_account_page">
     <div class="top">
-      <div class="left">
+      <div class="left" v-if="userInfo.mobile">
         <p class="phone">{{secrecyMobile(userInfo.mobile)}}</p>
         <p class="username">{{userInfo.name}}</p>
+      </div>
+      <div class="left" v-else>
+        <p class="phone" @click="goLogin">去登录</p>
       </div>
       <div class="right">
         <img src="@/assets/notifications-none.png" alt="" style="width:30px;">
@@ -14,7 +17,7 @@
         <img src="@/assets/bankcard.png" alt="" slot="icon" style="width:24px;margin:0px 15px 0px 5px;">
       </mt-cell>
       <p class="line"><i></i></p>
-      <mt-cell title="我的额度" is-link icon="back" to="/shenhe">
+      <mt-cell title="我的额度" is-link icon="back" to="/shenhe-result">
         <img src="@/assets/bankcard.png" alt="" slot="icon" style="width:24px;margin:0px 15px 0px 5px;">
       </mt-cell>
       <!-- <p class="line"><i></i></p>
@@ -26,7 +29,7 @@
         <img src="@/assets/bankcard.png" alt="" slot="icon" style="width:24px;margin:0px 15px 0px 5px;">
       </mt-cell>
       <p class="line"><i></i></p>
-      <mt-cell title="在线客服" is-link icon="back" to="tel:13764567708">
+      <mt-cell title="在线客服" is-link icon="back" :to="`tel:${qq}`">
         <img src="@/assets/bankcard.png" alt="" slot="icon" style="width:24px;margin:0px 15px 0px 5px;">
       </mt-cell>
       <p class="line"><i></i></p>
@@ -50,13 +53,32 @@ export default {
       userInfo: {
         mobile: '',
         name: ''
-      }
+      },
+      img_url: '',
+      qq: ''
     }
   },
   created() {
-    this.getUserInfo();
+    if (this.$Cookies.get('token')){
+      this.getUserInfo();
+      this.getQQ();
+    }
+    
   },
   methods: {
+    goLogin() {
+      this.$router.push('/login');
+    },
+    getQQ() {
+      this.$service.post('/getImg',{
+        token: this.$Cookies.get('token'),
+        type: 4
+      }).then(res => {
+        if (res.img) {
+          this.qq = res.img[0];
+        }
+      });
+    },
     // 手机号脱敏
     secrecyMobile(val){
       return secrecyMobile(val);
@@ -69,7 +91,6 @@ export default {
         if (res.userInfo) {
           this.userInfo = res.userInfo;
         }
-        console.log(res);
       });
     }
   }

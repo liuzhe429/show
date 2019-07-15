@@ -12,12 +12,70 @@ const Account = resolve => require(['@views/account'], resolve);
 const Setup = resolve => require(['@views/account/setup'], resolve);
 const BankCard = resolve => require(['@views/account/bankcard'], resolve);
 const AddBankCard = resolve => require(['@views/account/add-bankcard'], resolve);
+const AddId= resolve => require(['@views/account/add-id'], resolve);
 const Question = resolve => require(['@views/account/question'], resolve);
+const Answer = resolve => require(['@views/account/answer'], resolve);
 const Info = resolve => require(['@views/jiekuan/info'], resolve);
 const Shenhe = resolve => require(['@views/jiekuan/shenhe'], resolve);
 const ShenheWait = resolve => require(['@views/jiekuan/shenhewait'], resolve);
+const ShenheResult = resolve => require(['@views/account/shenhe-result'], resolve);
 const JieKuanPay = resolve => require(['@views/jiekuan/pay'], resolve);
+const AdminIndex = resolve => require(['@views/admin/index'], resolve);
+const AdminHome = resolve => require(['@views/admin/home'], resolve);
+const AdminLogin = resolve => require(['@views/admin/login'], resolve);
+const AdminUser = resolve => require(['@views/admin/user'], resolve);
+const AdminBankList = resolve => require(['@views/admin/bank-list'], resolve);
+const AdminAddPic = resolve => require(['@views/admin/add-pic'], resolve);
+const AdminQuestion = resolve => require(['@views/admin/question'], resolve);
+const AdminApplylist = resolve => require(['@views/admin/applylist'], resolve);
+const AdminHuankuan = resolve => require(['@views/admin/addhuankuan'], resolve);
 const routes = [
+  {
+    path: '/admin',
+    name: 'AdminIndex',
+    component: AdminIndex,
+    redirect: '/admin/home',
+    children: [
+      {
+        path: 'home',
+        name: 'AdminHome',
+        component: AdminHome,
+        
+        children: [{
+          path: 'add-pic',
+          name: 'AdminAddPic',
+          component: AdminAddPic
+        },{
+          path: 'user',
+          name: 'AdminUser',
+          component: AdminUser
+        },{
+          path: 'bank-list',
+          name: 'AdminBankList',
+          component: AdminBankList
+        },{
+          path: 'question',
+          name: 'AdminQuestion',
+          component: AdminQuestion
+        },{
+          path: 'applylist',
+          name: 'AdminQuestion',
+          component: AdminApplylist
+          
+        },{
+          path: 'huankuan',
+          name: 'AdminHuankuan',
+          component: AdminHuankuan
+          
+        }]
+      },
+      {
+        path: 'login',
+        name: 'AdminLogin',
+        component: AdminLogin
+      }
+    ]
+  },
   {
     path: '/',
     name: '借款',
@@ -40,8 +98,13 @@ const routes = [
   },
   {
     path: '/shenhe-wait',
-    name: '审核结果',
+    name: '审核等待',
     component: ShenheWait
+  },
+  {
+    path: '/shenhe-result',
+    name: '审核等待',
+    component: ShenheResult
   },
   {
     path: '/jiekuan-pay',
@@ -55,12 +118,12 @@ const routes = [
   },
   {
     path: '/reg-login',
-    name: '活动中心',
+    name: '登录注册',
     component: RegLogin,
   },
   {
     path: '/login',
-    name: '活动中心',
+    name: '登录',
     component: Login,
   }, {
     path: '/register',
@@ -101,6 +164,11 @@ const routes = [
     component: AddBankCard,
   },
   {
+    path: '/add-id',
+    name: '完善身份证信息',
+    component: AddId,
+  },
+  {
     path: '/setup',
     name: '系统设置',
     component: Setup,
@@ -109,6 +177,11 @@ const routes = [
     path: '/question',
     name: '常见问题',
     component: Question
+  },
+  {
+    path: '/answer',
+    name: '答案',
+    component: Answer
   }
 ];
 

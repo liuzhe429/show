@@ -1,6 +1,6 @@
 <template>
   <div class="p_register_page">
-    <mt-header fixed :title="type === 'forget' ? '忘记密码' : '找回密码'">
+    <mt-header fixed :title="type === 'forget' ? '忘记密码' : type === 'edit' ? '修改密码' : '找回密码'">
       <mt-button @click="$router.go(-1)" slot="left">
         <img src="@/assets/back.png" alt="" style="width:20px;height:20px;"/>
       </mt-button>
@@ -8,7 +8,7 @@
     <p class="step_line">
       <span class="active">选择验证方式</span>
       <span> > 安全验证</span>
-      <span> > 找回登录密码</span>       
+      <span> > {{type === 'edit'? '修改密码' : '找回登录密码'}}</span>       
     </p>
     <main class="p_register_page_content">
       <p class="forget_verify">
@@ -29,7 +29,7 @@ export default {
   methods: {
     handleVerify() {
       // forgetPassword
-      this.$router.push('/quick-register?type=forget');
+      this.$router.push(`/quick-register?type=${this.type}`);
     }
   }
 }
