@@ -31,7 +31,7 @@
               <el-button size="mini" type="primary">{{scope.row.img.length > 0 ? '修改' : '添加'}}</el-button>
               <el-upload
                 class="avatar-uploader"
-                :action="`/admin/file/edit?adminToken=${adminToken}&type=1`"
+                :action="`/api/admin/file/edit?adminToken=${adminToken}&type=1`"
                 :show-file-list="false"
                 :on-success="handleAvatarSuccess"
                 :before-upload="beforeAvatarUpload">
@@ -69,7 +69,7 @@
               <el-button size="mini" type="primary">{{scope.row.img.length > 0 ? '修改' : '添加'}}</el-button>
               <el-upload
                 class="avatar-uploader"
-                :action="`/admin/file/edit?adminToken=${adminToken}&type=3`"
+                :action="`/api/admin/file/edit?adminToken=${adminToken}&type=3`"
                 :show-file-list="false"
                 :on-success="handleAvatarSuccess3"
                 :before-upload="beforeAvatarUpload">
@@ -161,7 +161,7 @@ export default {
       this.qq = '';
     },
     addPic(type) {
-      this.$service.post(`/admin/file/edit`, {
+      this.$service.post(`/api/admin/file/edit`, {
         adminToken: this.adminToken,
         type: type
       }, true).then((res) => {

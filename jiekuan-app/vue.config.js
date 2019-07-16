@@ -14,7 +14,7 @@ function getProxy() {
         target: 'http://loan.com', // 源地址
         changeOrigin: true, // 改变源
         ws: true,
-        pathRewrite: {'^/api': ''}
+        pathRewrite: {'^/api': '/api'}
       },
       '/admin': {
         target: 'http://loan.com', // 源地址
@@ -31,7 +31,7 @@ module.exports = {
   baseUrl: process.env.baseUrl,
   // 将构建好的文件输出到哪里
   outputDir: process.env.outputDir,
-  publicPath: process.env.NODE_ENV === 'production' ? '/youqian/' : '/',
+  publicPath: process.env.NODE_ENV === 'production' ? '/' : '/',
   productionSourceMap: true,
   lintOnSave: true,
 

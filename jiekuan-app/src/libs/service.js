@@ -18,7 +18,8 @@ const axios = Axios.create({
   }
 });
 if (process.env.NODE_ENV === 'production') {
-  axios.defaults.baseURL = 'http://loan.com/';
+  axios.defaults.baseURL = 'http://loan.com/api';
+  // axios.defaults.baseURL = 'http://47.75.162.32/';
 }
 axios.defaults.withCredentials = true;
 // 添加请求拦截器

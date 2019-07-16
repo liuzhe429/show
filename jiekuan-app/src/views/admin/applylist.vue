@@ -6,16 +6,20 @@
       <el-table
         :data="orderList"
         border
-        style="width: 100%">
+        >
         <el-table-column
           prop="id"
           label="id">
         </el-table-column>
         <el-table-column
+          prop="order_id"
+          label="order_id">
+        </el-table-column>
+        <el-table-column
           prop="loan_name"
           label="姓名">
         </el-table-column>
-        <el-table-column
+        <!-- <el-table-column
           label="性别">
           <template slot-scope="scope">
             <span v-if="scope.row.sex === 1">男</span>
@@ -25,10 +29,9 @@
         <el-table-column
           prop="contact"
           label="手机号">
-        </el-table-column>
-        <el-table-column
+        </el-table-column> -->
+        <!-- <el-table-column
           prop="loan_type"
-          width="160px"
           label="借款类型">
           <template slot-scope="scope">
             <span v-if="scope.row.loan_type === '1'">身份证</span>
@@ -43,9 +46,9 @@
         <el-table-column
           prop="audit_money"
           label="审批的金额">
-        </el-table-column>
+        </el-table-column> -->
         
-        <el-table-column
+        <!-- <el-table-column
           label="借款分期">
           <template slot-scope="scope">
             <span>{{scope.row.periods}}期</span>
@@ -58,8 +61,8 @@
             <span v-if="scope.row.audit_status === 1">已通过</span>
             <span v-if="scope.row.audit_status === 2">被拒</span>
           </template>
-        </el-table-column>
-        <el-table-column
+        </el-table-column> -->
+        <!-- <el-table-column
           prop="income"
           label="年收入">
         </el-table-column>
@@ -76,8 +79,8 @@
             <span v-if="scope.row.housing_loan === 1">有</span>
             <span v-if="scope.row.housing_loan === 2">无</span>
           </template>
-        </el-table-column>
-        <el-table-column
+        </el-table-column> -->
+        <!-- <el-table-column
           prop="idcard"
           label="身份证号">
         </el-table-column>
@@ -93,7 +96,7 @@
         <el-table-column
           prop="create_time"
           label="申请时间">
-        </el-table-column>
+        </el-table-column> -->
         <el-table-column
           label="操作"
           width="200px">

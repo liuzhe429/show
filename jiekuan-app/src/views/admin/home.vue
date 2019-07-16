@@ -116,7 +116,7 @@ export default {
       }
     }
     main{
-      width: 100%;
+      width: calc(100% - 200px);
       height: 100%;
       box-sizing: border-box;
     }

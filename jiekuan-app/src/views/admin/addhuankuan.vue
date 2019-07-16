@@ -1,56 +1,53 @@
 <template>
   <div class="admin_p_add_huankuan">
-    <div>还款列表</div>
-      <el-table
-        :data="repayList"
-        border
-        style="width: 100%">
-        <el-table-column
-          prop="id"
-          label="id">
-        </el-table-column>
-        <el-table-column
-          prop="order_id"
-          label="订单号">
-        </el-table-column>
-        <el-table-column
-          label="借款分期">
-          <template slot-scope="scope">
-            <span>{{scope.row.period}}期</span>
-          </template>
-        </el-table-column>
-        <el-table-column
-          prop="repaid"
-          label="还款金额">
-        </el-table-column>
-        <el-table-column
-          label="借款类型">
-          <template slot-scope="scope">
-            <span v-if="scope.row.status === 0">还款中</span>
-            <span v-if="scope.row.status === 1">已还清</span>
-          </template>
-        </el-table-column>
-        
-        <el-table-column
-          prop="create_time"
-          label="还款时间">
-        </el-table-column>
-        <el-table-column
-          label="操作"
-          width="200px">
-          <template slot-scope="scope">
-            <el-button size="mini" type="primary" @click="shenheApply(scope.row, 1)">通过</el-button><i style="margin:0 2px;"/>
-            <el-button size="mini" type="danger" @click="shenheApply(scope.row, 2)">拒绝</el-button><i style="margin:0 2px;"/>
-            <el-button size="mini" type="success" @click="add(scope.row)" v-if="scope.row.repay_status === 1">查看</el-button>
-            <el-button size="mini" type="success" @click="add(scope.row)" v-if="scope.row.repay_status !== 1">还款</el-button>
-          </template>
-        </el-table-column>
-      </el-table>
-    <ul>
-      <li v-for="(item, index) in repayList" :key="index">dfdfdf</li>
-    </ul>
-    <div v-if="type !== 'chakan'">
-      <el-form label-width="100px" class="demo-ruleForm">
+    <el-button type="primary" class="back_btn" @click="$router.go(-1)">返回</el-button>
+    <div class="page_title">还款列表</div>
+    <el-table
+      :data="repayList"
+      border
+      style="width: 100%">
+      <el-table-column
+        prop="id"
+        label="id">
+      </el-table-column>
+      <el-table-column
+        prop="order_id"
+        label="订单号">
+      </el-table-column>
+      <el-table-column
+        label="借款分期">
+        <template slot-scope="scope">
+          <span>{{period}} - {{scope.row.period}}期</span>
+        </template>
+      </el-table-column>
+      <el-table-column
+        prop="repaid"
+        label="还款金额">
+      </el-table-column>
+      <!-- <el-table-column
+        label="借款类型">
+        <template slot-scope="scope">
+          <span v-if="scope.row.status === 0">还款中</span>
+          <span v-if="scope.row.status === 1">已还清</span>
+        </template>
+      </el-table-column> -->
+      <el-table-column
+        prop="create_time"
+        label="还款时间">
+      </el-table-column>
+      <!-- <el-table-column
+        label="操作"
+        width="200px">
+        <template slot-scope="scope">
+          <el-button size="mini" type="primary" @click="shenheApply(scope.row, 1)">通过</el-button><i style="margin:0 2px;"/>
+          <el-button size="mini" type="danger" @click="shenheApply(scope.row, 2)">拒绝</el-button><i style="margin:0 2px;"/>
+          <el-button size="mini" type="success" @click="add(scope.row)" v-if="scope.row.repay_status === 1">查看</el-button>
+          <el-button size="mini" type="success" @click="add(scope.row)" v-if="scope.row.repay_status !== 1">还款</el-button>
+        </template>
+      </el-table-column> -->
+    </el-table>
+    <div v-if="type !== 'chakan'" class="add_container">
+      <el-form label-width="70px" class="demo-ruleForm">
         <el-form-item label="还款金额" >
           <el-input v-model="repaid" autocomplete="off" placeholder="请输入还款金额"></el-input>
         </el-form-item>
@@ -59,7 +56,6 @@
         <el-button type="primary" @click="submitForm">确 定</el-button>
       </span>
     </div>
-    
   </div>
 </template>
 <script>
@@ -77,6 +73,7 @@ export default {
   data() {
     return{
       orderId: this.$route.query.orderId || '',
+      period: this.$route.query.period || '',
       type: this.$route.query.type || '',
       repaid: '',
       repayList: []
@@ -123,7 +120,7 @@ export default {
         if (res.code === 0) {
           showToastOnly({
             that: this,
-            msg: '审批成功',
+            msg: '还款成功',
             time: 2000
           });
           this.getData();
@@ -146,6 +143,19 @@ export default {
 <style lang="less" scoped>
 .admin_p_add_huankuan{
   padding:20px;
+  text-align: left;
+  .back_btn{
+    width: 150px;
+  }
+  .page_title{
+    text-align: left;
+    font-size: 18px;
+    height: 40px;
+    line-height: 40px;
+  }
+  .add_container{
+    margin-top: 20px;
+  }
 }
 </style>
 
