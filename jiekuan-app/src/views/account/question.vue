@@ -27,14 +27,12 @@ export default {
       token: this.$Cookies.get('token')
     }).then(res => {
       this.question = res.question;
-      console.log(res);
     }).catch(() => {
       // console.log(err);
     });
   },
   methods: {
     goDetail(id, question) {
-      console.log('dfdsfdsf');
       this.$router.push(`/answer?id=${id}&question=${question}`);
     },
     handleBack() {

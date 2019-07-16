@@ -6,26 +6,34 @@
       </mt-button>
     </mt-header>
     <ul>
-      <li v-for="(item, index) in detail" :key="index" class="item">
-        <p>{{item.orderId.auditMoney}}</p>
-        <p>{{item.orderId.auditStatus}}</p>
-        <!-- <div v-if="item.repayPlan.length>0">
+      <li class="item" v-for="(item, index) in repayList" :key="index">
+        <div class="left">
+          <p class="tips">订单号: {{item.orderId}}</p>
+          <!-- <p class="amount"><span>借款金额：</span>{{item.auditMoney}}</p> -->
+          <p class="amount">{{item.auditStatus === 0 ? '审核中' : item.auditStatus === 1 ? '审核通过' : '审核未通过'}}</p>
+          <!-- <p class="tips">{{item.orderId}}</p> -->
+        </div>
+        <div class="right">
+          <span @click="goDetail(item)">查看详细</span>
+        </div>
+      </li>
+      <!-- <li v-for="(item, index) in repayList" :key="index" class="item">
+        <p>{{item.orderId}}</p>
+        <p>{{item.auditMoney}}</p>
+        <p>{{item.auditStatus}}</p>
+        <div v-if="item.repayPlan.length>0">
           <div v-for="(per, index) in item.repayPlan" :key="index">
             <p>{{per.period}}</p>
             <p>{{per.repaid}}</p>
             <p>{{per.repay_time}}</p>
           </div>
-        </div> -->
-      </li>
+        </div>
+      </li> -->
     </ul>
   </div>
 </template>
 <script>
-import Tabbar from '@/components/tabbar';
 export default {
-  components: {
-    Tabbar
-  },
   data() {
     return {
       repayList: [],
@@ -37,50 +45,17 @@ export default {
       token: this.$Cookies.get('token')
     }, true).then(res => {
       this.repayList = res.data.repayList;
-      this.repayList.map(item => {
-        this.getDetail(item.orderId);
-      });
-      // if(res.data && res.data.repayList) {
-      //   this.repayList = res.data.repayList;
-      // }
-      // console.log(res);
     });
-    // // 我的银行卡列表  todo
-    // this.$service.post('/queryCardList',{
-    //   token: this.$Cookies.get('token')
-    // }).then(res => {
-    //   console.log(res);
-    // });
-    // // 获取用户信息
-    // this.$service.post('/getUserInfo',{
-    //   token: this.$Cookies.get('token')
-    // }).then(res => {
-    //   console.log(res);
-    // });
-    // 添加身份证信息
-    // this.$service.post('/addIdCard',{
-    //   token: this.$Cookies.get('token'),
-    //   idno: '123456'
-    // }).then(res => {
-    //   console.log(res);
-    // });
-    // 
-    // 修改密码
-    // this.$service.post('/modifyPassword',{
-    //   token: this.$Cookies.get('token'),
-    //   newPassword: '11111',
-    //   oldPassword: '123456'
-    // }).then(res => {
-    //   console.log(res);
-    // });
   },
   
   methods: {
+    goDetail(detail){
+      this.$router.push(`/shenhe?detail=${JSON.stringify(detail)}`);
+    },
     handleBack() {
       this.$router.go(-1);
     },
     getDetail(id){
-      
       this.$service.post('/queryPosition',{
         token: this.$Cookies.get('token'),
         orderId: id
@@ -89,12 +64,7 @@ export default {
           this.detail.push({
             orderId:res
           });
-          console.log(this.detail);
         }
-        // this.repayList = res.data.repayList;
-        // if(res.data && res.data.repayList) {
-        //   this.repayList = res.data.repayList;
-        // }
       });
     }
   }
@@ -122,8 +92,59 @@ export default {
     box-sizing: border-box;
   }
   .item{
-    background: #ccc;
+    padding: 0px 15px; 
+    background: #fff;
+    height: 125px;
+    box-sizing: border-box;
+    border-radius: 10px;
     margin-bottom: 20px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    .left{
+      // width: 150px;
+      flex: 1;
+      .amount{
+        text-indent: 0;
+        height: 41px;
+        line-height: 41px;
+        color: rgba(16, 16, 16, 1);
+        font-size: 20px;
+        margin-top: 10px;
+        span{
+          font-size: 15px;
+        }
+      }
+      .tips{
+        width: 230px;
+        height: 23px;
+        line-height: 20px;
+        color: rgba(187, 187, 187, 1);
+        font-size: 14px;
+        margin-top: 7px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+    .right{
+      width: 100px;
+      span{
+        width: 94px;
+        height: 33px;
+        display: block;
+        line-height: 33px;
+        border-radius: 10px;
+        color: rgba(245, 105, 104, 1);
+        font-size: 14px;
+        text-align: center;
+        border: 1px solid rgba(237, 235, 237, 1);/*no*/
+      }
+    }
   }
+  // .item{
+  //   background: #ccc;
+  //   margin-bottom: 20px;
+  // }
 }
 </style>

@@ -9,9 +9,7 @@
 export default {
   created(){
     var window = global || this,
-    width = 1500,
     docEl = window.document.documentElement,
-    dpr = window.devicePixelRatio || 1,
     resizeEvt = 'resize',
     resizeCall = (function () {
       var clientWidth = docEl.clientWidth;

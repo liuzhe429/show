@@ -5,15 +5,19 @@
         <img src="@/assets/back.png" alt="" style="width:20px;height:20px;"/>
       </mt-button>
     </mt-header>
-    <div class="content">
+    <div class="content" v-if="detail.auditStatus === 2">
       <img src="@/assets/shenhe.png" alt="" style="width:150px;"/>
       <p class="title_tips_red">抱歉根据系统综合评定，您暂未通过本次借款申请，请补充资料后，再次提交。谢谢</p>
     </div>
-    <div class="content">
+    <div class="content" v-if="detail.auditStatus === 0">
+      <img src="@/assets/shenhe.png" alt="" style="width:150px;"/>
+      <p class="title_tips_red">审核中，请耐心等待...</p>
+    </div>
+    <div class="content" v-if="detail.auditStatus === 1">
       <img src="@/assets/jieqian.png" alt="" style="width:150px;"/>
       <p class="title">初始审核通过，审批金额：</p>
       <p class="title_tips">最高可借额度（元）</p>
-      <p class="input_msg">200000000</p>
+      <p class="input_msg">{{detail.auditMoney}}</p>
     </div>
     <div class="apply_btn">
       <cube-button class="btn" @click="handleApply">我要借钱</cube-button>
@@ -24,11 +28,12 @@
 export default {
   data() {
     return {
+      detail: JSON.parse(this.$route.query.detail)
     }
   },
   methods: {
     handleApply(){
-      this.$router.push(`/shenhe-wait`);
+      this.$router.push(`/`);
     }
   }
 }

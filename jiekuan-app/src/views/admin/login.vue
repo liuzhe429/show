@@ -19,7 +19,7 @@
   </div>
 </template>
 <script>
-import {login, showToastOnly} from '@/libs/utils';
+import {showToastOnly} from '@/libs/utils';
 export default {
   data() {
     return {

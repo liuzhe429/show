@@ -149,7 +149,6 @@ export default {
     }
   },
   created() {
-    console.log(config.baseUrl);
     // 1首页图片  3支付二维码 4 qq号
     this.getData(1);
     this.getData(3);
