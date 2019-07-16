@@ -19,8 +19,8 @@
             <el-popover
               placement="right"
               trigger="hover">
-              <img :src="'http://loan.com'+ scope.row.img"/>
-              <img slot="reference" :src="'http://loan.com'+ scope.row.img" alt="" style="max-height:150px;"/>
+              <img :src="baseUrl + scope.row.img"/>
+              <img slot="reference" :src=" baseUrl+ scope.row.img" alt="" style="max-height:150px;"/>
             </el-popover>
           </template>
         </el-table-column>
@@ -57,8 +57,8 @@
             <el-popover
               placement="right"
               trigger="hover">
-              <img :src="'http://loan.com'+ scope.row.img"/>
-              <img slot="reference" :src="'http://loan.com'+ scope.row.img" alt="" style="max-height:150px;"/>
+              <img :src=" baseUrl + scope.row.img"/>
+              <img slot="reference" :src=" baseUrl+ scope.row.img" alt="" style="max-height:150px;"/>
             </el-popover>
           </template>
         </el-table-column>
@@ -122,6 +122,7 @@
 </template>
 <script>
 import { showToastOnly } from '@/libs/utils';
+import config from '@/config';
 import {Table, TableColumn, Button, Upload, Popover, Dialog, Form, FormItem, Input} from 'element-ui';
 export default {
   components: {
@@ -137,6 +138,7 @@ export default {
   },
   data() {
     return {
+      baseUrl: config.baseUrl,
       imageUrl: '',
       homePic: [],
       payPic: [],
@@ -147,6 +149,7 @@ export default {
     }
   },
   created() {
+    console.log(config.baseUrl);
     // 1首页图片  3支付二维码 4 qq号
     this.getData(1);
     this.getData(3);

@@ -1,5 +1,6 @@
 import Axios from 'axios';
 import Qs from 'qs';
+import config from '@/config';
 const axios = Axios.create({
   baseURL: '/',
   responseType: 'json',
@@ -18,7 +19,7 @@ const axios = Axios.create({
   }
 });
 if (process.env.NODE_ENV === 'production') {
-  axios.defaults.baseURL = 'http://loan.com/api';
+  axios.defaults.baseURL = config.baseUrl;
   // axios.defaults.baseURL = 'http://47.75.162.32/';
 }
 axios.defaults.withCredentials = true;
@@ -137,7 +138,7 @@ function returnResponse(formData, allback, api) {
   return promise;
 }
 // 数据过滤
-function checkState(res, api) {
+function checkState(res) {
   let newData = '';
   switch (res.code) {
     case 0:
@@ -145,11 +146,13 @@ function checkState(res, api) {
       break;
     case 9998:
       // 登录过期
-      if(api.indexOf('admin') > 0) {
-        window.location.href = '/'
-      } else {
-        window.location.href = '/admin/login'
-      }
+      // if(api.indexOf('admin') > 0) {
+      //   // this.$route.push('/admin/login');
+      //   // window.location.href = '/'
+      // } else {
+      //   // this.$route.push('/admin/login');
+      //   // window.location.href = '/admin/login'
+      // }
       break;
     default:
       break;

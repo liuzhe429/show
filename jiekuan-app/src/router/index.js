@@ -34,7 +34,7 @@ const routes = [
     path: '/admin',
     name: 'AdminIndex',
     component: AdminIndex,
-    redirect: '/admin/login',
+    redirect: '/admin/home',
     children: [
       {
         path: 'home',

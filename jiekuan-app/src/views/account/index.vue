@@ -38,18 +38,21 @@
       </mt-cell>
     </div>
     <Tabbar selected="3"></Tabbar>
+    <!-- <img :src="baseUrl + img_url" alt="" style="width:200px;"> -->
   </div>
   
 </template>
 <script>
 import Tabbar from '@/components/tabbar';
-import { secrecyMobile } from '@/libs/utils'
+import { secrecyMobile } from '@/libs/utils';
+import config from '@/config';
 export default {
   components: {
     Tabbar
   },
   data(){
     return {
+      baseUrl: config.baseUrl,
       userInfo: {
         mobile: '',
         name: ''
@@ -61,7 +64,8 @@ export default {
   created() {
     if (this.$Cookies.get('token')){
       this.getUserInfo();
-      this.getQQ();
+      this.getImg(1);
+      this.getImg(4);
     }
     
   },
@@ -69,13 +73,17 @@ export default {
     goLogin() {
       this.$router.push('/login');
     },
-    getQQ() {
+    getImg(type) {
       this.$service.post('/getImg',{
-        token: this.$Cookies.get('token'),
-        type: 4
+        // token: this.$Cookies.get('token'),
+        type: type
       }).then(res => {
         if (res.img) {
-          this.qq = res.img[0];
+          if (type === 4) {
+            this.qq = res.img[0];
+          } else {
+            this.img_url = res.img[0];
+          }
         }
       });
     },
