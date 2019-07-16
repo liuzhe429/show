@@ -5,7 +5,7 @@ import router from '@src/router';
 import store from '@/store';
 import service from '@/libs/service';
 import Cookies from 'js-cookie';
-import { Header, Button, Field, Cell, Tabbar, TabItem, Picker} from 'mint-ui';
+import { Header, Button, Field, Cell, Tabbar, TabItem, Picker, Popup} from 'mint-ui';
 
 Vue.component(Header.name, Header);
 Vue.component(Button.name, Button);
@@ -14,6 +14,7 @@ Vue.component(Cell.name, Cell);
 Vue.component(Tabbar.name, Tabbar);
 Vue.component(TabItem.name, TabItem);
 Vue.component(Picker.name, Picker);
+Vue.component(Popup.name, Popup);
 
 Vue.prototype.$service = service;
 Vue.prototype.$Cookies = Cookies;

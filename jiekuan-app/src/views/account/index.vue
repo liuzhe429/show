@@ -64,10 +64,8 @@ export default {
   created() {
     if (this.$Cookies.get('token')){
       this.getUserInfo();
-      this.getImg(1);
       this.getImg(4);
     }
-    
   },
   methods: {
     goLogin() {
@@ -79,11 +77,7 @@ export default {
         type: type
       }).then(res => {
         if (res.img) {
-          if (type === 4) {
-            this.qq = res.img[0];
-          } else {
-            this.img_url = res.img[0];
-          }
+          this.qq = res.img[0];
         }
       });
     },

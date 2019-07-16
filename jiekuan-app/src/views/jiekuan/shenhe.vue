@@ -19,8 +19,8 @@
       <p class="title_tips">最高可借额度（元）</p>
       <p class="input_msg">{{detail.auditMoney}}</p>
     </div>
-    <div class="apply_btn">
-      <cube-button class="btn" @click="handleApply">我要借钱</cube-button>
+    <div class="apply_btn" v-if="detail.auditStatus !== 2">
+      <cube-button class="btn" @click="handlePay()">支付管理费</cube-button>
     </div>
   </div>
 </template>
@@ -34,6 +34,9 @@ export default {
   methods: {
     handleApply(){
       this.$router.push(`/`);
+    },
+    handlePay(){
+      this.$router.push(`/jiekuan-pay`);
     }
   }
 }

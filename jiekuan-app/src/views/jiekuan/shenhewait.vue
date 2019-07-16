@@ -8,9 +8,20 @@
     <div class="content">
       <img src="@/assets/postsuccess.png" alt="" style="width:90px;"/>
       <p>系统审核中，请耐心等待......</p>
+      <cube-button class="btn" @click="handlePay()">返回首页</cube-button>
     </div>
   </div>
 </template>
+<script>
+export default {
+  methods: {
+    handlePay(){
+      this.$router.push('/');
+    }
+  }
+}
+</script>
+
 <style lang="less" scoped>
 .p_wait_page{
   position: absolute;
@@ -30,6 +41,10 @@
     line-height: 40px;
     color: rgba(51, 148, 49, 1);
     font-size: 16px;
+    .btn{
+      margin-top: 40px;
+      background: #F56968;
+    }
   }
 }
 </style>

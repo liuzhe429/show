@@ -16,12 +16,51 @@
           <p class="amount">300</p>
         </div>
         <div class="right">
-          <span>立即支付</span>
+          <span @click="showSlot">立即支付</span>
         </div>
       </li>
     </ul>
+    <mt-popup
+      v-model="popupVisible"
+      popup-transition="popup-fade">
+      <img :src="config.baseUrl + img_url" alt="">
+    </mt-popup>
+    <cube-button class="btn" @click="handleGoAccount()">返回</cube-button>
   </div>
 </template>
+<script>
+import config from '@/config';
+export default {
+  data() {
+    return {
+      config: config,
+      img_url: '',
+      popupVisible: false
+    }
+  },
+  created(){
+    this.getImg(1);
+  },
+  methods: {
+    handleGoAccount() {
+      this.$router.push('/account');
+    },
+    showSlot() {
+      this.popupVisible = !this.popupVisible;
+    },
+    getImg(type) {
+      this.$service.post('/getImg',{
+        type: type
+      }).then(res => {
+        if (res.img) {
+          this.img_url = res.img[0];
+        }
+      });
+    }
+  }
+}
+</script>
+
 <style lang="less" scoped>
 .p_jiekuan_pay_page{
   position: absolute;
@@ -91,6 +130,12 @@
         }
       }
     }
+  }
+  .btn{
+    margin-top: 50px;
+    border: 1px solid #F56968;
+    color: #F56968;
+    background: transparent;
   }
 }
 </style>

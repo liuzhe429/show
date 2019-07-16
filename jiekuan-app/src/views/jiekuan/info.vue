@@ -116,11 +116,11 @@ export default {
     },
     handlePost(){
       this.canClick = false;
-      this.idcard = '13053319980425489';
-      this.birth = '1996-01-02';
-      this.contact = '15201800977';
-      this.income = 10000;
-      this.creditLimit = 10000;
+      // this.idcard = '13053319980425489';
+      // this.birth = '1996-01-02';
+      // this.contact = '15201800977';
+      // this.income = 10000;
+      // this.creditLimit = 10000;
       
       this.$service.post(`/loanApply`, {
         amount: this.amount,
