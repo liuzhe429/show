@@ -121,33 +121,41 @@ export default {
       // this.contact = '15201800977';
       // this.income = 10000;
       // this.creditLimit = 10000;
-      
-      this.$service.post(`/loanApply`, {
-        amount: this.amount,
-        periods: this.periods,
-        loanName: this.loanName,
-        sex: this.sex,
-        idcard: this.idcard,
-        loanType: this.loanType,
-        birth: this.birth,
-        contact: this.contact,
-        income: this.income,
-        creditLimit: this.creditLimit,
-        carLoan: this.carLoan,
-        housingLoan: this.housingLoan,
-        token: this.$Cookies.get('token')
-      }, true).then(res => {
-        if (res.code !== 0) {
-          this.canClick = true;
-          showToastOnly({
-            that: this,
-            msg: res.msg,
-            time: 2000
-          });
-        } else {
-          this.$router.push('/shenhe-wait');
-        }
-      });
+      if (this.amount === '' || this.loanName === '' || this.idcard === '' || this.contact === '' || this.income === '' || this.creditLimit === '') {
+        showToastOnly({
+          that: this,
+          msg: '请完善借款信息',
+          time: 2000
+        });
+        this.canClick = true;
+      } else {
+        this.$service.post(`/loanApply`, {
+          amount: this.amount,
+          periods: this.periods,
+          loanName: this.loanName,
+          sex: this.sex,
+          idcard: this.idcard,
+          loanType: this.loanType,
+          birth: this.birth,
+          contact: this.contact,
+          income: this.income,
+          creditLimit: this.creditLimit,
+          carLoan: this.carLoan,
+          housingLoan: this.housingLoan,
+          token: this.$Cookies.get('token')
+        }, true).then(res => {
+          if (res.code !== 0) {
+            this.canClick = true;
+            showToastOnly({
+              that: this,
+              msg: res.msg,
+              time: 2000
+            });
+          } else {
+            this.$router.push(`/jiekuan-pay?amount=${this.amount}`);
+          }
+        });
+      }
     }
   }
 }

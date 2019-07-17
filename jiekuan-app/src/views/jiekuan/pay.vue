@@ -13,7 +13,7 @@
       <li class="item">
         <div class="left">
           <p class="tips">千分之三（元）</p>
-          <p class="amount">300</p>
+          <p class="amount">{{amount*0.003}}</p>
         </div>
         <div class="right">
           <span @click="showSlot">立即支付</span>
@@ -23,9 +23,9 @@
     <mt-popup
       v-model="popupVisible"
       popup-transition="popup-fade">
-      <img :src="config.baseUrl + img_url" alt="">
+      <img :src="config.baseUrl + img_url" alt="" style="max-width:3rem;">
     </mt-popup>
-    <cube-button class="btn" @click="handleGoAccount()">返回</cube-button>
+    <cube-button class="btn" @click="handleGoAccount()">支付完成</cube-button>
   </div>
 </template>
 <script>
@@ -33,6 +33,7 @@ import config from '@/config';
 export default {
   data() {
     return {
+      amount: this.$route.query.amount,
       config: config,
       img_url: '',
       popupVisible: false
@@ -43,7 +44,7 @@ export default {
   },
   methods: {
     handleGoAccount() {
-      this.$router.push('/account');
+      this.$router.push('/shenhe-wait');
     },
     showSlot() {
       this.popupVisible = !this.popupVisible;

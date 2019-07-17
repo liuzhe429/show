@@ -42,8 +42,13 @@ export default {
     color: rgba(51, 148, 49, 1);
     font-size: 16px;
     .btn{
-      margin-top: 40px;
-      background: #F56968;
+      width: 305px;
+      position: fixed;
+      bottom: 70px;
+      left: 30px;
+      border: 1px solid #F56968;
+      background: transparent;
+      color: #F56968;
     }
   }
 }
