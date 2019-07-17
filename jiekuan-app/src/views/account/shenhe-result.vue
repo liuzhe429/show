@@ -9,26 +9,13 @@
       <li class="item" v-for="(item, index) in repayList" :key="index">
         <div class="left">
           <p class="tips">订单号: {{item.orderId}}</p>
-          <!-- <p class="amount"><span>借款金额：</span>{{item.auditMoney}}</p> -->
-          <p class="amount">{{item.auditStatus === 0 ? '审核中' : item.auditStatus === 1 ? '审核通过' : '审核未通过'}}</p>
+          <p class="amount"><span>借款金额：</span>{{item.auditMoney}}</p>
           <!-- <p class="tips">{{item.orderId}}</p> -->
         </div>
         <div class="right">
-          <span @click="goDetail(item)">查看详细</span>
+          <span>{{item.auditStatus === 0 ? '审核中' : item.auditStatus === 1 ? '审核通过' : '审核未通过'}}</span>
         </div>
       </li>
-      <!-- <li v-for="(item, index) in repayList" :key="index" class="item">
-        <p>{{item.orderId}}</p>
-        <p>{{item.auditMoney}}</p>
-        <p>{{item.auditStatus}}</p>
-        <div v-if="item.repayPlan.length>0">
-          <div v-for="(per, index) in item.repayPlan" :key="index">
-            <p>{{per.period}}</p>
-            <p>{{per.repaid}}</p>
-            <p>{{per.repay_time}}</p>
-          </div>
-        </div>
-      </li> -->
     </ul>
   </div>
 </template>
@@ -49,9 +36,6 @@ export default {
   },
   
   methods: {
-    goDetail(detail){
-      this.$router.push(`/shenhe?detail=${JSON.stringify(detail)}`);
-    },
     handleBack() {
       this.$router.go(-1);
     },
@@ -138,7 +122,6 @@ export default {
         color: rgba(245, 105, 104, 1);
         font-size: 14px;
         text-align: center;
-        border: 1px solid rgba(237, 235, 237, 1);/*no*/
       }
     }
   }
