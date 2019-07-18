@@ -9,11 +9,13 @@
       <li class="item" v-for="(item, index) in repayList" :key="index">
         <div class="left">
           <p class="tips">订单号: {{item.orderId}}</p>
-          <p class="amount"><span>借款金额：</span>{{item.auditMoney}}</p>
+          <p class="amount"><span>借款金额：</span>{{item.orderInfo.audit_money}}</p>
           <!-- <p class="tips">{{item.orderId}}</p> -->
         </div>
         <div class="right">
-          <span>{{item.auditStatus === 0 ? '审核中' : item.auditStatus === 1 ? '审核通过' : '审核未通过'}}</span>
+          <span v-if="item.orderInfo.audit_status === 0">审核中</span>
+          <span v-if="item.orderInfo.audit_status === 2">审核未通过</span>
+          <span v-if="item.orderInfo.audit_status === 1" @click="goPay(item)" class="go_pay">去支付管理费</span>
         </div>
       </li>
     </ul>
@@ -36,6 +38,9 @@ export default {
   },
   
   methods: {
+    goPay(info) {
+      this.$router.push(`/jiekuan-pay?amount=${info.orderInfo.audit_money}`);
+    },
     handleBack() {
       this.$router.go(-1);
     },
@@ -122,6 +127,9 @@ export default {
         color: rgba(245, 105, 104, 1);
         font-size: 14px;
         text-align: center;
+        &.go_pay{
+          border: 1px solid rgba(245, 105, 104, 1);/*no*/
+        }
       }
     }
   }

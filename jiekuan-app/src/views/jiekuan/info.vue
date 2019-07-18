@@ -152,7 +152,8 @@ export default {
               time: 2000
             });
           } else {
-            this.$router.push(`/jiekuan-pay?amount=${this.amount}`);
+            this.$router.push(`/shenhe-wait`);
+            // this.$router.push(`/jiekuan-pay?amount=${this.amount}`);
           }
         });
       }
